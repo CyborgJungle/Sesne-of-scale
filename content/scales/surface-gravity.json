@@ -1,0 +1,146 @@
+{
+  "id": "surface-gravity",
+  "field": "Astronomy",
+  "name": "Surface gravity",
+  "question": "How hard you'd be pulled down standing on each world. Each gridline step is ten times stronger.",
+  "unit": "m/s²",
+  "type": "log",
+  "min": 0.1,
+  "max": 30,
+  "items": [
+    {
+      "name": "Ceres",
+      "value": 0.28,
+      "source": "https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)",
+      "fact": "Ceres is the largest object in the asteroid belt.",
+      "status": "draft"
+    },
+    {
+      "name": "Pluto",
+      "value": 0.62,
+      "source": "https://en.wikipedia.org/wiki/Pluto",
+      "fact": "On Pluto you could jump about 16 times higher than on Earth.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Triton",
+      "value": 0.779,
+      "source": "https://en.wikipedia.org/wiki/Triton_(moon)",
+      "fact": "Triton orbits Neptune backwards and is slowly spiraling inward.",
+      "status": "draft"
+    },
+    {
+      "name": "Eris",
+      "value": 0.82,
+      "source": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)",
+      "fact": "The discovery of Eris led to Pluto being reclassified as a dwarf planet.",
+      "status": "draft"
+    },
+    {
+      "name": "Callisto",
+      "value": 1.235,
+      "source": "https://en.wikipedia.org/wiki/Callisto_(moon)",
+      "fact": "Callisto is one of the most heavily cratered objects in the Solar System.",
+      "status": "draft"
+    },
+    {
+      "name": "Europa",
+      "value": 1.315,
+      "source": "https://en.wikipedia.org/wiki/Europa_(moon)",
+      "fact": "Europa likely hides a salty ocean under its ice.",
+      "status": "draft"
+    },
+    {
+      "name": "Titan",
+      "value": 1.352,
+      "source": "https://en.wikipedia.org/wiki/Titan_(moon)",
+      "fact": "With low gravity and thick air, a person on Titan could fly by flapping wings.",
+      "status": "draft"
+    },
+    {
+      "name": "Ganymede",
+      "value": 1.428,
+      "source": "https://en.wikipedia.org/wiki/Ganymede_(moon)",
+      "fact": "Ganymede is bigger than the planet Mercury.",
+      "status": "draft"
+    },
+    {
+      "name": "The Moon",
+      "value": 1.622,
+      "source": "https://en.wikipedia.org/wiki/Moon",
+      "fact": "Moon gravity is about one-sixth of Earth's.",
+      "familiar": true,
+      "verify": {
+        "match": "Moon"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Io",
+      "value": 1.796,
+      "source": "https://en.wikipedia.org/wiki/Io_(moon)",
+      "fact": "Io is the most volcanically active body in the Solar System.",
+      "status": "draft"
+    },
+    {
+      "name": "Mercury",
+      "value": 3.7,
+      "source": "https://en.wikipedia.org/wiki/Mercury_(planet)",
+      "fact": "Mercury and Mars have almost the same surface gravity, though Mercury is much smaller.",
+      "status": "draft"
+    },
+    {
+      "name": "Mars",
+      "value": 3.72076,
+      "source": "https://en.wikipedia.org/wiki/Mars",
+      "fact": "On Mars you'd weigh a bit over a third of your Earth weight.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Uranus",
+      "value": 8.69,
+      "source": "https://en.wikipedia.org/wiki/Uranus",
+      "fact": "Uranus rotates on its side.",
+      "status": "draft"
+    },
+    {
+      "name": "Venus",
+      "value": 8.87,
+      "source": "https://en.wikipedia.org/wiki/Venus",
+      "fact": "Venus is almost Earth's twin in size and gravity.",
+      "status": "draft"
+    },
+    {
+      "name": "Earth",
+      "value": 9.80665,
+      "source": "https://en.wikipedia.org/wiki/Earth",
+      "fact": "The standard value of Earth's gravity is 9.80665 m/s².",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Saturn",
+      "value": 10.44,
+      "source": "https://en.wikipedia.org/wiki/Saturn",
+      "fact": "Saturn is less dense than water.",
+      "status": "draft"
+    },
+    {
+      "name": "Neptune",
+      "value": 11.15,
+      "source": "https://en.wikipedia.org/wiki/Neptune",
+      "fact": "Neptune has the fastest winds in the Solar System.",
+      "status": "draft"
+    },
+    {
+      "name": "Jupiter",
+      "value": 24.79,
+      "source": "https://en.wikipedia.org/wiki/Jupiter",
+      "fact": "Jupiter is more than twice as massive as all the other planets combined.",
+      "familiar": true,
+      "status": "draft"
+    }
+  ]
+}

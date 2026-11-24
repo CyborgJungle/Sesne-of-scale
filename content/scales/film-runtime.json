@@ -1,0 +1,250 @@
+{
+  "id": "film-runtime",
+  "field": "Film",
+  "name": "Running time",
+  "question": "How long each film is, in minutes.",
+  "unit": "min",
+  "type": "lin",
+  "min": 60,
+  "max": 240,
+  "step": 30,
+  "items": [
+    {
+      "name": "Toy Story (1995)",
+      "value": 81,
+      "source": "https://en.wikipedia.org/wiki/Toy_Story",
+      "fact": "Toy Story was the first entirely computer-animated feature film.",
+      "familiar": true,
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Snow White and the Seven Dwarfs (1937)",
+      "value": 83,
+      "source": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs_(1937_film)",
+      "fact": "Snow White was Disney's first feature-length film.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "The Lion King (1994)",
+      "value": 88,
+      "source": "https://en.wikipedia.org/wiki/The_Lion_King",
+      "fact": "The Lion King was the highest-grossing animated film for years.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Shrek (2001)",
+      "value": 90,
+      "source": "https://en.wikipedia.org/wiki/Shrek",
+      "fact": "Shrek won the first Oscar for Best Animated Feature.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Finding Nemo (2003)",
+      "value": 100,
+      "source": "https://en.wikipedia.org/wiki/Finding_Nemo",
+      "fact": "Real clownfish can change sex.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Frozen (2013)",
+      "value": 102,
+      "source": "https://en.wikipedia.org/wiki/Frozen_(2013_film)",
+      "fact": "Frozen was loosely based on The Snow Queen by Hans Christian Andersen.",
+      "familiar": true,
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Home Alone (1990)",
+      "value": 103,
+      "source": "https://en.wikipedia.org/wiki/Home_Alone",
+      "fact": "Home Alone is set in suburban Chicago.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Barbie (2023)",
+      "value": 114,
+      "source": "https://en.wikipedia.org/wiki/Barbie_(film)",
+      "fact": "Barbie was the highest-grossing film of 2023.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Back to the Future (1985)",
+      "value": 116,
+      "source": "https://en.wikipedia.org/wiki/Back_to_the_Future",
+      "fact": "The time machine needs exactly 88 mph.",
+      "familiar": true,
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Star Wars (1977)",
+      "value": 121,
+      "source": "https://en.wikipedia.org/wiki/Star_Wars_(film)",
+      "fact": "Star Wars was later retitled Episode IV – A New Hope.",
+      "familiar": true,
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Spirited Away (2001)",
+      "value": 125,
+      "source": "https://en.wikipedia.org/wiki/Spirited_Away",
+      "fact": "Spirited Away won the Oscar for Best Animated Feature.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Jurassic Park (1993)",
+      "value": 127,
+      "source": "https://en.wikipedia.org/wiki/Jurassic_Park_(film)",
+      "fact": "The dinosaurs are on screen for only about 15 minutes.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Inception (2010)",
+      "value": 148,
+      "source": "https://en.wikipedia.org/wiki/Inception",
+      "fact": "Many effects in Inception were done for real, including the rotating hallway.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "The Dark Knight (2008)",
+      "value": 152,
+      "source": "https://en.wikipedia.org/wiki/The_Dark_Knight",
+      "fact": "Heath Ledger won a posthumous Oscar for playing the Joker.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Avatar (2009)",
+      "value": 162,
+      "source": "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
+      "fact": "Avatar is the highest-grossing film of all time.",
+      "familiar": true,
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "The Godfather (1972)",
+      "value": 175,
+      "source": "https://en.wikipedia.org/wiki/The_Godfather",
+      "fact": "Marlon Brando stuffed his cheeks for his audition.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Oppenheimer (2023)",
+      "value": 180,
+      "source": "https://en.wikipedia.org/wiki/Oppenheimer_(film)",
+      "fact": "Oppenheimer won seven Oscars including Best Picture.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Avengers: Endgame (2019)",
+      "value": 181,
+      "source": "https://en.wikipedia.org/wiki/Avengers:_Endgame",
+      "fact": "Endgame was the longest Marvel film at the time.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Titanic (1997)",
+      "value": 195,
+      "source": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+      "fact": "Titanic won 11 Oscars.",
+      "familiar": true,
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "The Return of the King (2003)",
+      "value": 201,
+      "source": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King",
+      "fact": "It won all 11 Oscars it was nominated for.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "The Irishman (2019)",
+      "value": 209,
+      "source": "https://en.wikipedia.org/wiki/The_Irishman",
+      "fact": "Digital de-aging let the actors play their characters across decades.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Gone with the Wind (1939)",
+      "value": 221,
+      "source": "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)",
+      "fact": "Adjusted for inflation, it is the highest-grossing film ever.",
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Lawrence of Arabia (1962)",
+      "value": 227,
+      "source": "https://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)",
+      "fact": "Lawrence of Arabia has no speaking roles for women.",
+      "disputed": true,
+      "verify": {
+        "match": "Running time"
+      },
+      "status": "draft"
+    }
+  ]
+}

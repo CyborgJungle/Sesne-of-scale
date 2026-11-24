@@ -1,0 +1,191 @@
+{
+  "id": "energy-density",
+  "field": "Nutrition",
+  "name": "Energy density",
+  "question": "Calories (kcal) in 100 grams of each.",
+  "unit": "kcal / 100 g",
+  "type": "lin",
+  "min": 0,
+  "max": 1000,
+  "step": 100,
+  "items": [
+    {
+      "name": "Cucumber",
+      "value": 16,
+      "source": "https://en.wikipedia.org/wiki/Cucumber",
+      "fact": "Cucumbers are about 95% water.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "] Nutrition [ edit | edit source ] Cucumber, with peel, raw Nutritional value per 100 g (3.5 oz) Energy 65 kJ (16 kcal) Carbohydrates 3.63 g Sugars 1.67 Dietary fiber 0.5 g Fat 0.11 g Protein 0.65 g Vitamins and minerals"
+    },
+    {
+      "name": "Watermelon",
+      "value": 30,
+      "source": "https://en.wikipedia.org/wiki/Watermelon",
+      "fact": "Watermelon is a berry, botanically speaking.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "pounds). Uses [ edit | edit source ] Watermelon flesh, raw Nutritional value per 100 g (3.5 oz) Energy 127 kJ (30 kcal) Carbohydrates 7.55 g Sugars 6.2 g Dietary fiber 0.4 g Fat 0.15 g Protein 0.61 g Vitamins and mineral"
+    },
+    {
+      "name": "Broccoli",
+      "value": 34,
+      "source": "https://en.wikipedia.org/wiki/Broccoli",
+      "fact": "Broccoli was bred from wild cabbage.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "nd broccoli Nutrition [ edit | edit source ] Broccoli, raw Nutritional value per 100 g (3.5 oz) Energy 141 kJ (34 kcal) Carbohydrates 6.64 g Sugars 1.7 g Dietary fiber 2.6 g Fat 0.37 g Protein 2.82 g Vitamins and mineral"
+    },
+    {
+      "name": "Carrot",
+      "value": 41,
+      "source": "https://en.wikipedia.org/wiki/Carrot",
+      "fact": "The first cultivated carrots were purple and yellow, not orange.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "dit source ] Nutrition [ edit | edit source ] Carrots, raw Nutritional value per 100 g (3.5 oz) Energy 173 kJ (41 kcal) Carbohydrates 9.6 g Sugars 4.7 g Dietary fiber 2.8 g Fat 0.24 g Protein 0.93 g Vitamins and minerals"
+    },
+    {
+      "name": "Apple",
+      "value": 52,
+      "source": "https://en.wikipedia.org/wiki/Apple",
+      "fact": "There are thousands of apple varieties.",
+      "familiar": true,
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "on [ edit | edit source ] Apples, with skin (edible parts) Nutritional value per 100 g (3.5 oz) Energy 218 kJ (52 kcal) Carbohydrates 13.81 g Sugars 10.39 Dietary fiber 2.4 g Fat 0.17 g Protein 0.26 g Vitamins and minera"
+    },
+    {
+      "name": "Potato",
+      "value": 77,
+      "source": "https://en.wikipedia.org/wiki/Potato",
+      "fact": "Potatoes were the first vegetable grown in space.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Banana",
+      "value": 89,
+      "source": "https://en.wikipedia.org/wiki/Banana",
+      "fact": "Bananas are slightly radioactive because of their potassium.",
+      "familiar": true,
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "rition [ edit | edit source ] Bananas, raw ( Daily Value ) Nutritional value per 100 g (3.5 oz) Energy 371 kJ (89 kcal) Carbohydrates 22.84 g Sugars 12.23 g Dietary fiber 2.6 g Fat 0.33 g Protein 1.09 g Vitamins and mine"
+    },
+    {
+      "name": "Avocado",
+      "value": 160,
+      "source": "https://en.wikipedia.org/wiki/Avocado",
+      "fact": "Avocados ripen only after they're picked.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "it source ] Nutrition [ edit | edit source ] Avocados, raw Nutritional value per 100 g (3.5 oz) Energy 670 kJ (160 kcal) Carbohydrates 8.53 g Sugars 0.66 g Dietary fiber 6.7 g Fat 14.66 g Saturated 2.13 g Monounsaturated"
+    },
+    {
+      "name": "Honey",
+      "value": 304,
+      "source": "https://en.wikipedia.org/wiki/Honey",
+      "fact": "Honey found in ancient Egyptian tombs was still edible.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sugar",
+      "value": 387,
+      "source": "https://en.wikipedia.org/wiki/Sugar",
+      "fact": "Sugar is almost pure carbohydrate.",
+      "familiar": true,
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "from the National Academies . Sugar (sucrose), granulated Nutritional value per 100 g (3.5 oz) Energy 1619 kJ (387 kcal) Carbohydrates 99.98 g Sugars 99.91 g Dietary fiber 0 g Fat 0 g Protein 0 g Vitamins and minerals Vi"
+    },
+    {
+      "name": "Cheddar cheese",
+      "value": 403,
+      "source": "https://en.wikipedia.org/wiki/Cheddar_cheese",
+      "fact": "Cheddar is named after a village in Somerset, England.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Almonds",
+      "value": 579,
+      "source": "https://en.wikipedia.org/wiki/Almond",
+      "fact": "Almonds are seeds, not true nuts.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "| edit source ] Nutrition [ edit | edit source ] Almonds Nutritional value per 100 g (3.5 oz) Energy 2423 kJ (579 kcal) Carbohydrates 21.6 g Starch 0.7 g Sugars lactose 4.4 g 0.00 g Dietary fiber 12.5 g Fat 49.9 g Satur"
+    },
+    {
+      "name": "Peanut butter",
+      "value": 588,
+      "source": "https://en.wikipedia.org/wiki/Peanut_butter",
+      "fact": "Peanuts are legumes, related to beans and peas.",
+      "familiar": true,
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Walnuts",
+      "value": 654,
+      "source": "https://en.wikipedia.org/wiki/Walnut",
+      "fact": "Walnuts are among the oldest tree foods known.",
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "n [ edit | edit source ] Walnut, English Walnut kernel, halves Nutritional value per 100 grams Energy 2738 kJ (654 kcal) Carbohydrates 13.71 g Starch 0.06 g Sugars 2.61 g Dietary fiber 6.7 g Fat 65.21 g Saturated 6.126 g"
+    },
+    {
+      "name": "Butter",
+      "value": 717,
+      "source": "https://en.wikipedia.org/wiki/Butter",
+      "fact": "Butter is about 80% fat.",
+      "familiar": true,
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": "dishes. Nutrition [ edit | edit source ] See also: Butterfat Butter, salted Nutritional value per 100 g Energy 717 kcal (3000 kJ) Carbohydrates 0.06 g Sugars 0.06 g Fat 81.1 g Saturated 51.4 g Monounsaturated 21 g Polyun"
+    },
+    {
+      "name": "Olive oil",
+      "value": 884,
+      "source": "https://en.wikipedia.org/wiki/Olive_oil",
+      "fact": "Oil is pure fat, the most energy-dense nutrient.",
+      "familiar": true,
+      "verify": {
+        "match": "Energy"
+      },
+      "status": "checked",
+      "quote": ".0% Palmitoleic acid : 0.3-3.5% Polyunsaturated Linoleic acid : 15.0% α-Linolenic acid : 0.5% Properties Food energy per 100 g (3.5 oz) 3700 kJ (880 kcal) Melting point -6.0 °C (21.2 °F) Boiling point 299 °C (570 °F) Smo"
+    }
+  ]
+}

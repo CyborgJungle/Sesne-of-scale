@@ -1,0 +1,238 @@
+{
+  "id": "lifespan",
+  "field": "Biology",
+  "name": "Lifespan",
+  "question": "Typical (or record) life length, from hours to millennia.",
+  "unit": "",
+  "type": "log",
+  "min": 0.001,
+  "max": 10000,
+  "display": {
+    "kind": "years"
+  },
+  "ticks": [
+    {
+      "v": 0.00274,
+      "l": "1 day"
+    },
+    {
+      "v": 0.01918,
+      "l": "1 wk"
+    },
+    {
+      "v": 0.08333333333333333,
+      "l": "1 mo"
+    },
+    {
+      "v": 1,
+      "l": "1 yr"
+    },
+    {
+      "v": 10,
+      "l": "10 yr"
+    },
+    {
+      "v": 100,
+      "l": "100 yr"
+    },
+    {
+      "v": 1000,
+      "l": "1000 yr"
+    },
+    {
+      "v": 10000,
+      "l": "10k yr"
+    }
+  ],
+  "items": [
+    {
+      "name": "Adult mayfly",
+      "value": 0.00274,
+      "source": "https://en.wikipedia.org/wiki/Mayfly",
+      "fact": "Adult mayflies have no working mouths; they live only to mate.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "number": 1,
+        "match": "day"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Fruit fly",
+      "value": 0.137,
+      "source": "https://en.wikipedia.org/wiki/Drosophila_melanogaster",
+      "fact": "Fruit flies are one of the most studied animals in genetics.",
+      "verify": {
+        "number": 50,
+        "match": "days"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Golden hamster",
+      "value": 2.5,
+      "source": "https://en.wikipedia.org/wiki/Golden_hamster",
+      "fact": "Almost all pet hamsters descend from a few hamsters caught in Syria in 1930.",
+      "verify": {
+        "number": 2,
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "House mouse (in captivity)",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/House_mouse",
+      "fact": "Mice can squeeze through gaps about the width of a pencil.",
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Dog",
+      "value": 12,
+      "source": "https://en.wikipedia.org/wiki/Dog",
+      "fact": "Small dog breeds tend to live longer than large ones.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Cat",
+      "value": 15,
+      "source": "https://en.wikipedia.org/wiki/Cat",
+      "fact": "The oldest cat on record lived to 38.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Horse",
+      "value": 28,
+      "source": "https://en.wikipedia.org/wiki/Horse",
+      "fact": "A horse's age can be estimated from its teeth.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Brandt's bat (record)",
+      "value": 41,
+      "source": "https://en.wikipedia.org/wiki/Brandt%27s_bat",
+      "fact": "This tiny bat weighs about 7 g but can live over 40 years.",
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Human (global life expectancy)",
+      "value": 73.3,
+      "source": "https://en.wikipedia.org/wiki/Life_expectancy",
+      "fact": "Global life expectancy has more than doubled since 1900.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "number": 73,
+        "match": "life expectancy"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Cookie the cockatoo (record)",
+      "value": 83,
+      "source": "https://en.wikipedia.org/wiki/Cookie_(cockatoo)",
+      "fact": "Cookie lived at a Chicago-area zoo for almost his whole life.",
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Galápagos tortoise",
+      "value": 100,
+      "source": "https://en.wikipedia.org/wiki/Galápagos_tortoise",
+      "fact": "Galápagos tortoises can survive a year without food or water.",
+      "familiar": true,
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Bowhead whale",
+      "value": 200,
+      "source": "https://en.wikipedia.org/wiki/Bowhead_whale",
+      "fact": "Old harpoon tips found in bowheads revealed some were over a century old.",
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Rougheye rockfish (record)",
+      "value": 205,
+      "source": "https://en.wikipedia.org/wiki/Rougheye_rockfish",
+      "fact": "Rockfish ages are counted from growth rings in their ear bones.",
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Hanako the koi (claimed)",
+      "value": 226,
+      "source": "https://en.wikipedia.org/wiki/Hanako_(koi)",
+      "fact": "Hanako's age was estimated by counting rings on her scales.",
+      "disputed": true,
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Greenland shark (estimate)",
+      "value": 392,
+      "source": "https://en.wikipedia.org/wiki/Greenland_shark",
+      "fact": "Greenland sharks grow only about 1 cm a year.",
+      "disputed": true,
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Ocean quahog clam (record)",
+      "value": 507,
+      "source": "https://en.wikipedia.org/wiki/Ocean_quahog",
+      "fact": "The record clam, nicknamed Ming, was born in the 1490s.",
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Methuselah bristlecone pine",
+      "value": 4850,
+      "source": "https://en.wikipedia.org/wiki/Methuselah_(tree)",
+      "fact": "Methuselah's exact location is kept secret to protect it.",
+      "disputed": true,
+      "verify": {
+        "number": 4800,
+        "match": "years"
+      },
+      "status": "draft"
+    }
+  ]
+}

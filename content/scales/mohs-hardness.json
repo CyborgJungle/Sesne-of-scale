@@ -1,0 +1,171 @@
+{
+  "id": "mohs-hardness",
+  "field": "Geology",
+  "name": "Mohs hardness",
+  "question": "Which scratches which? 1 is soft as talc, 10 is diamond.",
+  "unit": "",
+  "type": "lin",
+  "min": 0,
+  "max": 10,
+  "step": 1,
+  "display": {
+    "prefix": "Mohs ",
+    "decimals": 2
+  },
+  "items": [
+    {
+      "name": "Talc",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Talc is the softest mineral on the scale and the main ingredient of talcum powder.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Gypsum",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Gypsum is the mineral in plaster and drywall.",
+      "status": "draft"
+    },
+    {
+      "name": "Calcite",
+      "value": 3,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Calcite makes up limestone and marble.",
+      "status": "draft"
+    },
+    {
+      "name": "Fluorite",
+      "value": 4,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Fluorite gave its name to fluorescence: many samples glow under UV light.",
+      "status": "draft"
+    },
+    {
+      "name": "Apatite",
+      "value": 5,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "The enamel on your teeth is mostly a form of apatite.",
+      "status": "draft"
+    },
+    {
+      "name": "Orthoclase feldspar",
+      "value": 6,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Feldspars are the most common group of minerals in Earth's crust.",
+      "verify": {
+        "match": "orthoclase"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Quartz",
+      "value": 7,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Quartz is hard enough to scratch window glass.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Topaz",
+      "value": 8,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Pure topaz is colorless; most blue topaz in shops has been treated.",
+      "status": "draft"
+    },
+    {
+      "name": "Corundum (ruby, sapphire)",
+      "value": 9,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Ruby and sapphire are the same mineral, corundum, colored by different traces of metal.",
+      "verify": {
+        "match": "corundum"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Diamond",
+      "value": 10,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "One step above corundum, but about four times as hard.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Potassium metal",
+      "value": 0.3,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Potassium is soft enough to cut with a butter knife.",
+      "verify": {
+        "number": 0.2,
+        "match": "Potassium"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Lead",
+      "value": 1.5,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Lead is soft enough to mark paper, which is why 'lead' pencils got their name (they're actually graphite).",
+      "status": "draft"
+    },
+    {
+      "name": "Zinc",
+      "value": 2.5,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Most modern 'copper' pennies in the US are mostly zinc inside.",
+      "status": "draft"
+    },
+    {
+      "name": "Brass",
+      "value": 3,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Brass is an alloy of copper and zinc.",
+      "status": "draft"
+    },
+    {
+      "name": "Iron",
+      "value": 4,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Pure iron is surprisingly soft; carbon turns it into much harder steel.",
+      "status": "draft"
+    },
+    {
+      "name": "Glass",
+      "value": 5.5,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "A steel knife and window glass are close in hardness.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Silicon",
+      "value": 6.5,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Silicon wafers for computer chips are cut from huge single crystals.",
+      "status": "draft"
+    },
+    {
+      "name": "Tungsten",
+      "value": 7.5,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Tungsten has the highest melting point of any metal.",
+      "status": "draft"
+    },
+    {
+      "name": "Chromium",
+      "value": 8.5,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Chromium is the hardest pure metal, which is why it's used for plating.",
+      "status": "draft"
+    },
+    {
+      "name": "Sapphire",
+      "value": 9,
+      "source": "https://en.wikipedia.org/wiki/Mohs_scale",
+      "fact": "Synthetic sapphire is used for scratch-resistant watch faces.",
+      "status": "draft"
+    }
+  ]
+}

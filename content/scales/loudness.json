@@ -1,0 +1,182 @@
+{
+  "id": "loudness",
+  "field": "Acoustics",
+  "name": "Loudness",
+  "question": "Sound pressure level in decibels. Every +10 dB sounds roughly twice as loud.",
+  "unit": "dB",
+  "type": "lin",
+  "min": -30,
+  "max": 180,
+  "step": 30,
+  "tickStart": 0,
+  "items": [
+    {
+      "name": "Quietest room on Earth (Microsoft's anechoic chamber)",
+      "value": -20.35,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Decibels can go below zero: zero is only the faintest sound a typical ear can hear.",
+      "verify": {
+        "match": "Microsoft"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Threshold of hearing",
+      "value": 0,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "0 dB is roughly a mosquito flying 3 m away.",
+      "verify": {
+        "match": "Auditory threshold"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Rustling leaves",
+      "value": 10,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Rustling leaves are ten times the sound energy of the threshold of hearing.",
+      "verify": {
+        "match": "leaf rustling"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "A very calm room",
+      "value": 25,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "A quiet bedroom at night is around 25 dB.",
+      "verify": {
+        "number": 20,
+        "match": "Very calm room"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Normal conversation (1 m)",
+      "value": 50,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Normal conversation ranges from about 40 to 60 dB.",
+      "familiar": true,
+      "verify": {
+        "number": 40,
+        "match": "Normal conversation"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Car passing at 30 km/h (10 m)",
+      "value": 67,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "At low speeds electric and petrol cars sound similar: tire noise dominates.",
+      "verify": {
+        "number": 65,
+        "match": "Passenger car at 30"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Television",
+      "value": 75,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "The US EPA names 75 dB as the level to stay under to protect your hearing.",
+      "verify": {
+        "match": "Television"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Vacuum cleaner",
+      "value": 85,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "85 dB over long periods can damage hearing.",
+      "familiar": true,
+      "verify": {
+        "match": "Vacuum cleaner"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Jackhammer (1 m)",
+      "value": 100,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Jackhammers are about ten times louder than a vacuum cleaner in sound energy terms.",
+      "verify": {
+        "match": "Jackhammer"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Chainsaw (1 m)",
+      "value": 110,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Chainsaw operators are required to wear ear protection.",
+      "verify": {
+        "match": "chainsaw"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Vuvuzela (1 m)",
+      "value": 120,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Vuvuzelas became famous at the 2010 World Cup in South Africa.",
+      "verify": {
+        "match": "Vuvuzela"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Threshold of pain",
+      "value": 125,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Around 120–134 dB sound starts to physically hurt.",
+      "verify": {
+        "number": 120,
+        "match": "Threshold of pain"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Trumpet (0.5 m)",
+      "value": 130,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "A trumpet up close is as loud as the threshold of pain.",
+      "verify": {
+        "match": "Trumpet"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Jet engine (1 m)",
+      "value": 150,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "Airport ground crew wear heavy ear defenders for good reason.",
+      "familiar": true,
+      "verify": {
+        "match": "Jet engine"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Firecracker (0.5 m)",
+      "value": 171,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "A firecracker at arm's length can cause instant hearing damage.",
+      "verify": {
+        "match": "Firecracker"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Krakatoa eruption, 165 km away",
+      "value": 172,
+      "source": "https://en.wikipedia.org/wiki/Sound_pressure",
+      "fact": "The 1883 Krakatoa eruption was heard nearly 5,000 km away.",
+      "disputed": true,
+      "verify": {
+        "match": "Krakatoa"
+      },
+      "status": "draft"
+    }
+  ]
+}

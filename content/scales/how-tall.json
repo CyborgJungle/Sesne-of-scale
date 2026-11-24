@@ -1,0 +1,232 @@
+{
+  "id": "how-tall",
+  "field": "Geography",
+  "name": "How tall",
+  "question": "Height from base to top, in meters. Each gridline step is ten times taller.",
+  "unit": "m",
+  "type": "log",
+  "min": 1,
+  "max": 30000,
+  "items": [
+    {
+      "name": "Adult giraffe",
+      "value": 5.7,
+      "source": "https://en.wikipedia.org/wiki/Giraffe",
+      "fact": "A giraffe's neck has seven vertebrae, the same as yours.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "match": "Giraffe"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Christ the Redeemer statue",
+      "value": 30,
+      "source": "https://en.wikipedia.org/wiki/Christ_the_Redeemer_(statue)",
+      "fact": "The statue is struck by lightning several times a year.",
+      "verify": {
+        "match": "statue"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Horseshoe Falls (Niagara)",
+      "value": 51,
+      "source": "https://en.wikipedia.org/wiki/Niagara_Falls",
+      "fact": "Niagara Falls is slowly eroding upstream.",
+      "verify": {
+        "match": "Horseshoe"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Leaning Tower of Pisa",
+      "value": 55.86,
+      "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
+      "fact": "The tower started leaning during construction, in the 12th century.",
+      "familiar": true,
+      "verify": {
+        "match": "tower"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Statue of Liberty (with pedestal)",
+      "value": 93,
+      "source": "https://en.wikipedia.org/wiki/Statue_of_Liberty",
+      "fact": "The Statue of Liberty's copper skin is about as thick as two pennies.",
+      "familiar": true,
+      "verify": {
+        "match": "pedestal"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Big Ben (Elizabeth Tower)",
+      "value": 96,
+      "source": "https://en.wikipedia.org/wiki/Big_Ben",
+      "fact": "Big Ben is officially the name of the bell, not the tower.",
+      "verify": {
+        "match": "tower"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Saturn V rocket",
+      "value": 110.6,
+      "source": "https://en.wikipedia.org/wiki/Saturn_V",
+      "fact": "Saturn V remains one of the tallest rockets ever flown.",
+      "verify": {
+        "match": "Height"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Hyperion, the tallest known tree",
+      "value": 116.07,
+      "source": "https://en.wikipedia.org/wiki/Hyperion_(tree)",
+      "fact": "Hyperion's exact location is kept secret to protect it.",
+      "verify": {
+        "match": "Hyperion"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Great Pyramid of Giza (original)",
+      "value": 146.6,
+      "source": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+      "fact": "It was the tallest human-made structure for almost 4,000 years.",
+      "familiar": true,
+      "verify": {
+        "match": "Pyramid"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Space Needle",
+      "value": 184,
+      "source": "https://en.wikipedia.org/wiki/Space_Needle",
+      "fact": "The Space Needle was built for the 1962 World's Fair.",
+      "verify": {
+        "match": "Space Needle"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Eiffel Tower",
+      "value": 330,
+      "source": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+      "fact": "The Eiffel Tower grows about 15 cm in summer heat.",
+      "familiar": true,
+      "verify": {
+        "match": "Eiffel"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Empire State Building (to tip)",
+      "value": 443.2,
+      "source": "https://en.wikipedia.org/wiki/Empire_State_Building",
+      "fact": "The Empire State Building gets its own ZIP code.",
+      "verify": {
+        "match": "Empire State"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "CN Tower",
+      "value": 553.3,
+      "source": "https://en.wikipedia.org/wiki/CN_Tower",
+      "fact": "The CN Tower was the world's tallest free-standing structure for 31 years.",
+      "verify": {
+        "match": "CN Tower"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Burj Khalifa",
+      "value": 828,
+      "source": "https://en.wikipedia.org/wiki/Burj_Khalifa",
+      "fact": "You can watch the sunset twice: once from the ground and again from the top.",
+      "familiar": true,
+      "verify": {
+        "match": "Burj Khalifa"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Angel Falls",
+      "value": 979,
+      "source": "https://en.wikipedia.org/wiki/Angel_Falls",
+      "fact": "Angel Falls is the world's highest uninterrupted waterfall.",
+      "verify": {
+        "match": "Angel Falls"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Table Mountain",
+      "value": 1085,
+      "source": "https://en.wikipedia.org/wiki/Table_Mountain",
+      "fact": "Table Mountain is one of the oldest mountains in the world.",
+      "verify": {
+        "match": "Elevation"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mount Fuji",
+      "value": 3776.24,
+      "source": "https://en.wikipedia.org/wiki/Mount_Fuji",
+      "fact": "Mount Fuji last erupted in 1707.",
+      "familiar": true,
+      "verify": {
+        "match": "Fuji"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mont Blanc",
+      "value": 4805.59,
+      "source": "https://en.wikipedia.org/wiki/Mont_Blanc",
+      "fact": "Mont Blanc's height changes from year to year with its ice cap.",
+      "verify": {
+        "match": "Mont Blanc"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Kilimanjaro",
+      "value": 5895,
+      "source": "https://en.wikipedia.org/wiki/Mount_Kilimanjaro",
+      "fact": "Kilimanjaro is the tallest free-standing mountain on land.",
+      "verify": {
+        "match": "Kilimanjaro"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mount Everest",
+      "value": 8848.86,
+      "source": "https://en.wikipedia.org/wiki/Mount_Everest",
+      "fact": "Everest grows a few millimeters a year as India pushes into Asia.",
+      "familiar": true,
+      "verify": {
+        "match": "Everest"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Olympus Mons, Mars",
+      "value": 21900,
+      "source": "https://en.wikipedia.org/wiki/Olympus_Mons",
+      "fact": "Olympus Mons is about two and a half times as high as Everest.",
+      "verify": {
+        "number": 21.9,
+        "match": "km"
+      },
+      "status": "draft"
+    }
+  ]
+}

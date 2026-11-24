@@ -1,0 +1,188 @@
+{
+  "id": "capital-population",
+  "field": "Geography",
+  "name": "Capital city population",
+  "question": "People living in the city itself (not the wider metro area). Each gridline step is ten times more.",
+  "unit": "people",
+  "type": "log",
+  "min": 100,
+  "max": 50000000,
+  "items": [
+    {
+      "name": "Vatican City",
+      "value": 949,
+      "source": "https://www.wikidata.org/wiki/Q237",
+      "quote": "Wikidata P1082 = 949 people",
+      "fact": "Vatican City is the #201 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Ciudad de la Paz (Equatorial Guinea)",
+      "value": 2000,
+      "source": "https://www.wikidata.org/wiki/Q1140136",
+      "quote": "Wikidata P1082 = 2000 people",
+      "fact": "Ciudad de la Paz is the #200 most populous of 203 national capitals.",
+      "status": "rejected",
+      "note": "Planned capital, not functioning yet."
+    },
+    {
+      "name": "San Marino",
+      "value": 4040,
+      "source": "https://www.wikidata.org/wiki/Q1848",
+      "quote": "Wikidata P1082 = 4040 people",
+      "fact": "San Marino is the #199 most populous of 203 national capitals.",
+      "status": "checked"
+    },
+    {
+      "name": "Vaduz (Liechtenstein)",
+      "value": 5668,
+      "source": "https://www.wikidata.org/wiki/Q1844",
+      "quote": "Wikidata P1082 = 5668 people",
+      "fact": "Vaduz is the #197 most populous of 203 national capitals.",
+      "status": "checked"
+    },
+    {
+      "name": "Roseau (Dominica)",
+      "value": 16571,
+      "source": "https://www.wikidata.org/wiki/Q36281",
+      "quote": "Wikidata P1082 = 16571 people",
+      "fact": "Roseau is the #193 most populous of 203 national capitals.",
+      "status": "checked"
+    },
+    {
+      "name": "Andorra la Vella (Andorra)",
+      "value": 24042,
+      "source": "https://www.wikidata.org/wiki/Q1863",
+      "quote": "Wikidata P1082 = 24042 people",
+      "fact": "Andorra la Vella is the #188 most populous of 203 national capitals.",
+      "status": "checked"
+    },
+    {
+      "name": "Monaco",
+      "value": 38857,
+      "source": "https://www.wikidata.org/wiki/Q235",
+      "quote": "Wikidata P1082 = 38857 people",
+      "fact": "Monaco is the #181 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Thimphu (Bhutan)",
+      "value": 114551,
+      "source": "https://www.wikidata.org/wiki/Q9270",
+      "quote": "Wikidata P1082 = 114551 people",
+      "fact": "Thimphu is the #168 most populous of 203 national capitals.",
+      "status": "checked"
+    },
+    {
+      "name": "Brussels (Belgium)",
+      "value": 195546,
+      "source": "https://www.wikidata.org/wiki/Q239",
+      "quote": "Wikidata P1082 = 195546 people",
+      "fact": "Brussels is the #157 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Tirana (Albania)",
+      "value": 389323,
+      "source": "https://www.wikidata.org/wiki/Q19689",
+      "quote": "Wikidata P1082 = 389323 people",
+      "fact": "Tirana is the #134 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Washington, D.C. (United States)",
+      "value": 689545,
+      "source": "https://www.wikidata.org/wiki/Q61",
+      "quote": "Wikidata P1082 = 689545 people",
+      "fact": "Washington, D.C. is the #115 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Jerusalem (Israel)",
+      "value": 1050151,
+      "source": "https://www.wikidata.org/wiki/Q1218",
+      "quote": "Wikidata P1082 = 1050151 people",
+      "fact": "Jerusalem is the #93 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "rejected",
+      "note": "Capital status is politically contested; keep it out of a light-hearted game."
+    },
+    {
+      "name": "Paris (France)",
+      "value": 2103778,
+      "source": "https://www.wikidata.org/wiki/Q90",
+      "quote": "Wikidata P1082 = 2103778 people",
+      "fact": "Paris is the #56 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Rome (Italy)",
+      "value": 2743851,
+      "source": "https://www.wikidata.org/wiki/Q220",
+      "quote": "Wikidata P1082 = 2743851 people",
+      "fact": "Rome is the #38 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Madrid (Spain)",
+      "value": 3506730,
+      "source": "https://www.wikidata.org/wiki/Q2807",
+      "quote": "Wikidata P1082 = 3506730 people",
+      "fact": "Madrid is the #30 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Berlin (Germany)",
+      "value": 3700577,
+      "source": "https://www.wikidata.org/wiki/Q64",
+      "quote": "Wikidata P1082 = 3700577 people",
+      "fact": "Berlin is the #29 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Singapore",
+      "value": 5866139,
+      "source": "https://www.wikidata.org/wiki/Q334",
+      "quote": "Wikidata P1082 = 5866139 people",
+      "fact": "Singapore is the #19 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "London (United Kingdom)",
+      "value": 8799728,
+      "source": "https://www.wikidata.org/wiki/Q84",
+      "quote": "Wikidata P1082 = 8799728 people",
+      "fact": "London is the #12 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Moscow (Russia)",
+      "value": 13274285,
+      "source": "https://www.wikidata.org/wiki/Q649",
+      "quote": "Wikidata P1082 = 13274285 people",
+      "fact": "Moscow is the #5 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Beijing (China)",
+      "value": 21893095,
+      "source": "https://www.wikidata.org/wiki/Q956",
+      "quote": "Wikidata P1082 = 21893095 people",
+      "fact": "Beijing is the #1 most populous of 203 national capitals.",
+      "familiar": true,
+      "status": "checked"
+    }
+  ]
+}

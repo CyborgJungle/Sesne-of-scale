@@ -1,0 +1,188 @@
+{
+  "id": "year-completed",
+  "field": "History",
+  "name": "When was it completed?",
+  "question": "The year each landmark was finished or opened.",
+  "unit": "",
+  "type": "lin",
+  "min": 1000,
+  "max": 2030,
+  "step": 100,
+  "display": {
+    "kind": "year"
+  },
+  "items": [
+    {
+      "name": "Westminster Hall",
+      "value": 1099,
+      "source": "https://en.wikipedia.org/wiki/Westminster_Hall",
+      "fact": "Westminster Hall is the oldest part of the Houses of Parliament.",
+      "status": "draft"
+    },
+    {
+      "name": "Angkor Wat",
+      "value": 1150,
+      "source": "https://en.wikipedia.org/wiki/Angkor_Wat",
+      "fact": "Angkor Wat is the largest religious structure in the world.",
+      "disputed": true,
+      "status": "draft"
+    },
+    {
+      "name": "Notre-Dame de Paris",
+      "value": 1345,
+      "source": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
+      "fact": "Notre-Dame reopened in December 2024 after the 2019 fire.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Leaning Tower of Pisa",
+      "value": 1372,
+      "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
+      "fact": "Construction of the tower took almost 200 years.",
+      "status": "draft"
+    },
+    {
+      "name": "Kinkaku-ji (Golden Pavilion)",
+      "value": 1397,
+      "source": "https://en.wikipedia.org/wiki/Kinkaku-ji",
+      "fact": "The current Golden Pavilion is a 1955 rebuild after an arson attack.",
+      "verify": {
+        "match": "Kinkaku"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Forbidden City",
+      "value": 1420,
+      "source": "https://en.wikipedia.org/wiki/Forbidden_City",
+      "fact": "The Forbidden City has around 9,000 rooms, by legend 9,999.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Machu Picchu",
+      "value": 1450,
+      "source": "https://en.wikipedia.org/wiki/Machu_Picchu",
+      "fact": "Machu Picchu was built without mortar.",
+      "disputed": true,
+      "status": "draft"
+    },
+    {
+      "name": "Château de Chambord",
+      "value": 1547,
+      "source": "https://en.wikipedia.org/wiki/Château_de_Chambord",
+      "fact": "Its double-helix staircase may have been designed by Leonardo da Vinci.",
+      "verify": {
+        "match": "Chambord"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "St. Peter's Basilica",
+      "value": 1626,
+      "source": "https://en.wikipedia.org/wiki/St._Peter%27s_Basilica",
+      "fact": "Michelangelo designed St. Peter's dome.",
+      "verify": {
+        "match": "Basilica"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Taj Mahal",
+      "value": 1653,
+      "source": "https://en.wikipedia.org/wiki/Taj_Mahal",
+      "fact": "About 20,000 workers built the Taj Mahal.",
+      "familiar": true,
+      "disputed": true,
+      "status": "draft"
+    },
+    {
+      "name": "St Paul's Cathedral",
+      "value": 1710,
+      "source": "https://en.wikipedia.org/wiki/St_Paul%27s_Cathedral",
+      "fact": "St Paul's survived the Blitz almost untouched.",
+      "verify": {
+        "match": "St Paul"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Big Ben (Elizabeth Tower)",
+      "value": 1859,
+      "source": "https://en.wikipedia.org/wiki/Big_Ben",
+      "fact": "Big Ben's bell cracked shortly after it first rang.",
+      "verify": {
+        "match": "completed"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Brooklyn Bridge",
+      "value": 1883,
+      "source": "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
+      "fact": "P. T. Barnum walked 21 elephants across the Brooklyn Bridge to prove it was safe.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Eiffel Tower",
+      "value": 1889,
+      "source": "https://en.wikipedia.org/wiki/Eiffel_Tower",
+      "fact": "The Eiffel Tower was meant to stand for only 20 years.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Panama Canal",
+      "value": 1914,
+      "source": "https://en.wikipedia.org/wiki/Panama_Canal",
+      "fact": "Ships are lifted 26 m above sea level to cross Panama.",
+      "verify": {
+        "match": "opened"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Empire State Building",
+      "value": 1931,
+      "source": "https://en.wikipedia.org/wiki/Empire_State_Building",
+      "fact": "The Empire State Building took just 410 days to build.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Golden Gate Bridge",
+      "value": 1937,
+      "source": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+      "fact": "The bridge's color is called International Orange.",
+      "status": "draft"
+    },
+    {
+      "name": "Sydney Opera House",
+      "value": 1973,
+      "source": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+      "fact": "The Opera House opened ten years late and over budget.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "CN Tower",
+      "value": 1976,
+      "source": "https://en.wikipedia.org/wiki/CN_Tower",
+      "fact": "The CN Tower is hit by lightning about 75 times a year.",
+      "status": "draft"
+    },
+    {
+      "name": "Burj Khalifa",
+      "value": 2010,
+      "source": "https://en.wikipedia.org/wiki/Burj_Khalifa",
+      "fact": "The Burj Khalifa has 163 floors.",
+      "familiar": true,
+      "verify": {
+        "match": "opened"
+      },
+      "status": "draft"
+    }
+  ]
+}

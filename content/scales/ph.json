@@ -1,0 +1,155 @@
+{
+  "id": "ph",
+  "field": "Chemistry",
+  "name": "pH",
+  "question": "How acidic or basic is it? 7 is neutral; every step down is ten times more acidic.",
+  "unit": "",
+  "type": "lin",
+  "min": 0,
+  "max": 14,
+  "step": 1,
+  "display": {
+    "prefix": "pH ",
+    "decimals": 1
+  },
+  "items": [
+    {
+      "name": "Battery acid",
+      "value": 0.8,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Car battery acid is sulfuric acid, strong enough to burn skin.",
+      "verify": {
+        "number": 1
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Gastric acid",
+      "value": 1.5,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Your stomach lining replaces itself every few days to survive its own acid.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Lemon juice",
+      "value": 2.2,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Lemon juice is 5–6% citric acid.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Vinegar",
+      "value": 2.5,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Vinegar is mostly water with about 5–8% acetic acid.",
+      "verify": {
+        "number": 2
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Orange juice",
+      "value": 3.7,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Orange juice is acidic enough to soften tooth enamel.",
+      "verify": {
+        "number": 3.3
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Human skin",
+      "value": 4.7,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Skin's slightly acidic surface is sometimes called the 'acid mantle'.",
+      "status": "draft"
+    },
+    {
+      "name": "Black coffee",
+      "value": 5,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Dark roasts are usually slightly less acidic than light roasts.",
+      "status": "draft"
+    },
+    {
+      "name": "Urine",
+      "value": 6,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Urine pH swings with diet: lots of meat makes it more acidic.",
+      "status": "draft"
+    },
+    {
+      "name": "Milk",
+      "value": 6.6,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Milk turns sour as bacteria make lactic acid and the pH drops.",
+      "verify": {
+        "number": 6.5
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Pure water",
+      "value": 7,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Pure water is neutral, but rainwater is slightly acidic from dissolved CO₂.",
+      "familiar": true,
+      "verify": {
+        "match": "Pure water"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Human blood",
+      "value": 7.4,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Blood pH outside about 7.35–7.45 is a medical emergency.",
+      "verify": {
+        "number": 7.34,
+        "match": "Blood"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Seawater",
+      "value": 8.1,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "The ocean surface has become measurably more acidic since 1950.",
+      "verify": {
+        "number": 7.5,
+        "match": "Sea water"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Household ammonia",
+      "value": 11.2,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Never mix ammonia with bleach: together they release toxic gas.",
+      "verify": {
+        "number": 11,
+        "match": "Ammonia"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Bleach",
+      "value": 12.5,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Household bleach is a dilute solution of sodium hypochlorite.",
+      "status": "draft"
+    },
+    {
+      "name": "Lye (drain cleaner)",
+      "value": 14,
+      "source": "https://en.wikipedia.org/wiki/PH",
+      "fact": "Lye has been used for centuries to make soap.",
+      "verify": {
+        "match": "Lye"
+      },
+      "status": "draft"
+    }
+  ]
+}

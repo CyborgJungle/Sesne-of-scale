@@ -1,0 +1,169 @@
+{
+  "id": "boiling-point",
+  "field": "Materials",
+  "name": "Boiling point",
+  "question": "The temperature where each one boils, at normal air pressure.",
+  "unit": "°C",
+  "type": "lin",
+  "min": -300,
+  "max": 6000,
+  "step": 1000,
+  "tickStart": 0,
+  "items": [
+    {
+      "name": "Helium",
+      "value": -268.928,
+      "source": "https://en.wikipedia.org/wiki/Helium",
+      "fact": "Helium boils just 4 degrees above absolute zero.",
+      "status": "checked",
+      "quote": "figuration 1s 2 Electrons per shell 2 Physical properties Phase at STP gas Boiling point 4.222 K&#x20;&#x200b;(-268.928 °C,&#x20;&#x200b;-452.070 °F)&#x20; Density &#x20; (at STP ) 0.1786 g/L when liquid (at b.p. ) 0.125"
+    },
+    {
+      "name": "Hydrogen",
+      "value": -252.879,
+      "source": "https://en.wikipedia.org/wiki/Hydrogen",
+      "fact": "Liquid hydrogen fuels many rocket upper stages.",
+      "status": "checked",
+      "quote": "13.99 K &#x20;&#x200b;(-259.16 °C,&#x20;&#x200b;-434.49 °F)&#x20; Boiling point ( H 2 ) 20.271 K&#x20;&#x200b;(-252.879 °C,&#x20;&#x200b;-423.182 °F)&#x20; Density &#x20; (at STP ) 0.08988 g/L when liquid (at m.p. ) 0.07"
+    },
+    {
+      "name": "Nitrogen",
+      "value": -195.795,
+      "source": "https://en.wikipedia.org/wiki/Nitrogen",
+      "fact": "Liquid nitrogen is used to make 'instant' ice cream.",
+      "familiar": true,
+      "status": "checked",
+      "quote": "63.23 K &#x20;&#x200b;(-209.92 °C,&#x20;&#x200b;-345.86 °F)&#x20; Boiling point (N 2 ) 77.355 K&#x20;&#x200b;(-195.795 °C,&#x20;&#x200b;-320.431 °F)&#x20; Density &#x20; (at STP ) 1.2506 g/L&#x20;at 0 °C, 1013 mbar when"
+    },
+    {
+      "name": "Oxygen",
+      "value": -182.962,
+      "source": "https://en.wikipedia.org/wiki/Oxygen",
+      "fact": "Liquid oxygen is pale blue and magnetic.",
+      "status": "checked",
+      "quote": "54.36 K &#x20;&#x200b;(-218.79 °C,&#x20;&#x200b;-361.82 °F)&#x20; Boiling point (O 2 ) 90.188 K&#x20;&#x200b;(-182.962 °C,&#x20;&#x200b;-297.332 °F)&#x20; Density &#x20; (at STP ) 1.429 g/L when liquid (at b.p. ) 1.141"
+    },
+    {
+      "name": "Ammonia",
+      "value": -33.34,
+      "source": "https://en.wikipedia.org/wiki/Ammonia",
+      "fact": "Ammonia was one of the first refrigerants.",
+      "status": "checked",
+      "quote": "rent solid) Melting point -77.73 °C (-107.91 °F; 195.42 K) ( Triple point at 6.060 kPa, 195.4 K) Boiling point -33.34 °C (-28.01 °F; 239.81 K) Critical point ( T , P ) 132.4 °C (405.5 K), 111.3 atm (11280 kPa) Solubility"
+    },
+    {
+      "name": "Ethanol",
+      "value": 78.23,
+      "source": "https://en.wikipedia.org/wiki/Ethanol",
+      "fact": "Distilling works because alcohol boils at a lower temperature than water.",
+      "verify": {
+        "number": 78.2
+      },
+      "status": "checked",
+      "quote": "e at about 89.4 mol% ethanol (95.6% ethanol by mass, 97% alcohol by volume ), with a boiling point of 351.3 K (78.2 °C; 172.7 °F). At lower pressure, the composition of the ethanol-water azeotrope shifts to more ethanol-"
+    },
+    {
+      "name": "Water",
+      "value": 100,
+      "source": "https://en.wikipedia.org/wiki/Properties_of_water",
+      "fact": "On top of Mount Everest water boils at only about 70 °C.",
+      "familiar": true,
+      "verify": {
+        "match": "Boiling point"
+      },
+      "status": "checked",
+      "quote": "at 25 °C 0.961887 91 (96) g/mL at 95 °C Solid: 0.9167 g/mL at 0 °C Melting point 0.00 °C (32.00 °F; 273.15 K) Boiling point 99.98 °C (211.96 °F; 373.13 K) Solubility Poorly soluble in haloalkanes , aliphatic and aromatic"
+    },
+    {
+      "name": "Mercury",
+      "value": 356.73,
+      "source": "https://en.wikipedia.org/wiki/Mercury_(element)",
+      "fact": "Mercury thermometers can measure up to about 350 °C.",
+      "status": "checked",
+      "quote": "nt 234.3210 K &#x20;&#x200b;(-38.8290 °C,&#x20;&#x200b;-37.8922 °F)&#x20; Boiling point 629.88 K&#x20;&#x200b;(356.73 °C,&#x20;&#x200b;674.11 °F)&#x20; Density &#x20; (near r.t. ) 13.546 g/cm 3 Triple point 234.3156 K,&#"
+    },
+    {
+      "name": "Sulfur",
+      "value": 444.6,
+      "source": "https://en.wikipedia.org/wiki/Sulfur",
+      "fact": "Sulfur has been known since ancient times as brimstone.",
+      "verify": {
+        "number": 444.6
+      },
+      "status": "checked",
+      "quote": "(α-S 8 ): 388.36 K &#x20;&#x200b;(115.21 °C,&#x20;&#x200b;239.38 °F)&#x20; Boiling point 717.8 K&#x20;&#x200b;(444.6 °C,&#x20;&#x200b;832.3 °F)&#x20; Density &#x20; (near r.t. ) alpha (α-S 8 ): 2.07 g/cm 3 beta (β-S 8 ):"
+    },
+    {
+      "name": "Sodium",
+      "value": 882.94,
+      "source": "https://en.wikipedia.org/wiki/Sodium",
+      "fact": "Sodium-vapor street lamps glow orange.",
+      "status": "checked",
+      "quote": "oint 370.944 K &#x20;&#x200b;(97.794 °C,&#x20;&#x200b;208.029 °F)&#x20; Boiling point 1156.090 K&#x20;&#x200b;(882.940 °C,&#x20;&#x200b;1621.292 °F)&#x20; Density (at 20° C) 0.9688 g/cm 3 when liquid (at m.p. ) 0.927 g/c"
+    },
+    {
+      "name": "Zinc",
+      "value": 907,
+      "source": "https://en.wikipedia.org/wiki/Zinc",
+      "fact": "Zinc boils at a lower temperature than copper melts.",
+      "status": "checked",
+      "quote": "ting point 692.68 K &#x20;&#x200b;(419.53 °C,&#x20;&#x200b;787.15 °F)&#x20; Boiling point 1180 K&#x20;&#x200b;(907 °C,&#x20;&#x200b;1665 °F)&#x20; Density (at 20° C) 7.140 g/cm 3 when liquid (at m.p. ) 6.57 g/cm 3 &#x20;"
+    },
+    {
+      "name": "Lead",
+      "value": 1749,
+      "source": "https://en.wikipedia.org/wiki/Lead",
+      "fact": "Lead boils at a temperature hotter than lava from many volcanoes.",
+      "status": "checked",
+      "quote": "ting point 600.61 K &#x20;&#x200b;(327.46 °C,&#x20;&#x200b;621.43 °F)&#x20; Boiling point 2022 K&#x20;&#x200b;(1749 °C,&#x20;&#x200b;3180 °F)&#x20; Density (at 20 °C) 11.348 g/cm 3 when liquid (at m.p. ) 10.66 g/cm 3 &#x"
+    },
+    {
+      "name": "Aluminium",
+      "value": 2470,
+      "source": "https://en.wikipedia.org/wiki/Aluminium",
+      "fact": "Aluminium stays liquid across a range of almost 1,800 °C.",
+      "status": "checked",
+      "quote": "ing point 933.47 K &#x20;&#x200b;(660.32 °C,&#x20;&#x200b;1220.58 °F)&#x20; Boiling point 2743 K&#x20;&#x200b;(2470 °C,&#x20;&#x200b;4478 °F)&#x20; Density (at 20 °C) 2.699 g/cm 3 when liquid (at m.p. ) 2.375 g/cm 3 &#x2"
+    },
+    {
+      "name": "Copper",
+      "value": 2562,
+      "source": "https://en.wikipedia.org/wiki/Copper",
+      "fact": "Copper vapor lasers produce yellow and green light.",
+      "status": "checked",
+      "quote": "g point 1357.77 K &#x20;&#x200b;(1084.62 °C,&#x20;&#x200b;1984.32 °F)&#x20; Boiling point 2835 K&#x20;&#x200b;(2562 °C,&#x20;&#x200b;4643 °F)&#x20; Density (at 20° C) 8.935 g/cm 3 (at STP ) 8944 g/L when liquid (at m.p."
+    },
+    {
+      "name": "Iron",
+      "value": 2862,
+      "source": "https://en.wikipedia.org/wiki/Iron",
+      "fact": "Iron vapor has been detected in the atmosphere of a scorching exoplanet.",
+      "status": "checked",
+      "quote": "Roentgenium Copernicium Nihonium Flerovium Moscovium Livermorium Tennessine Oganesson - ↑ Fe ↓ Ru manganese ← iron → cobalt Atomic number ( Z ) 26 Group group 8 Period period 4 Block d-block Electron configuration Ar 3d"
+    },
+    {
+      "name": "Gold",
+      "value": 2970,
+      "source": "https://en.wikipedia.org/wiki/Gold",
+      "fact": "Gold can be beaten so thin that light shines through it.",
+      "status": "checked",
+      "quote": "g point 1337.33 K &#x20;&#x200b;(1064.18 °C,&#x20;&#x200b;1947.52 °F)&#x20; Boiling point 3243 K&#x20;&#x200b;(2970 °C,&#x20;&#x200b;5378 °F)&#x20; Density (at 20° C) 19.283 g/cm 3 when liquid (at m.p. ) 17.31 g/cm 3 &#x"
+    },
+    {
+      "name": "Titanium",
+      "value": 3287,
+      "source": "https://en.wikipedia.org/wiki/Titanium",
+      "fact": "Titanium is named after the Titans of Greek mythology.",
+      "status": "checked",
+      "quote": "id Melting point 1941 K &#x20;&#x200b;(1668 °C,&#x20;&#x200b;3034 °F)&#x20; Boiling point 3560 K&#x20;&#x200b;(3287 °C,&#x20;&#x200b;5949 °F)&#x20; Density (at 20° C) 4.502 g/cm 3 &#x20; (near r.t. ) 4.322 g/cm 3 &#x20;"
+    },
+    {
+      "name": "Tungsten",
+      "value": 5930,
+      "source": "https://en.wikipedia.org/wiki/Tungsten",
+      "fact": "Tungsten boils at about the temperature of the Sun's surface.",
+      "status": "checked",
+      "quote": "id Melting point 3695 K &#x20;&#x200b;(3422 °C,&#x20;&#x200b;6192 °F)&#x20; Boiling point 6203 K&#x20;&#x200b;(5930 °C,&#x20;&#x200b;10706 °F)&#x20; Density (at 20° C) 19.254 g/cm 3 when liquid (at m.p. ) 17.6 g/cm 3 &#x"
+    }
+  ]
+}

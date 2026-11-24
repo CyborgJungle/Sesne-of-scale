@@ -1,0 +1,186 @@
+{
+  "id": "ocean-depth",
+  "field": "Oceanography",
+  "name": "How deep down",
+  "question": "Meters below the water surface. Each gridline step is ten times deeper.",
+  "unit": "m",
+  "type": "log",
+  "min": 10,
+  "max": 12000,
+  "items": [
+    {
+      "name": "Recreational scuba limit",
+      "value": 40,
+      "source": "https://en.wikipedia.org/wiki/Recreational_diving",
+      "fact": "Below about 30 m, nitrogen starts to make divers feel drunk.",
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Deep Dive Dubai pool",
+      "value": 60,
+      "source": "https://en.wikipedia.org/wiki/Deep_Dive_Dubai",
+      "fact": "Deep Dive Dubai has a sunken city at the bottom of the pool.",
+      "verify": {
+        "match": "pool"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Kursk submarine wreck",
+      "value": 108,
+      "source": "https://en.wikipedia.org/wiki/Kursk_submarine_disaster",
+      "fact": "The Kursk sank in the Barents Sea in 2000.",
+      "verify": {
+        "match": "Kursk"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Where sunlight fades out",
+      "value": 200,
+      "source": "https://en.wikipedia.org/wiki/Photic_zone",
+      "fact": "Below about 200 m there isn't enough light for photosynthesis.",
+      "verify": {
+        "match": "years"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Free-dive record (no limits)",
+      "value": 214,
+      "source": "https://en.wikipedia.org/wiki/Herbert_Nitsch",
+      "fact": "Herbert Nitsch reached 214 m on a single breath in 2007.",
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Deepest scuba dive",
+      "value": 332.35,
+      "source": "https://en.wikipedia.org/wiki/Ahmed_Gabr",
+      "fact": "The record dive took 12 minutes down and almost 14 hours back up.",
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Lake Tahoe (deepest point)",
+      "value": 501,
+      "source": "https://en.wikipedia.org/wiki/Lake_Tahoe",
+      "fact": "Lake Tahoe is so clear you can see down about 20 m.",
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Emperor penguin dive",
+      "value": 565,
+      "source": "https://en.wikipedia.org/wiki/Emperor_penguin",
+      "fact": "Emperor penguins can hold their breath for over 20 minutes.",
+      "verify": {
+        "match": "dive"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Crater Lake (deepest point)",
+      "value": 594,
+      "source": "https://en.wikipedia.org/wiki/Crater_Lake",
+      "fact": "Crater Lake is the deepest lake in the United States.",
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Leatherback turtle dive",
+      "value": 1280,
+      "source": "https://en.wikipedia.org/wiki/Leatherback_sea_turtle",
+      "fact": "Leatherbacks are the largest living turtles.",
+      "verify": {
+        "match": "dive"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Lake Baikal (deepest point)",
+      "value": 1642,
+      "source": "https://en.wikipedia.org/wiki/Lake_Baikal",
+      "fact": "Lake Baikal holds about a fifth of the world's unfrozen fresh water.",
+      "familiar": true,
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sperm whale dive",
+      "value": 2250,
+      "source": "https://en.wikipedia.org/wiki/Sperm_whale",
+      "fact": "Sperm whales dive deep to hunt giant squid.",
+      "verify": {
+        "match": "dive"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Cuvier's beaked whale dive",
+      "value": 2992,
+      "source": "https://en.wikipedia.org/wiki/Cuvier%27s_beaked_whale",
+      "fact": "One Cuvier's beaked whale stayed under for 3 hours 42 minutes.",
+      "verify": {
+        "match": "dive"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Average ocean depth",
+      "value": 3688,
+      "source": "https://en.wikipedia.org/wiki/Ocean",
+      "fact": "The average ocean is deeper than most mountains on land are tall.",
+      "familiar": true,
+      "verify": {
+        "match": "average depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Titanic wreck",
+      "value": 3800,
+      "source": "https://en.wikipedia.org/wiki/Wreck_of_the_Titanic",
+      "fact": "The Titanic's wreck was found in 1985, 73 years after it sank.",
+      "familiar": true,
+      "verify": {
+        "match": "Titanic"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Puerto Rico Trench",
+      "value": 8376,
+      "source": "https://en.wikipedia.org/wiki/Puerto_Rico_Trench",
+      "fact": "The Puerto Rico Trench is the deepest point of the Atlantic.",
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Challenger Deep",
+      "value": 10935,
+      "source": "https://en.wikipedia.org/wiki/Challenger_Deep",
+      "fact": "The pressure in Challenger Deep is over 1,000 times that at the surface.",
+      "familiar": true,
+      "verify": {
+        "match": "depth"
+      },
+      "status": "draft"
+    }
+  ]
+}

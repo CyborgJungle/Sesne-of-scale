@@ -1,0 +1,189 @@
+{
+  "id": "earthquake-magnitude",
+  "field": "Seismology",
+  "name": "Earthquake magnitude",
+  "question": "Moment magnitude. Each whole step releases about 32 times more energy.",
+  "unit": "",
+  "type": "lin",
+  "min": 5,
+  "max": 10,
+  "step": 1,
+  "display": {
+    "prefix": "M ",
+    "decimals": 1
+  },
+  "items": [
+    {
+      "name": "Christchurch, 2011",
+      "value": 6.2,
+      "source": "https://en.wikipedia.org/wiki/February_2011_Christchurch_earthquake",
+      "fact": "The Christchurch quake was shallow and very close to the city.",
+      "status": "checked",
+      "quote": "ent 16168897 USGS- ANSS ComCat Local date 22 February 2011 ( 2011-02-22 ) Local time 12:51 p.m. NZDT Magnitude 6.2 M w (GCMT) 6.1 M w (USGS) Depth 5 km (3.1 mi) Epicentre 43°34′59″S 172°40′48″E &#xfeff; / &#xfeff; 43.583"
+    },
+    {
+      "name": "L'Aquila, 2009",
+      "value": 6.3,
+      "source": "https://en.wikipedia.org/wiki/2009_L%27Aquila_earthquake",
+      "fact": "Six Italian scientists were convicted (later acquitted) over their risk statements before this quake.",
+      "verify": {
+        "match": "Aquila"
+      },
+      "status": "checked",
+      "quote": "SC event 13438018 USGS- ANSS ComCat Local date 6 April 2009 ( 2009-04-06 ) Local time 03:32 CEST Magnitude M w 6.3 (GCMT) Depth 9.46 km (5.88 mi) Epicenter 42°20′51″N 13°22′48″E &#xfeff; / &#xfeff; 42.3476°N 13.3800°E &#"
+    },
+    {
+      "name": "Northridge, 1994",
+      "value": 6.7,
+      "source": "https://en.wikipedia.org/wiki/1994_Northridge_earthquake",
+      "fact": "Northridge is one of the costliest earthquakes in US history.",
+      "status": "checked",
+      "quote": "cal date January 17, 1994 32 years ago ( 1994-01-17 ) Local time 4:30:55 a.m. PST Duration 8 seconds Magnitude 6.7 M w Depth 11.31 mi (18.20 km) Epicenter 34°12′47″N 118°32′13″W &#xfeff; / &#xfeff; 34.213°N 118.537°W &#x"
+    },
+    {
+      "name": "Morocco (Al Haouz), 2023",
+      "value": 6.8,
+      "source": "https://en.wikipedia.org/wiki/2023_Marrakesh–Safi_earthquake",
+      "fact": "It was the strongest instrumentally recorded quake in Morocco.",
+      "verify": {
+        "match": "magnitude"
+      },
+      "status": "checked",
+      "quote": "Seismological Centre . Bulletin of the ISC . Thatcham, United Kingdom. Event 626740945 . ^ \"Powerful magnitude 6.8 earthquake rattles Morocco, with five believed dead\" . Al Jazeera. 8 September 2023. Archived from the or"
+    },
+    {
+      "name": "Loma Prieta, 1989",
+      "value": 6.9,
+      "source": "https://en.wikipedia.org/wiki/1989_Loma_Prieta_earthquake",
+      "fact": "It struck during the World Series in San Francisco, live on TV.",
+      "status": "checked",
+      "quote": "ocal date October 17, 1989 37 years ago ( 1989-10-17 ) Local time 17:04:15 PDT Duration 8-15 seconds Magnitude 6.9 M w , 7.2 M S Depth 19 km (12 mi) Epicenter 37°02′N 121°53′W &#xfeff; / &#xfeff; 37.04°N 121.88°W &#xfeff"
+    },
+    {
+      "name": "Kobe, 1995",
+      "value": 6.9,
+      "source": "https://en.wikipedia.org/wiki/Great_Hanshin_earthquake",
+      "fact": "The Kobe earthquake destroyed much of the city's port.",
+      "verify": {
+        "match": "magnitude"
+      },
+      "status": "checked",
+      "quote": "at Local date January 17, 1995 ( 1995-01-17 ) Local time 05:46:53 JST Duration ~20 seconds Magnitude 7.3 M JMA 6.9 M w Depth 17.6 km (10.9 mi) Epicenter 34°35′N 135°04′E &#xfeff; / &#xfeff; 34.59°N 135.07°E &#xfeff; / 34"
+    },
+    {
+      "name": "Haiti, 2010",
+      "value": 7,
+      "source": "https://en.wikipedia.org/wiki/2010_Haiti_earthquake",
+      "fact": "The 2010 Haiti quake is among the deadliest ever recorded.",
+      "familiar": true,
+      "status": "checked",
+      "quote": "Magnitude 7.0 Mw earthquake 2010 Haiti earthquake Goudougoudou The heavily damaged National Palace of Haiti after the e"
+    },
+    {
+      "name": "Kashmir, 2005",
+      "value": 7.6,
+      "source": "https://en.wikipedia.org/wiki/2005_Kashmir_earthquake",
+      "fact": "Landslides from the Kashmir quake blocked rivers and created new lakes.",
+      "status": "checked",
+      "quote": "Local date October 8, 2005 ( 2005-10-08 ) Local time 08:50:39 PKT ( UTC+5 ) Duration 20 seconds Magnitude M w 7.6 Depth 15 km (9.3 mi) Epicenter 34°27′N 73°39′E &#xfeff; / &#xfeff; 34.45°N 73.65°E &#xfeff; / 34.45; 73.6"
+    },
+    {
+      "name": "Nepal, 2015",
+      "value": 7.8,
+      "source": "https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake",
+      "fact": "The Nepal quake triggered a deadly avalanche on Mount Everest.",
+      "status": "checked",
+      "quote": "Local date 25 April 2015 11 years ago ( 2015-04-25 ) Local time 11:56:25 NST Duration 50 seconds Magnitude M w 7.8-7.9 M s 8.1 Depth 8.2 km (5.1 mi) Epicenter 28°13′48″N 84°43′52″E &#xfeff; / &#xfeff; 28.230°N 84.731°E &"
+    },
+    {
+      "name": "Türkiye–Syria, 2023",
+      "value": 7.8,
+      "source": "https://en.wikipedia.org/wiki/2023_Turkey–Syria_earthquakes",
+      "fact": "A second magnitude 7.7 quake hit the same region nine hours later.",
+      "verify": {
+        "match": "Mw"
+      },
+      "status": "checked",
+      "quote": "0 mi). Map of mainshock and aftershocks - Mw 4.0 or greater ( map data ) Seismology [ edit | edit source ] M w 7.8 finite fault Distribution of slip across the rupture Surface projection of finite fault model M w 7.7 fin"
+    },
+    {
+      "name": "San Francisco, 1906",
+      "value": 7.9,
+      "source": "https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake",
+      "fact": "Fires after the 1906 quake destroyed more of the city than the shaking.",
+      "familiar": true,
+      "status": "checked",
+      "quote": "05 USGS- ANSS ComCat Local date April 18, 1906120 years ago ( 1906-04-18 ) Local time 05:12:27 (PST) Magnitude 7.9 M w Depth 5 mi (8.0 km) Epicenter 37°45′N 122°33′W &#xfeff; / &#xfeff; 37.75°N 122.55°W &#xfeff; / 37.75;"
+    },
+    {
+      "name": "Sichuan, 2008",
+      "value": 7.9,
+      "source": "https://en.wikipedia.org/wiki/2008_Sichuan_earthquake",
+      "fact": "The Sichuan quake was felt as far away as Beijing and Bangkok.",
+      "status": "checked",
+      "quote": "USGS- ANSS ComCat Local date May 12, 2008 ( 2008-05-12 ) Local time 14:28:01 CST Duration 2 minutes Magnitude 7.9-8.3 M w 8.0 M s Depth 19 km (12 mi) Epicenter 31°01′16″N 103°22′01″E &#xfeff; / &#xfeff; 31.021°N 103.367"
+    },
+    {
+      "name": "Mexico City, 1985",
+      "value": 8,
+      "source": "https://en.wikipedia.org/wiki/1985_Mexico_City_earthquake",
+      "fact": "Mexico City's soft lakebed soil amplified the shaking.",
+      "status": "checked",
+      "quote": "GS- ANSS ComCat Local date 19 September 1985 ( 1985-09-19 ) Local time 07:17:50 Duration 3-4 minutes Magnitude 8.0 M w Depth 20 km (12 mi) Epicenter 18°21′N 102°23′W &#xfeff; / &#xfeff; 18.35°N 102.39°W &#xfeff; / 18.35;"
+    },
+    {
+      "name": "Chile (Maule), 2010",
+      "value": 8.8,
+      "source": "https://en.wikipedia.org/wiki/2010_Chile_earthquake",
+      "fact": "It shifted the city of Concepción about 3 m to the west.",
+      "verify": {
+        "match": "magnitude"
+      },
+      "status": "checked",
+      "quote": "Local date 27 February 2010 ( 2010-02-27 ) Local time 03:34:12 CST ( UTC-03:00 ) Duration 3 minutes Magnitude 8.8 M ww Depth 35 km (22 mi) 30.1 km (19 mi) Epicenter 35°54′32″S 72°43′59″W &#xfeff; / &#xfeff; 35.909°S 72."
+    },
+    {
+      "name": "Tōhoku, Japan, 2011",
+      "value": 9.1,
+      "source": "https://en.wikipedia.org/wiki/2011_Tōhoku_earthquake_and_tsunami",
+      "fact": "The Tōhoku quake moved Japan's main island about 2.4 m east.",
+      "familiar": true,
+      "verify": {
+        "match": "magnitude"
+      },
+      "status": "checked",
+      "quote": "time of the Great East Japan Earthquake. A seismogram recorded in Massachusetts , United States The magnitude 9.1 ( M w ) undersea megathrust earthquake occurred on 11 March 2011 at 14:46 JST (05:46 UTC) in the north-we"
+    },
+    {
+      "name": "Indian Ocean, 2004",
+      "value": 9.1,
+      "source": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami",
+      "fact": "Its tsunami reached the coast of Africa, about 5,000 km away.",
+      "familiar": true,
+      "verify": {
+        "match": "magnitude"
+      },
+      "status": "checked",
+      "quote": "nted as having a moment magnitude of 8.8. The United States Geological Survey has its official estimate of M w 9.1, but most recent studies suggest that the earthquake was M w 9.2-9.3. Hiroo Kanamori of the California In"
+    },
+    {
+      "name": "Alaska, 1964",
+      "value": 9.2,
+      "source": "https://en.wikipedia.org/wiki/1964_Alaska_earthquake",
+      "fact": "The Good Friday earthquake shook Alaska for about four and a half minutes.",
+      "status": "checked",
+      "quote": "ting from the earthquake caused about 139 deaths. Lasting four minutes and thirty-eight seconds, the magnitude 9.2-9.3 megathrust earthquake remains the most powerful earthquake ever recorded in North America and the sec"
+    },
+    {
+      "name": "Valdivia, Chile, 1960",
+      "value": 9.5,
+      "source": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+      "fact": "Valdivia is the most powerful earthquake ever recorded.",
+      "verify": {
+        "match": "magnitude"
+      },
+      "status": "checked",
+      "quote": "energy could have been reaccumulated in the time since 1960, even if there were no remaining energy after the 9.5 megaquake. --> File:Americas Tectonic Plate Map - by NOAA.jpg|left|thumb|202x202px|Chile at the interse"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "melting-point",
+  "field": "Materials",
+  "name": "Melting point",
+  "question": "The temperature where each one turns to liquid.",
+  "unit": "°C",
+  "type": "lin",
+  "min": -100,
+  "max": 3500,
+  "step": 500,
+  "tickStart": 0,
+  "items": [
+    {
+      "name": "Mercury",
+      "value": -38.83,
+      "source": "https://en.wikipedia.org/wiki/Mercury_(element)",
+      "fact": "Mercury is the only metal that's liquid at room temperature.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Ice",
+      "value": 0,
+      "source": "https://en.wikipedia.org/wiki/Properties_of_water",
+      "fact": "Salt lowers the melting point of ice, which is why roads are salted.",
+      "familiar": true,
+      "verify": {
+        "match": "Melting point"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Gallium",
+      "value": 29.76,
+      "source": "https://en.wikipedia.org/wiki/Gallium",
+      "fact": "Gallium melts in your hand.",
+      "status": "draft"
+    },
+    {
+      "name": "Cocoa butter (chocolate)",
+      "value": 34,
+      "source": "https://en.wikipedia.org/wiki/Cocoa_butter",
+      "fact": "Chocolate is designed to melt just below body temperature.",
+      "verify": {
+        "match": "melting point"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sodium",
+      "value": 97.79,
+      "source": "https://en.wikipedia.org/wiki/Sodium",
+      "fact": "Sodium melts just below the boiling point of water.",
+      "status": "draft"
+    },
+    {
+      "name": "Sulfur",
+      "value": 115.21,
+      "source": "https://en.wikipedia.org/wiki/Sulfur",
+      "fact": "Melted sulfur turns blood red as it heats up.",
+      "status": "draft"
+    },
+    {
+      "name": "Tin",
+      "value": 231.93,
+      "source": "https://en.wikipedia.org/wiki/Tin",
+      "fact": "Tin's low melting point made it ideal for solder.",
+      "status": "draft"
+    },
+    {
+      "name": "Lead",
+      "value": 327.46,
+      "source": "https://en.wikipedia.org/wiki/Lead",
+      "fact": "Lead melts at a temperature you can reach on a camping stove.",
+      "status": "draft"
+    },
+    {
+      "name": "Zinc",
+      "value": 419.53,
+      "source": "https://en.wikipedia.org/wiki/Zinc",
+      "fact": "Zinc coats steel to stop it rusting (galvanizing).",
+      "status": "draft"
+    },
+    {
+      "name": "Aluminium",
+      "value": 660.32,
+      "source": "https://en.wikipedia.org/wiki/Aluminium",
+      "fact": "Aluminium was once more valuable than gold.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Table salt",
+      "value": 800.7,
+      "source": "https://en.wikipedia.org/wiki/Sodium_chloride",
+      "fact": "Molten salt is used to store heat in some solar power plants.",
+      "verify": {
+        "match": "Melting point"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Silver",
+      "value": 961.78,
+      "source": "https://en.wikipedia.org/wiki/Silver",
+      "fact": "Silver conducts electricity and heat better than any other metal.",
+      "status": "draft"
+    },
+    {
+      "name": "Gold",
+      "value": 1064.18,
+      "source": "https://en.wikipedia.org/wiki/Gold",
+      "fact": "All the gold ever mined would fit in a cube about 22 m on each side.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Copper",
+      "value": 1084.62,
+      "source": "https://en.wikipedia.org/wiki/Copper",
+      "fact": "Copper melts only about 20 °C above gold.",
+      "status": "draft"
+    },
+    {
+      "name": "Iron",
+      "value": 1538,
+      "source": "https://en.wikipedia.org/wiki/Iron",
+      "fact": "Iron is the most common element on Earth by mass.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Titanium",
+      "value": 1668,
+      "source": "https://en.wikipedia.org/wiki/Titanium",
+      "fact": "Titanium is as strong as some steels but about 45% lighter.",
+      "status": "draft"
+    },
+    {
+      "name": "Platinum",
+      "value": 1768.3,
+      "source": "https://en.wikipedia.org/wiki/Platinum",
+      "fact": "Platinum is denser than gold.",
+      "status": "draft"
+    },
+    {
+      "name": "Tungsten",
+      "value": 3422,
+      "source": "https://en.wikipedia.org/wiki/Tungsten",
+      "fact": "Tungsten has the highest melting point of all metals, which made it ideal for light-bulb filaments.",
+      "status": "draft"
+    }
+  ]
+}

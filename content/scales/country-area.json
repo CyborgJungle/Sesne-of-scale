@@ -1,0 +1,183 @@
+{
+  "id": "country-area",
+  "field": "Geography",
+  "name": "Country size",
+  "question": "Land and water area in square kilometers. Each gridline step is ten times bigger.",
+  "unit": "km²",
+  "type": "log",
+  "min": 0.1,
+  "max": 30000000,
+  "items": [
+    {
+      "name": "Vatican City",
+      "value": 0.44,
+      "source": "https://www.wikidata.org/wiki/Q237",
+      "quote": "Wikidata P2046 = 0.44 km²",
+      "fact": "Vatican City is the #197 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Monaco",
+      "value": 2.08,
+      "source": "https://www.wikidata.org/wiki/Q235",
+      "quote": "Wikidata P2046 = 2.08 km²",
+      "fact": "Monaco is the #196 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Nauru",
+      "value": 21.2,
+      "source": "https://www.wikidata.org/wiki/Q697",
+      "quote": "Wikidata P2046 = 21.2 km²",
+      "fact": "Nauru is the #195 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "San Marino",
+      "value": 61.2,
+      "source": "https://www.wikidata.org/wiki/Q238",
+      "quote": "Wikidata P2046 = 61.2 km²",
+      "fact": "San Marino is the #193 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Liechtenstein",
+      "value": 161,
+      "source": "https://www.wikidata.org/wiki/Q347",
+      "quote": "Wikidata P2046 = 160.5 km²",
+      "fact": "Liechtenstein is the #192 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Andorra",
+      "value": 468,
+      "source": "https://www.wikidata.org/wiki/Q228",
+      "quote": "Wikidata P2046 = 468 km²",
+      "fact": "Andorra is the #181 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Singapore",
+      "value": 719,
+      "source": "https://www.wikidata.org/wiki/Q334",
+      "quote": "Wikidata P2046 = 719.1 km²",
+      "fact": "Singapore is the #178 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Luxembourg",
+      "value": 2593,
+      "source": "https://www.wikidata.org/wiki/Q32",
+      "quote": "Wikidata P2046 = 2593.05 km²",
+      "fact": "Luxembourg is the #170 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Lebanon",
+      "value": 10452,
+      "source": "https://www.wikidata.org/wiki/Q822",
+      "quote": "Wikidata P2046 = 10452 km²",
+      "fact": "Lebanon is the #163 largest of 197 countries by area.",
+      "status": "checked"
+    },
+    {
+      "name": "Albania",
+      "value": 28748,
+      "source": "https://www.wikidata.org/wiki/Q222",
+      "quote": "Wikidata P2046 = 28748 km²",
+      "fact": "Albania is the #140 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Switzerland",
+      "value": 41291,
+      "source": "https://www.wikidata.org/wiki/Q39",
+      "quote": "Wikidata P2046 = 41291 km²",
+      "fact": "Switzerland is the #133 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Greece",
+      "value": 131957,
+      "source": "https://www.wikidata.org/wiki/Q41",
+      "quote": "Wikidata P2046 = 131957 km²",
+      "fact": "Greece is the #97 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Italy",
+      "value": 302068,
+      "source": "https://www.wikidata.org/wiki/Q38",
+      "quote": "Wikidata P2046 = 302068 km²",
+      "fact": "Italy is the #74 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Germany",
+      "value": 357588,
+      "source": "https://www.wikidata.org/wiki/Q183",
+      "quote": "Wikidata P2046 = 357587.77 km²",
+      "fact": "Germany is the #66 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Japan",
+      "value": 377974,
+      "source": "https://www.wikidata.org/wiki/Q17",
+      "quote": "Wikidata P2046 = 377973.68 km²",
+      "fact": "Japan is the #65 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "France",
+      "value": 643801,
+      "source": "https://www.wikidata.org/wiki/Q142",
+      "quote": "Wikidata P2046 = 643801 km²",
+      "fact": "France is the #45 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Turkey",
+      "value": 783562,
+      "source": "https://www.wikidata.org/wiki/Q43",
+      "quote": "Wikidata P2046 = 783562.05296 km²",
+      "fact": "Turkey is the #38 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "India",
+      "value": 3287593,
+      "source": "https://www.wikidata.org/wiki/Q668",
+      "quote": "Wikidata P2046 = 3287593 km²",
+      "fact": "India is the #8 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "United States",
+      "value": 9833517,
+      "source": "https://www.wikidata.org/wiki/Q30",
+      "quote": "Wikidata P2046 = 9833517 km²",
+      "fact": "United States is the #4 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    },
+    {
+      "name": "Russia",
+      "value": 17125191,
+      "source": "https://www.wikidata.org/wiki/Q159",
+      "quote": "Wikidata P2046 = 17125191 km²",
+      "fact": "Russia is the #1 largest of 197 countries by area.",
+      "familiar": true,
+      "status": "checked"
+    }
+  ]
+}

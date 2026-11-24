@@ -1,0 +1,221 @@
+{
+  "id": "river-length",
+  "field": "Geography",
+  "name": "River length",
+  "question": "Length from source to mouth in kilometers. Each gridline step is ten times longer.",
+  "unit": "km",
+  "type": "log",
+  "min": 100,
+  "max": 10000,
+  "items": [
+    {
+      "name": "Jordan",
+      "value": 251,
+      "source": "https://en.wikipedia.org/wiki/Jordan_River",
+      "fact": "The Jordan flows into the Dead Sea, the lowest place on land.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Thames",
+      "value": 346,
+      "source": "https://en.wikipedia.org/wiki/River_Thames",
+      "fact": "The Thames is tidal for 100 km up to Teddington Lock.",
+      "familiar": true,
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Shannon",
+      "value": 360,
+      "source": "https://en.wikipedia.org/wiki/River_Shannon",
+      "fact": "The Shannon is the longest river in Ireland and Britain.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Tiber",
+      "value": 406,
+      "source": "https://en.wikipedia.org/wiki/Tiber",
+      "fact": "Legend says Romulus and Remus were set adrift on the Tiber.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Hudson",
+      "value": 507,
+      "source": "https://en.wikipedia.org/wiki/Hudson_River",
+      "fact": "The Hudson's lower half is a tidal estuary.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Seine",
+      "value": 777,
+      "source": "https://en.wikipedia.org/wiki/Seine",
+      "fact": "The Seine flows through Paris.",
+      "familiar": true,
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Loire",
+      "value": 1006,
+      "source": "https://en.wikipedia.org/wiki/Loire",
+      "fact": "The Loire is France's longest river.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Elbe",
+      "value": 1094,
+      "source": "https://en.wikipedia.org/wiki/Elbe",
+      "fact": "The Elbe flows from the Czech Republic through Germany to the North Sea.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Rhine",
+      "value": 1233,
+      "source": "https://en.wikipedia.org/wiki/Rhine",
+      "fact": "The Rhine flows through or along six countries.",
+      "familiar": true,
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Colorado",
+      "value": 2330,
+      "source": "https://en.wikipedia.org/wiki/Colorado_River",
+      "fact": "The Colorado carved the Grand Canyon.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Ganges",
+      "value": 2525,
+      "source": "https://en.wikipedia.org/wiki/Ganges",
+      "fact": "The Ganges is sacred in Hinduism.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Zambezi",
+      "value": 2574,
+      "source": "https://en.wikipedia.org/wiki/Zambezi",
+      "fact": "The Zambezi plunges over Victoria Falls.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Danube",
+      "value": 2850,
+      "source": "https://en.wikipedia.org/wiki/Danube",
+      "fact": "The Danube passes through more countries than any other river: ten.",
+      "familiar": true,
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Volga",
+      "value": 3531,
+      "source": "https://en.wikipedia.org/wiki/Volga",
+      "fact": "The Volga is Europe's longest river.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mississippi",
+      "value": 3730,
+      "source": "https://en.wikipedia.org/wiki/Mississippi_River",
+      "fact": "A raindrop takes about 90 days to travel the whole Mississippi.",
+      "familiar": true,
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Congo",
+      "value": 4700,
+      "source": "https://en.wikipedia.org/wiki/Congo_River",
+      "fact": "The Congo is the deepest river in the world.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mekong",
+      "value": 4909,
+      "source": "https://en.wikipedia.org/wiki/Mekong",
+      "fact": "The Mekong flows through six countries.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Yangtze",
+      "value": 6300,
+      "source": "https://en.wikipedia.org/wiki/Yangtze",
+      "fact": "The Yangtze is the longest river in Asia.",
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Amazon",
+      "value": 6400,
+      "source": "https://en.wikipedia.org/wiki/Amazon_River",
+      "fact": "The Amazon carries more water than the next seven largest rivers combined.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Nile",
+      "value": 6650,
+      "source": "https://en.wikipedia.org/wiki/Nile",
+      "fact": "The Nile and the Amazon still compete for 'longest river', depending on how you measure.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "match": "Length"
+      },
+      "status": "draft"
+    }
+  ]
+}

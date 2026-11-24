@@ -1,0 +1,147 @@
+{
+  "id": "sun-distance",
+  "field": "Astronomy",
+  "name": "Distance from the Sun",
+  "question": "Average distance from the Sun in astronomical units (1 AU is Earth's distance). Each gridline step is ten times farther.",
+  "unit": "AU",
+  "type": "log",
+  "min": 0.1,
+  "max": 1000,
+  "items": [
+    {
+      "name": "Mercury",
+      "value": 0.387098,
+      "source": "https://en.wikipedia.org/wiki/Mercury_(planet)",
+      "fact": "A year on Mercury lasts 88 Earth days.",
+      "status": "draft"
+    },
+    {
+      "name": "Venus",
+      "value": 0.723332,
+      "source": "https://en.wikipedia.org/wiki/Venus",
+      "fact": "A day on Venus is longer than its year.",
+      "status": "draft"
+    },
+    {
+      "name": "Earth",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Earth",
+      "fact": "Sunlight takes about 8 minutes 20 seconds to reach Earth.",
+      "familiar": true,
+      "verify": {
+        "match": "Semi-major axis"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mars",
+      "value": 1.52368055,
+      "source": "https://en.wikipedia.org/wiki/Mars",
+      "fact": "Mars is named after the Roman god of war.",
+      "familiar": true,
+      "verify": {
+        "number": 1.524
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Ceres",
+      "value": 2.77,
+      "source": "https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)",
+      "fact": "Ceres was called a planet for about 50 years after its discovery in 1801.",
+      "verify": {
+        "number": 2.77
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Jupiter",
+      "value": 5.2038,
+      "source": "https://en.wikipedia.org/wiki/Jupiter",
+      "fact": "Jupiter takes almost 12 years to orbit the Sun.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Saturn",
+      "value": 9.5826,
+      "source": "https://en.wikipedia.org/wiki/Saturn",
+      "fact": "Saturn's rings are mostly ice.",
+      "status": "draft"
+    },
+    {
+      "name": "Halley's Comet (average)",
+      "value": 17.8,
+      "source": "https://en.wikipedia.org/wiki/Halley%27s_Comet",
+      "fact": "Halley's Comet returns about every 76 years; next in 2061.",
+      "verify": {
+        "number": 17.8,
+        "match": "Semi-major axis"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Uranus",
+      "value": 19.19126,
+      "source": "https://en.wikipedia.org/wiki/Uranus",
+      "fact": "Uranus was the first planet found with a telescope, in 1781.",
+      "status": "draft"
+    },
+    {
+      "name": "Neptune",
+      "value": 30.07,
+      "source": "https://en.wikipedia.org/wiki/Neptune",
+      "fact": "Neptune was found by mathematics before anyone saw it.",
+      "verify": {
+        "number": 30.07
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Pluto",
+      "value": 39.482,
+      "source": "https://en.wikipedia.org/wiki/Pluto",
+      "fact": "Pluto hasn't completed an orbit since it was discovered in 1930.",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Haumea",
+      "value": 43.1,
+      "source": "https://en.wikipedia.org/wiki/Haumea",
+      "fact": "Haumea spins so fast it's shaped like an egg.",
+      "verify": {
+        "number": 43.1
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Makemake",
+      "value": 45.4,
+      "source": "https://en.wikipedia.org/wiki/Makemake",
+      "fact": "Makemake is named after a creator god of Easter Island.",
+      "verify": {
+        "number": 45.4
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Eris",
+      "value": 67.86,
+      "source": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)",
+      "fact": "Eris is almost exactly the same size as Pluto.",
+      "verify": {
+        "number": 67.86
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sedna",
+      "value": 506,
+      "source": "https://en.wikipedia.org/wiki/Sedna_(dwarf_planet)",
+      "fact": "One orbit of Sedna takes over 11,000 years.",
+      "disputed": true,
+      "status": "draft"
+    }
+  ]
+}

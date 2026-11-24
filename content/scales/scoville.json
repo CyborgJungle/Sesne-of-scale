@@ -1,0 +1,184 @@
+{
+  "id": "scoville",
+  "field": "Food science",
+  "name": "Chili heat",
+  "question": "Scoville heat units: how many times an extract must be diluted before you can't taste the burn.",
+  "unit": "SHU",
+  "type": "log",
+  "min": 10,
+  "max": 20000000,
+  "items": [
+    {
+      "name": "Banana pepper",
+      "value": 150,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Banana peppers are so mild that some taste almost sweet.",
+      "verify": {
+        "number": 500
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Cubanelle",
+      "value": 700,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Cubanelles are a favorite frying pepper in Cuban and Italian cooking.",
+      "verify": {
+        "number": 500
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Poblano",
+      "value": 1600,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Dried poblanos are sold as ancho chiles.",
+      "verify": {
+        "number": 1000
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Jalapeño",
+      "value": 5000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Smoked, dried jalapeños are called chipotles.",
+      "familiar": true,
+      "verify": {
+        "number": 2500
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Serrano",
+      "value": 16000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Serranos are a few times hotter than jalapeños.",
+      "verify": {
+        "number": 10000
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Cayenne",
+      "value": 35000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Cayenne is usually sold ground into powder.",
+      "verify": {
+        "number": 25000
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Gingerol (fresh ginger)",
+      "value": 60000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Ginger's bite comes from gingerol, which acts on the same heat receptor as chili.",
+      "verify": {
+        "match": "Gingerol"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Bird's eye chili",
+      "value": 70000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Bird's eye chilies are a staple of Thai cooking.",
+      "verify": {
+        "number": 50000,
+        "match": "Bird's eye"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Piperine (black pepper)",
+      "value": 150000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Piperine is what makes black pepper make you sneeze.",
+      "verify": {
+        "match": "Piperine"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Habanero",
+      "value": 190000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Habaneros are hot but famous for their fruity flavor.",
+      "familiar": true,
+      "verify": {
+        "number": 100000,
+        "match": "Habanero chili"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Red Savina habanero",
+      "value": 500000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "The Red Savina held the world record for hottest pepper through the 1990s.",
+      "verify": {
+        "number": 350000,
+        "match": "Red savina"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Ghost pepper",
+      "value": 1000000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "The ghost pepper was the first pepper measured at over one million SHU.",
+      "familiar": true,
+      "verify": {
+        "number": 750000
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Police pepper spray",
+      "value": 1500000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Pepper spray strength depends on how much it's diluted.",
+      "disputed": true,
+      "verify": {
+        "number": 500000,
+        "match": "pepper spray"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Carolina Reaper",
+      "value": 1900000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "The Carolina Reaper was bred in South Carolina by crossing two very hot peppers.",
+      "verify": {
+        "number": 1500000
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Pepper X",
+      "value": 2693000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Pepper X took the hottest-pepper world record from the Carolina Reaper in 2023.",
+      "status": "draft"
+    },
+    {
+      "name": "Nonivamide",
+      "value": 9200000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Nonivamide is a synthetic capsaicin often used in pepper spray instead of chili extract.",
+      "status": "draft"
+    },
+    {
+      "name": "Pure capsaicin",
+      "value": 16000000,
+      "source": "https://en.wikipedia.org/wiki/Scoville_scale",
+      "fact": "Pure capsaicin is the benchmark at the top of the scale.",
+      "verify": {
+        "match": "Capsaicin"
+      },
+      "status": "draft"
+    }
+  ]
+}
