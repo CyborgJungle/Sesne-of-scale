@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content review</title>
+<style>
+  :root { --bg:#E6ECEA; --panel:#F6F9F8; --ink:#13222B; --muted:#5A6B72; --rule:#C3CFCC; --good:#1D8C5A; --mid:#B97800; --bad:#C2412A; --tag:#FFC93C; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0E181D; --panel:#15232A; --ink:#E3EDEA; --muted:#8EA2A7; --rule:#2B3D45; --good:#4CCB8F; --mid:#F0B43A; --bad:#FF7A5C; color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 20px 16px 60px; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, sans-serif; }
+  .wrap { max-width: 900px; margin: 0 auto; display: grid; gap: 14px; }
+  h1 { margin: 0; font-size: 22px; }
+  .bar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  select, input, button { font: inherit; }
+  select, input { padding: 6px 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); color: var(--ink); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .card { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 16px; display: grid; gap: 8px; }
+  .card.cur { box-shadow: 0 0 0 3px var(--tag); }
+  .top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+  .name { font-weight: 650; font-size: 17px; }
+  .val { font: 600 16px ui-monospace, monospace; }
+  .quote { font: 13px/1.45 ui-monospace, monospace; background: var(--bg); border-left: 3px solid var(--rule); padding: 6px 10px; white-space: pre-wrap; word-break: break-word; }
+  .pill { font-size: 12px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule); }
+  .s-checked { color: var(--good); } .s-draft { color: var(--mid); } .s-verified { color: var(--good); font-weight: 700; } .s-rejected { color: var(--bad); }
+  .acts { display: flex; gap: 8px; flex-wrap: wrap; }
+  .acts button { border: 0; border-radius: 999px; padding: 7px 14px; cursor: pointer; font-weight: 600; }
+  .ok { background: var(--good); color: #fff; } .no { background: var(--bad); color: #fff; } .ed { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Content review</h1>
+  <p class="muted">Approve only when the evidence matches the value. Keys: <b>A</b> approve, <b>R</b> reject, <b>E</b> edit value, <b>J/K</b> next/previous. Changes are written straight to <code>content/scales/*.json</code>; commit them afterwards.</p>
+  <div class="bar">
+    <select id="f-status"><option value="todo">To review (checked + draft)</option><option value="checked">Checked</option><option value="draft">Draft</option><option value="verified">Verified</option><option value="rejected">Rejected</option><option value="all">All</option></select>
+    <select id="f-scale"><option value="">All scales</option></select>
+    <span class="muted" id="count"></span>
+  </div>
+  <div id="list" class="wrap"></div>
+</div>
+<script type="module">
+import { fmtVal } from "/js/core.js";
+let scales = [], cur = 0, rows = [];
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+async function load() {
+  scales = await (await fetch("/dev/content")).json();
+  if ($("f-scale").options.length === 1) scales.forEach(s => $("f-scale").add(new Option(`${s.name} (${s.id})`, s.id)));
+  render();
+}
+function render() {
+  const st = $("f-status").value, sc = $("f-scale").value;
+  rows = scales.filter(s => !sc || s.id === sc).flatMap(s => s.items.map(it => ({ s, it })))
+    .filter(({ it }) => st === "all" || (st === "todo" ? ["checked", "draft"].includes(it.status || "draft") : (it.status || "draft") === st))
+    .sort((a, b) => (a.it.status === "checked" ? 0 : 1) - (b.it.status === "checked" ? 0 : 1));
+  cur = Math.min(cur, Math.max(0, rows.length - 1));
+  $("count").textContent = `${rows.length} items`;
+  $("list").innerHTML = rows.slice(0, 200).map(({ s, it }, i) => `
+    <div class="card${i === cur ? " cur" : ""}" data-i="${i}">
+      <div class="top"><span class="muted">${esc(s.field)} · ${esc(s.name)}</span><span class="pill s-${esc(it.status || "draft")}">${esc(it.status || "draft")}</span></div>
+      <div class="top"><span class="name">${esc(it.name)}${it.familiar ? " ★" : ""}${it.disputed ? " ⚠ disputed" : ""}</span><span class="val">${esc(fmtVal(s, it.value))} <span class="muted">(${it.value})</span></span></div>
+      ${it.quote ? `<div class="quote">${esc(it.quote)}</div>` : `<div class="muted">No evidence snippet yet: open the source and check.</div>`}
+      <div class="muted">Source: <a href="${esc(it.source)}" target="_blank" rel="noopener">${esc(it.source)}</a></div>
+      ${it.fact ? `<div>💡 ${esc(it.fact)}</div>` : ""}
+      ${it.note ? `<div class="muted">Note: ${esc(it.note)}</div>` : ""}
+      <div class="acts"><button class="ok" data-a="verified">Approve</button><button class="no" data-a="rejected">Reject</button><button class="ed" data-a="edit">Edit value</button></div>
+    </div>`).join("");
+  document.querySelector(".card.cur")?.scrollIntoView({ block: "nearest" });
+}
+async function act(i, a) {
+  const { s, it } = rows[i];
+  const body = { id: it.id, status: a };
+  if (a === "edit") {
+    const v = prompt(`New value for "${it.name}" (${s.unit || "no unit"}):`, it.value);
+    if (v === null) return;
+    const src = prompt("Source URL:", it.source);
+    if (src === null) return;
+    Object.assign(body, { status: "verified", value: Number(v), source: src });
+    if (!Number.isFinite(body.value)) return alert("Not a number");
+  } else if (a === "rejected") {
+    body.note = prompt("Why? (optional)", it.note || "") || "";
+  }
+  const res = await fetch("/dev/review", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+  if (!res.ok) return alert((await res.json()).error);
+  await load();
+}
+$("list").addEventListener("click", e => { const b = e.target.closest("button[data-a]"); if (b) act(+b.closest(".card").dataset.i, b.dataset.a); });
+$("f-status").onchange = $("f-scale").onchange = () => { cur = 0; render(); };
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input, select") || !rows.length) return;
+  if (e.key === "j") { cur = Math.min(rows.length - 1, cur + 1); render(); }
+  else if (e.key === "k") { cur = Math.max(0, cur - 1); render(); }
+  else if (e.key === "a") act(cur, "verified");
+  else if (e.key === "r") act(cur, "rejected");
+  else if (e.key === "e") act(cur, "edit");
+});
+load();
+</script>
+</body>
+</html>

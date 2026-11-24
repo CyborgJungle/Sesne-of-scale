@@ -1,0 +1,10 @@
+{
+  "name": "Sense of Scale",
+  "short_name": "Scale",
+  "description": "A daily game about how big, fast, hot, loud and old things really are.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E6ECEA",
+  "theme_color": "#13222B",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
