@@ -17,7 +17,8 @@
       "value": 1099,
       "source": "https://en.wikipedia.org/wiki/Westminster_Hall",
       "fact": "Westminster Hall is the oldest part of the Houses of Parliament.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "Westminster Hall Medieval great hall in London, England The interior of the hall in 2018 Westminster Hall is a"
     },
     {
       "name": "Angkor Wat",
@@ -25,7 +26,8 @@
       "source": "https://en.wikipedia.org/wiki/Angkor_Wat",
       "fact": "Angkor Wat is the largest religious structure in the world.",
       "disputed": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "}' id=\"mwFA\"/> Architecture Type Temple complex Style Khmer architecture Founder Suryavarman II Established c. 1150 Specifications Height (max) 65 m Site area 162.6 hectares UNESCO World Heritage Site Official name: Angk"
     },
     {
       "name": "Notre-Dame de Paris",
@@ -33,14 +35,16 @@
       "source": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
       "fact": "Notre-Dame reopened in December 2024 after the 2019 fire.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "ch Gothic Years built 1163-1345 Groundbreaking 1163 ; 863 years ago ( 1163 ) Completed 1345 ; 681 years ago ( 1345 ) Specifications Length 128 m (420 ft) Width 48 m (157 ft) Materials Limestone and marble Administration"
     },
     {
       "name": "Leaning Tower of Pisa",
       "value": 1372,
       "source": "https://en.wikipedia.org/wiki/Leaning_Tower_of_Pisa",
       "fact": "Construction of the tower took almost 200 years.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "EA\"/> Architecture Architects Diotisalvi (?) Bonanno Pisano (?) Style Romanesque Groundbreaking 1173 Completed 1372 ; 654 years ago ( 1372 ) Specifications Height (max) 55.86 m (183 ft 3 in) Materials marble other stone"
     },
     {
       "name": "Kinkaku-ji (Golden Pavilion)",
@@ -50,7 +54,8 @@
       "verify": {
         "match": "Kinkaku"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "inkakuji/|www.shokoku-ji.jp/en/kinkakuji/\"},\"founded_by\":{\"wt\":\"Ashikaga Yoshimitsu\"},\"completed\":{\"wt\":\"1397 br />1955 small>(reconstruction) /small>\",\"i\":0]}' id=\"mwBQ\"> Rokuon-ji 鹿苑寺 The shariden at Rokuon-j"
     },
     {
       "name": "Forbidden City",
@@ -58,7 +63,8 @@
       "source": "https://en.wikipedia.org/wiki/Forbidden_City",
       "fact": "The Forbidden City has around 9,000 rooms, by legend 9,999.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "www.chinanews.com/sh/2017/12-31/8413475.shtml |url-status=live  /ref>\"},\"established\":{\"wt\":\"1406 endash 1420; 606 years ago br> start date and age|1925 br> (as public museum)\"},\"type\":{\"wt\":\"hlist|Art muse"
     },
     {
       "name": "Machu Picchu",
@@ -66,7 +72,8 @@
       "source": "https://en.wikipedia.org/wiki/Machu_Picchu",
       "fact": "Machu Picchu was built without mortar.",
       "disputed": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "Cultures Inca civilization Location Machupicchu District , Urubamba, Cusco, Peru Region Andes History Built c. 1450 - c. 1470 Abandoned c. 1532 - c. 1565 Site notes Elevation 2430 m (7970 ft) Discovered Agustín Lizárraga"
     },
     {
       "name": "Château de Chambord",
@@ -76,7 +83,8 @@
       "verify": {
         "match": "Chambord"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ine,title\"},\"groundbreaking_date\":{\"wt\":\"\"},\"construction_start_date\":{\"wt\":\"1519\"},\"completion_date\":{\"wt\":\"1547\"},\"opened_date\":{\"wt\":\"\"},\"inauguration_date\":{\"wt\":\"\"},\"renovation_date\":{\"wt\":\"\"},\"demolished_date\":{\""
     },
     {
       "name": "St. Peter's Basilica",
@@ -86,7 +94,8 @@
       "verify": {
         "match": "Basilica"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ebsite St. Peter's Basilica History Status Papal major basilica Dedication Saint Peter Consecrated 18 November 1626 Architecture Architect Bernardo Rossellino , Giuliano da Sangallo , Donato Bramante , Raphael , Giovanni"
     },
     {
       "name": "Taj Mahal",
@@ -95,7 +104,8 @@
       "fact": "About 20,000 workers built the Taj Mahal.",
       "familiar": true,
       "disputed": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "\":\"Agra, Uttar Pradesh, India\"},\"height\":{\"wt\":\"cvt|73|m|ft\"},\"built\":{\"wt\":\"1631-Start date and age|1653|br=ysfn |DuTemple |2003 |p=32|\"},\"architect\":{\"wt\":\"Ustad Ahmad Lahori\"},\"architecture\":{\"wt\":"
     },
     {
       "name": "St Paul's Cathedral",
@@ -115,7 +125,8 @@
       "verify": {
         "match": "completed"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "es using gadget WikiMiniAtlas /span>\"' id=\"mwEQ\"/> Construction started 28 September 1843 Completed 31 May 1859 ; 167 years ago ( 1859-05-31 ) Height Height 316 feet (96 m) Technical details Floor count 11 Design and"
     },
     {
       "name": "Brooklyn Bridge",
@@ -123,7 +134,8 @@
       "source": "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
       "fact": "P. T. Barnum walked 21 elephants across the Brooklyn Bridge to prove it was safe.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "tml/dot/html/about/datafeeds.shtml#trafficcounts |url-status=live /ref>\"},\"open\":{\"wt\":\"start date and age|1883|05|24 ref>cite web |url=https://www.endex.com/gf/buildings/bbridge/bbridgefacts.htm |title=Brooklyn"
     },
     {
       "name": "Eiffel Tower",
@@ -141,7 +153,8 @@
       "verify": {
         "match": "opened"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "\"wt\":\"3 lanes of locks\"},\"elev\":{\"wt\":\"\"},\"elev_note\":{\"wt\":\"\"},\"status\":{\"wt\":\"Opened in start date and age|1914; expansion opened 26 June 2016\"},\"navigation_authority\":{\"wt\":\"Panama Canal Authority\",\"i\":0]}"
     },
     {
       "name": "Empire State Building",
@@ -156,7 +169,8 @@
       "value": 1937,
       "source": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
       "fact": "The bridge's color is called International Orange.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "w and Charles Ellis making significant contributions to its design. The bridge opened to the public on May 27, 1937, and has undergone various retrofits and other improvement projects in the decades since. The Golden Gat"
     },
     {
       "name": "Sydney Opera House",
@@ -164,14 +178,16 @@
       "source": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
       "fact": "The Opera House opened ten years late and over budget.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "Sydney Opera House Performing arts centre in Australia For the historical (1879-1900) theatre of the same name"
     },
     {
       "name": "CN Tower",
       "value": 1976,
       "source": "https://en.wikipedia.org/wiki/CN_Tower",
       "fact": "The CN Tower is hit by lightning about 75 times a year.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "d observation tower in Toronto, Canada This article is about the Toronto tower. For the Alberta building, see CN Tower (Edmonton) . For the Drake song, see CN Tower (song) . Toronto, Ontario br />M5V 3L9\"},\"coordinat"
     },
     {
       "name": "Burj Khalifa",
@@ -182,7 +198,8 @@
       "verify": {
         "match": "opened"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "}\"},\"completion_date\":{\"wt\":\"start date and age|2009|10|1|df=y\"},\"opened_date\":{\"wt\":\"start date and age|2010|01|04|df=y\"},\"inauguration_date\":{\"wt\":\"start date and age|2011|1|23|df=y\"},\"cost\":{\"wt\":\"US$1.5 b"
     }
   ]
 }

@@ -1,0 +1,199 @@
+{
+  "id": "sting-pain",
+  "field": "Zoology",
+  "name": "How much does the sting hurt?",
+  "question": "Schmidt sting pain index: entomologist Justin Schmidt rated the pain of insect stings he received, from 1 (mild) to 4 (excruciating).",
+  "unit": "",
+  "type": "lin",
+  "min": 0,
+  "max": 4,
+  "step": 1,
+  "display": {
+    "prefix": "Pain ",
+    "decimals": 1
+  },
+  "items": [
+    {
+      "name": "Potter wasp",
+      "value": 0.5,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "One of the few stings Schmidt rated below 1.",
+      "verify": {
+        "match": "Potter wasp"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sweat bee",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Light and ephemeral, almost fruity. A tiny spark has singed a single hair on your arm.\"",
+      "verify": {
+        "match": "Sweat bees"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Red fire ant",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Like walking across a shag carpet and reaching for the light switch.\"",
+      "familiar": true,
+      "status": "draft"
+    },
+    {
+      "name": "Mud dauber wasp",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Jalapeño cheese when you were expecting Havarti.\"",
+      "verify": {
+        "match": "Mud dauber"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Paper wasp",
+      "value": 1.5,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"A single drop of superheated frying oil landed on your arm.\"",
+      "verify": {
+        "match": "Paper wasp"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Honey bee",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt used the honey bee sting, rated 2, as the anchor for his whole scale.",
+      "familiar": true,
+      "verify": {
+        "match": "Western honey bee"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Bumble bee",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Colorful flames. Fireworks land on your arm.\"",
+      "familiar": true,
+      "verify": {
+        "match": "Bumble bees"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Yellowjacket wasp",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Imagine W. C. Fields extinguishing a cigar on your tongue.\"",
+      "familiar": true,
+      "verify": {
+        "match": "Western yellowjacket"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Bald-faced hornet",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Similar to getting your hand mashed in a revolving door.\"",
+      "verify": {
+        "match": "Baldfaced hornet"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Jack jumper ant",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"The oven mitt had a hole in it when you pulled the cookies out of the oven.\"",
+      "verify": {
+        "match": "Jack jumper"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Trap-jaw ant",
+      "value": 2.5,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Trap-jaw ants snap their jaws shut faster than almost any other animal movement.",
+      "verify": {
+        "match": "Trap-jaw ant"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Nocturnal hornet",
+      "value": 2.5,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "This hornet hunts at night.",
+      "verify": {
+        "match": "Nocturnal hornet"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Honey bee sting on the tongue",
+      "value": 3,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"For 10 minutes life is not worth living.\"",
+      "verify": {
+        "match": "tongue"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Florida harvester ant",
+      "value": 3,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Somebody is using a power drill to excavate your ingrown toenail.\"",
+      "verify": {
+        "match": "Florida harvester"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Red paper wasp",
+      "value": 3,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Like spilling a beaker of hydrochloric acid on a paper cut.\"",
+      "verify": {
+        "match": "Red paper wasp"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Bullet ant",
+      "value": 4,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"Like walking over flaming charcoal with a 3-inch nail embedded in your heel.\"",
+      "familiar": true,
+      "verify": {
+        "match": "Bullet ant"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Tarantula hawk wasp",
+      "value": 4,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"A running hair dryer has just been dropped into your bubble bath.\"",
+      "verify": {
+        "match": "Tarantula hawk"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Warrior wasp",
+      "value": 4,
+      "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
+      "fact": "Schmidt: \"You are chained in the flow of an active volcano.\"",
+      "verify": {
+        "match": "Warrior"
+      },
+      "status": "draft"
+    }
+  ]
+}

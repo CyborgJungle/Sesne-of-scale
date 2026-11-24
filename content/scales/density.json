@@ -1,0 +1,249 @@
+{
+  "id": "density",
+  "field": "Physics",
+  "name": "Density",
+  "question": "Kilograms per cubic meter (water is 1,000). Each gridline step is ten times denser.",
+  "unit": "kg/m³",
+  "type": "log",
+  "min": 0.01,
+  "max": 30000,
+  "items": [
+    {
+      "name": "Hydrogen gas",
+      "value": 0.0898,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Hydrogen is the lightest element and the most common in the universe.",
+      "verify": {
+        "match": "Hydrogen"
+      },
+      "status": "checked",
+      "quote": "mical elements . Densities of various materials covering a range of values Material ρ (kg/m 3 ) Notes Hydrogen 0.0898 Helium 0.179 Aerographite 0.2 Metallic microlattice 0.9 Aerogel 1.0 Air 1.2 At sea level Tungsten hexa"
+    },
+    {
+      "name": "Helium gas",
+      "value": 0.179,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Helium balloons float because helium is about 7 times lighter than air.",
+      "familiar": true,
+      "verify": {
+        "match": "Helium"
+      },
+      "status": "checked",
+      "quote": ". Densities of various materials covering a range of values Material ρ (kg/m 3 ) Notes Hydrogen 0.0898 Helium 0.179 Aerographite 0.2 Metallic microlattice 0.9 Aerogel 1.0 Air 1.2 At sea level Tungsten hexafluoride 12.4"
+    },
+    {
+      "name": "Aerogel",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Aerogel is mostly air and is sometimes called 'frozen smoke'.",
+      "verify": {
+        "match": "Aerogel"
+      },
+      "status": "checked",
+      "quote": "ues Material ρ (kg/m 3 ) Notes Hydrogen 0.0898 Helium 0.179 Aerographite 0.2 Metallic microlattice 0.9 Aerogel 1.0 Air 1.2 At sea level Tungsten hexafluoride 12.4 One of the heaviest known gases at standard conditions Li"
+    },
+    {
+      "name": "Air at sea level",
+      "value": 1.2,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "A cubic meter of air weighs about as much as a bag of sugar.",
+      "familiar": true,
+      "verify": {
+        "match": "At sea level"
+      },
+      "status": "checked",
+      "quote": "rial ρ (kg/m 3 ) Notes Hydrogen 0.0898 Helium 0.179 Aerographite 0.2 Metallic microlattice 0.9 Aerogel 1.0 Air 1.2 At sea level Tungsten hexafluoride 12.4 One of the heaviest known gases at standard conditions Liquid hyd"
+    },
+    {
+      "name": "Tungsten hexafluoride (a very heavy gas)",
+      "value": 12.4,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Tungsten hexafluoride is one of the heaviest gases known, about 10 times denser than air.",
+      "verify": {
+        "match": "Tungsten hexafluoride"
+      },
+      "status": "checked",
+      "quote": "Helium 0.179 Aerographite 0.2 Metallic microlattice 0.9 Aerogel 1.0 Air 1.2 At sea level Tungsten hexafluoride 12.4 One of the heaviest known gases at standard conditions Liquid hydrogen 70 At approximately -255 °C Styro"
+    },
+    {
+      "name": "Styrofoam",
+      "value": 75,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Styrofoam is about 95% air.",
+      "verify": {
+        "match": "Styrofoam"
+      },
+      "status": "checked",
+      "quote": "4 One of the heaviest known gases at standard conditions Liquid hydrogen 70 At approximately -255 °C Styrofoam 75 Approximate Cork 240 Approximate Pine 373 Lithium 535 Least dense metal Wood 700 Seasoned, typical Oak 710"
+    },
+    {
+      "name": "Cork",
+      "value": 240,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Cork comes from the bark of the cork oak, which regrows after harvesting.",
+      "verify": {
+        "match": "Cork"
+      },
+      "status": "checked",
+      "quote": "t known gases at standard conditions Liquid hydrogen 70 At approximately -255 °C Styrofoam 75 Approximate Cork 240 Approximate Pine 373 Lithium 535 Least dense metal Wood 700 Seasoned, typical Oak 710 Potassium 860 Ice 9"
+    },
+    {
+      "name": "Lithium",
+      "value": 535,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Lithium is the least dense metal; it floats on water.",
+      "verify": {
+        "match": "Lithium"
+      },
+      "status": "checked",
+      "quote": "ons Liquid hydrogen 70 At approximately -255 °C Styrofoam 75 Approximate Cork 240 Approximate Pine 373 Lithium 535 Least dense metal Wood 700 Seasoned, typical Oak 710 Potassium 860 Ice 916.7 At temperature 0 °C Cooking"
+    },
+    {
+      "name": "Ice",
+      "value": 916.7,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Ice is less dense than water, which is why lakes freeze from the top.",
+      "familiar": true,
+      "verify": {
+        "match": "Ice"
+      },
+      "status": "checked",
+      "quote": "rk 240 Approximate Pine 373 Lithium 535 Least dense metal Wood 700 Seasoned, typical Oak 710 Potassium 860 Ice 916.7 At temperature 0 °C Cooking oil 910-930 Sodium 970 Water (fresh) 1000 Maximum, occurs at approximately"
+    },
+    {
+      "name": "Fresh water",
+      "value": 1000,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Water is densest at about 4 °C.",
+      "familiar": true,
+      "verify": {
+        "match": "Water (fresh)"
+      },
+      "status": "checked",
+      "quote": "oned, typical Oak 710 Potassium 860 Ice 916.7 At temperature 0 °C Cooking oil 910-930 Sodium 970 Water (fresh) 1000 Maximum, occurs at approximately 4 °C Water (salt) 1030 Salinity of 3% Liquid oxygen 1141 At approximate"
+    },
+    {
+      "name": "Sand",
+      "value": 1600,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Dry sand ranges from 1,600 to 2,000 kg/m³.",
+      "verify": {
+        "match": "Sand"
+      },
+      "status": "checked",
+      "quote": "lon 1150 Plastics 1175 Approximate; for polypropylene and PETE / PVC Glycerol 1261 Tetrachloroethene 1622 Sand 1600 Between 1600 and 2000 Magnesium 1740 Beryllium 1850 Silicon 2330 Concrete 2400 Glass 2500 Quartzite 2600"
+    },
+    {
+      "name": "Concrete",
+      "value": 2400,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Concrete is the most widely used human-made material.",
+      "verify": {
+        "match": "Concrete"
+      },
+      "status": "checked",
+      "quote": "261 Tetrachloroethene 1622 Sand 1600 Between 1600 and 2000 Magnesium 1740 Beryllium 1850 Silicon 2330 Concrete 2400 Glass 2500 Quartzite 2600 Granite 2700 Gneiss 2700 Aluminium 2700 Limestone 2750 Compact Basalt 3000 Dii"
+    },
+    {
+      "name": "Aluminium",
+      "value": 2700,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Aluminium is about a third as dense as steel.",
+      "verify": {
+        "match": "Aluminium"
+      },
+      "status": "checked",
+      "quote": "tween 1600 and 2000 Magnesium 1740 Beryllium 1850 Silicon 2330 Concrete 2400 Glass 2500 Quartzite 2600 Granite 2700 Gneiss 2700 Aluminium 2700 Limestone 2750 Compact Basalt 3000 Diiodomethane 3325 Liquid at room temperat"
+    },
+    {
+      "name": "Diamond",
+      "value": 3500,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Diamond is pure carbon, just like pencil graphite.",
+      "verify": {
+        "match": "Diamond"
+      },
+      "status": "checked",
+      "quote": "s 2700 Aluminium 2700 Limestone 2750 Compact Basalt 3000 Diiodomethane 3325 Liquid at room temperature Diamond 3500 Titanium 4540 Selenium 4800 Vanadium 6100 Antimony 6690 Zinc 7000 Chromium 7200 Tin 7310 Manganese 7325"
+    },
+    {
+      "name": "The Earth (average)",
+      "value": 5515,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Earth is the densest planet in the Solar System.",
+      "verify": {
+        "match": "The Earth"
+      },
+      "status": "checked",
+      "quote": "cubic centimetre Interstellar medium 1.7 × 10 -16 Based on 10 5 hydrogen atoms per cubic centimetre The Earth 5515 Mean density. Earth's inner core 13000 Approx., as listed in Earth . The core of the Sun 33000-160000 Ap"
+    },
+    {
+      "name": "Iron",
+      "value": 7870,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Iron is the main ingredient of steel.",
+      "familiar": true,
+      "verify": {
+        "match": "Iron"
+      },
+      "status": "checked",
+      "quote": "0 Vanadium 6100 Antimony 6690 Zinc 7000 Chromium 7200 Tin 7310 Manganese 7325 Approximate Mild steel 7850 Iron 7870 Niobium 8570 Brass 8600 Cadmium 8650 Cobalt 8900 Nickel 8900 Copper 8940 Bismuth 9750 Molybdenum 10220 S"
+    },
+    {
+      "name": "Copper",
+      "value": 8940,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Copper's reddish color is rare among metals.",
+      "verify": {
+        "match": "Copper"
+      },
+      "status": "checked",
+      "quote": "7325 Approximate Mild steel 7850 Iron 7870 Niobium 8570 Brass 8600 Cadmium 8650 Cobalt 8900 Nickel 8900 Copper 8940 Bismuth 9750 Molybdenum 10220 Silver 10500 Lead 11340 Thorium 11700 Rhodium 12410 Mercury 13546 Tantalum"
+    },
+    {
+      "name": "Lead",
+      "value": 11340,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Lead is soft and dense, which is why it was used for fishing weights.",
+      "verify": {
+        "match": "Lead"
+      },
+      "status": "checked",
+      "quote": "70 Brass 8600 Cadmium 8650 Cobalt 8900 Nickel 8900 Copper 8940 Bismuth 9750 Molybdenum 10220 Silver 10500 Lead 11340 Thorium 11700 Rhodium 12410 Mercury 13546 Tantalum 16600 Uranium 19100 Tungsten 19300 Gold 19320 Pluton"
+    },
+    {
+      "name": "Mercury",
+      "value": 13546,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "A bowling ball would float on liquid mercury.",
+      "verify": {
+        "match": "Mercury"
+      },
+      "status": "checked",
+      "quote": "kel 8900 Copper 8940 Bismuth 9750 Molybdenum 10220 Silver 10500 Lead 11340 Thorium 11700 Rhodium 12410 Mercury 13546 Tantalum 16600 Uranium 19100 Tungsten 19300 Gold 19320 Plutonium 19840 Rhenium 21020 Platinum 21450 Iri"
+    },
+    {
+      "name": "Gold",
+      "value": 19320,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "A gold bar the size of a milk carton would weigh about 19 kg.",
+      "familiar": true,
+      "verify": {
+        "match": "Gold"
+      },
+      "status": "checked",
+      "quote": "er 10500 Lead 11340 Thorium 11700 Rhodium 12410 Mercury 13546 Tantalum 16600 Uranium 19100 Tungsten 19300 Gold 19320 Plutonium 19840 Rhenium 21020 Platinum 21450 Iridium 22420 Osmium 22570 Densest natural element on Eart"
+    },
+    {
+      "name": "Osmium",
+      "value": 22570,
+      "source": "https://en.wikipedia.org/wiki/Density",
+      "fact": "Osmium is the densest naturally occurring element.",
+      "verify": {
+        "match": "Osmium"
+      },
+      "status": "checked",
+      "quote": "6600 Uranium 19100 Tungsten 19300 Gold 19320 Plutonium 19840 Rhenium 21020 Platinum 21450 Iridium 22420 Osmium 22570 Densest natural element on Earth ↑ Unless otherwise noted, all densities given are at standard conditio"
+    }
+  ]
+}

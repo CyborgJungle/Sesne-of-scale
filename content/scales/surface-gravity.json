@@ -13,7 +13,10 @@
       "value": 0.28,
       "source": "https://en.wikipedia.org/wiki/Ceres_(dwarf_planet)",
       "fact": "Ceres is the largest object in the asteroid belt.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Pluto",
@@ -21,49 +24,66 @@
       "source": "https://en.wikipedia.org/wiki/Pluto",
       "fact": "On Pluto you could jump about 16 times higher than on Earth.",
       "familiar": true,
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Triton",
       "value": 0.779,
       "source": "https://en.wikipedia.org/wiki/Triton_(moon)",
       "fact": "Triton orbits Neptune backwards and is slowly spiraling inward.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "-AJ\\\"/>\"},\"density\":{\"wt\":\"val|2.061|u=g/cm3 ref name=\\\"JPL-SSD-sat_phys\\\"/>\"},\"surface_grav\":{\"wt\":\"val|0.779|ul=m/s2 (val|0.0794|u=G-force| g ) (0.48 Moons) ref name=\\\"nSurfaceGravity\\\" group=\\\"lower-al"
     },
     {
       "name": "Eris",
       "value": 0.82,
       "source": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)",
       "fact": "The discovery of Eris led to Pluto being reclassified as a dwarf planet.",
-      "status": "draft"
+      "status": "checked",
+      "quote": ") × 10 22 kg (Eris only) 0.0027 Earths ; 0.22 Moons Mean density 2.43 ± 0.05 g/cm 3 Equatorial surface gravity 0.82 ± 0.02 m/s 2 0.084 ± 0.002 g Equatorial escape velocity 1.38 ± 0.01 km/s Sidereal rotation period 15.786"
     },
     {
       "name": "Callisto",
       "value": 1.235,
       "source": "https://en.wikipedia.org/wiki/Callisto_(moon)",
       "fact": "Callisto is one of the most heavily cratered objects in the Solar System.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Europa",
       "value": 1.315,
       "source": "https://en.wikipedia.org/wiki/Europa_(moon)",
       "fact": "Europa likely hides a salty ocean under its ice.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Titan",
       "value": 1.352,
       "source": "https://en.wikipedia.org/wiki/Titan_(moon)",
       "fact": "With low gravity and thick air, a person on Titan could fly by flapping wings.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Ganymede",
       "value": 1.428,
       "source": "https://en.wikipedia.org/wiki/Ganymede_(moon)",
       "fact": "Ganymede is bigger than the planet Mercury.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "The Moon",
@@ -74,21 +94,26 @@
       "verify": {
         "match": "Moon"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "mated to be 5 GPa (49000 atm) . Gravitational field See also: Lunar orbit Astronaut John Young jumping on the Moon, illustrating that the gravitational pull of the Moon is approximately 1/6 of Earth's. The jumping height"
     },
     {
       "name": "Io",
       "value": 1.796,
       "source": "https://en.wikipedia.org/wiki/Io_(moon)",
       "fact": "Io is the most volcanically active body in the Solar System.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Mercury",
       "value": 3.7,
       "source": "https://en.wikipedia.org/wiki/Mercury_(planet)",
       "fact": "Mercury and Mars have almost the same surface gravity, though Mercury is much smaller.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "0.055 Earths\\n \"},\"density\":{\"wt\":\"val|5.427|u=g/cm3 ref name=\\\"nasa\\\" />\"},\"surface_grav\":{\"wt\":\"cvt|3.70|m/s2|g0|lk=out ref name=\\\"nasa\\\" />\"},\"moment_of_inertia_factor\":{\"wt\":\"val|0.346|0.014 ref name=\\"
     },
     {
       "name": "Mars",
@@ -96,21 +121,26 @@
       "source": "https://en.wikipedia.org/wiki/Mars",
       "fact": "On Mars you'd weigh a bit over a third of your Earth weight.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "07 Earths)\"},\"density\":{\"wt\":\"3.9335 g/cm sup>3 /sup> ref name=\\\"lodders1998\\\"/>\"},\"surface_grav\":{\"wt\":\"cvt|3.72076|m/s2|g0|4|lk=out ref name=\\\"Hirt2012\\\">Cite journal |title=Kilometer-resolution gravity field of"
     },
     {
       "name": "Uranus",
       "value": 8.69,
       "source": "https://en.wikipedia.org/wiki/Uranus",
       "fact": "Uranus rotates on its side.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Venus",
       "value": 8.87,
       "source": "https://en.wikipedia.org/wiki/Venus",
       "fact": "Venus is almost Earth's twin in size and gravity.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "ths\\n \"},\"density\":{\"wt\":\"val|5.243|0.003|u=g/cm3 ref name=\\\"NASA_2015\\\"/>\"},\"surface_grav\":{\"wt\":\"cvt|8.87|m/s2|g0|lk=out\"},\"escape_velocity\":{\"wt\":\"convert|10.36|km/s|abbr=on ref name=\\\"NASA_2015\\\"/>\"},\"r"
     },
     {
       "name": "Earth",
@@ -118,21 +148,28 @@
       "source": "https://en.wikipedia.org/wiki/Earth",
       "fact": "The standard value of Earth's gravity is 9.80665 m/s².",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "!--- Planetary densities are conventionally given in g/cm3 instead of kg/m3 --->\"},\"surface_grav\":{\"wt\":\"val|9.80665|u=m/s2| ref name=\\\"NIST2008\\\" /> br />(exactly 1 Standard gravity|g sub>0 /sub>)\"},\"moment_of_i"
     },
     {
       "name": "Saturn",
       "value": 10.44,
       "source": "https://en.wikipedia.org/wiki/Saturn",
       "fact": "Saturn is less dense than water.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Neptune",
       "value": 11.15,
       "source": "https://en.wikipedia.org/wiki/Neptune",
       "fact": "Neptune has the fastest winds in the Solar System.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     },
     {
       "name": "Jupiter",
@@ -140,7 +177,10 @@
       "source": "https://en.wikipedia.org/wiki/Jupiter",
       "fact": "Jupiter is more than twice as massive as all the other planets combined.",
       "familiar": true,
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Surface gravity"
+      }
     }
   ]
 }

@@ -1,0 +1,172 @@
+{
+  "id": "radiation-dose",
+  "field": "Physics",
+  "name": "Radiation dose",
+  "question": "Effective dose in sieverts (Sv). Each gridline step is ten times more.",
+  "unit": "Sv",
+  "type": "log",
+  "min": 1e-8,
+  "max": 100,
+  "display": {
+    "kind": "si"
+  },
+  "items": [
+    {
+      "name": "Eating a banana",
+      "value": 9.8e-8,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Bananas are slightly radioactive because they contain potassium-40.",
+      "familiar": true,
+      "verify": {
+        "number": 98,
+        "match": "Banana"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Airport security scan (US limit)",
+      "value": 2.5e-7,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Airport scanner limits are a fraction of a single day's natural background dose.",
+      "verify": {
+        "number": 250,
+        "match": "security screening"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Dental X-rays",
+      "value": 0.000007,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "A set of dental X-rays is about the same as a day of natural background radiation.",
+      "verify": {
+        "number": 5,
+        "match": "dental radiographs"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Chest X-ray",
+      "value": 0.00006,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(radiation)",
+      "fact": "A chest X-ray gives about the dose of a long-haul flight.",
+      "familiar": true,
+      "verify": {
+        "number": 0.06,
+        "match": "Chest X-ray"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mammogram",
+      "value": 0.0005,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Mammograms use low-energy X-rays.",
+      "verify": {
+        "number": 400,
+        "match": "mammogram"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "A year as a flight attendant",
+      "value": 0.0016,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "At cruising altitude there's less atmosphere shielding you from cosmic rays.",
+      "verify": {
+        "number": 1.5,
+        "match": "flight attendants"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "A year of natural background radiation",
+      "value": 0.0024,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Radon gas seeping from the ground is the largest single source of natural background radiation.",
+      "verify": {
+        "number": 2.4,
+        "match": "global average"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Full-body CT scan",
+      "value": 0.02,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "A full-body CT scan equals several years of natural background radiation.",
+      "verify": {
+        "number": 10,
+        "match": "full-body CT"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Yearly limit for US radiation workers",
+      "value": 0.05,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Limits for workers are set well below doses that cause any visible harm.",
+      "verify": {
+        "number": 50,
+        "match": "occupational dose limit"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Six months on the Space Station",
+      "value": 0.08,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Astronauts get about 80 mSv in six months on the ISS.",
+      "familiar": true,
+      "verify": {
+        "number": 80,
+        "match": "International Space Station"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "A year of smoking 1.5 packs a day (lungs)",
+      "value": 0.16,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Tobacco contains radioactive polonium-210 and lead-210.",
+      "verify": {
+        "number": 160,
+        "match": "smoking"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Six-month trip to Mars",
+      "value": 0.25,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Cosmic rays are very hard to shield against on the way to Mars.",
+      "verify": {
+        "number": 250,
+        "match": "trip to Mars"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "NASA astronaut career limit",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "NASA caps astronauts at 1 sievert over their whole career.",
+      "verify": {
+        "number": 1,
+        "match": "NASA astronauts"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Dose fatal to half of people (short exposure)",
+      "value": 4.5,
+      "source": "https://en.wikipedia.org/wiki/Sievert",
+      "fact": "Doses spread out over time are far less harmful than the same dose all at once.",
+      "verify": {
+        "number": 4,
+        "match": "LD50"
+      },
+      "status": "draft"
+    }
+  ]
+}

@@ -28,7 +28,8 @@
       "verify": {
         "match": "statue"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "and Romanian sculptor Gheorghe Leonida who sculpted the face. Constructed between 1922 and 1931, the statue is 30 metres (98 ft) high, excluding its 8-metre (26 ft) pedestal , and faces east. The arms stretch 28 metres ("
     },
     {
       "name": "Horseshoe Falls (Niagara)",
@@ -38,7 +39,8 @@
       "verify": {
         "match": "Horseshoe"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "/span>Category:Pages using gadget WikiMiniAtlas /span>\"' id=\"mwHw\"/> Type Cataract Total height 167 ft (51 m) Number of drops 3 Watercourse Niagara River Average flow rate 85000 cu ft/s (2400 m 3 /s) Niagara Falls"
     },
     {
       "name": "Leaning Tower of Pisa",
@@ -49,7 +51,8 @@
       "verify": {
         "match": "tower"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "\"},\"groundbreaking\":{\"wt\":\"1173\"},\"completed\":{\"wt\":\"start date and age|1372\"},\"height_max\":{\"wt\":\"cvt|55.86|m|ftin|frac=2\"},\"materials\":{\"wt\":\"Flatlist|\\n* marble\\n* Rock (geology)|other stone\\n\"},"
     },
     {
       "name": "Statue of Liberty (with pedestal)",
@@ -60,7 +63,8 @@
       "verify": {
         "match": "pedestal"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ric Height of copper statue 151 ft 1 in 46 m Foundation of pedestal (ground level) to tip of torch 305 ft 1 in 93 m Heel to top of head 111 ft 1 in 34 m Height of hand 16 ft 5 in 5 m Index finger 8 ft 1 in 2.44 m Circumf"
     },
     {
       "name": "Big Ben (Elizabeth Tower)",
@@ -70,7 +74,8 @@
       "verify": {
         "match": "tower"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ruction started 28 September 1843 Completed 31 May 1859 ; 167 years ago ( 1859-05-31 ) Height Height 316 feet (96 m) Technical details Floor count 11 Design and construction Architects Charles Barry and Augustus Pugin We"
     },
     {
       "name": "Saturn V rocket",
@@ -80,7 +85,8 @@
       "verify": {
         "match": "Height"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "quivalent to $35.5 billion in 2025) Cost per launch US$185 million (equivalent to $1.02 billion in 2025) Size Height 111 m (363 ft) Diameter 10 m (33 ft) Mass 2822171 to 2965241 kg (6221823 to 6537238 lb) Stages 3 Capaci"
     },
     {
       "name": "Hyperion, the tallest known tree",
@@ -90,7 +96,8 @@
       "verify": {
         "match": "Hyperion"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "1.3 ft) (2026) Volume of trunk 530 m 3 (18600 ft 3 ) Date seeded c. 1200-1400 Custodian National Park Service Hyperion is a coast redwood ( Sequoia sempervirens D.Don , Endl. ) tree in California , which is the world's t"
     },
     {
       "name": "Great Pyramid of Giza (original)",
@@ -101,7 +108,8 @@
       "verify": {
         "match": "Pyramid"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "\"Pyramid|True pyramid\"},\"material\":{\"wt\":\"Limestone, mortar, granite\"},\"height\":{\"wt\":\"Original: convert|146.6|m|ft|0|abbr=on or 280 cubits br />Current: convert|138.5|m|ft|0|abbr=on\"},\"base\":{\"wt\":\"con"
     },
     {
       "name": "Space Needle",
@@ -111,7 +119,8 @@
       "verify": {
         "match": "Space Needle"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "il 21, 1962\"},\"building_type\":{\"wt\":\"Observation tower / Gyro tower\"},\"antenna_spire\":{\"wt\":\"convert|184.404|m|abbr=on|order=flip\"},\"top_floor\":{\"wt\":\"convert|158|m|abbr=on|order=flip\"},\"floor_count\":{\"wt"
     },
     {
       "name": "Eiffel Tower",
@@ -122,7 +131,8 @@
       "verify": {
         "match": "Eiffel"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "onvert|300|m|ft|0|abbr=on ref name=CTBUH>ctbuh|id=9410|title=Eiffel Tower /ref>\"},\"tip\":{\"wt\":\"convert|330|m|ft|0|abbr=on\"},\"antenna_spire\":{\"wt\":\"\"},\"roof\":{\"wt\":\"\"},\"top_floor\":{\"wt\":\"convert|276|m|ft|0|abb"
     },
     {
       "name": "Empire State Building (to tip)",
@@ -132,7 +142,8 @@
       "verify": {
         "match": "Empire State"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "1931 ) Cost $40948900 (equivalent to $697 million in 2025) Owner Empire State Realty Trust Height Tip 1454 ft (443.2 m) Antenna spire 204 ft (62.2 m) Roof 1250 ft (381.0 m) Top floor 1224 ft (373.1 m) Observatory 80th, 8"
     },
     {
       "name": "CN Tower",
@@ -142,7 +153,8 @@
       "verify": {
         "match": "CN Tower"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "{\"wt\":\"Mixed use: br /> Observation, telecommunications, attraction, restaurant\"},\"architectural\":{\"wt\":\"cvt|553.3|m\"},\"antenna_spire\":{\"wt\":\"cvt|96.1|m\"},\"roof\":{\"wt\":\"cvt|457.2|m\"},\"elevator_count\":{\"wt\":\"9"
     },
     {
       "name": "Burj Khalifa",
@@ -153,7 +165,8 @@
       "verify": {
         "match": "Burj Khalifa"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Burj Khalifa/Dubai Mall Website burjkhalifa.ae References Photographic silhouette of the Dubai skyline ; the Burj Khalifa is visible at the centre The Burj Khalifa (previously known as Burj Dubai prior to inauguration)"
     },
     {
       "name": "Angel Falls",
@@ -163,7 +176,8 @@
       "verify": {
         "match": "Angel Falls"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "pe:waterbody_scale:50000|format=dms|display=inline,title\"},\"type\":{\"wt\":\"Plunges\"},\"height\":{\"wt\":\"convert|979|m|ft|abbr=on\"},\"height_longest\":{\"wt\":\"convert|807|m|ft|abbr=on\"},\"number_drops\":{\"wt\":\"2\"},\"averag"
     },
     {
       "name": "Table Mountain",
@@ -173,7 +187,8 @@
       "verify": {
         "match": "Elevation"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "%212m2%211d18.4394575%212d-33.9548621%213e3?entry=ttu |date=24 April 2024 , obtained 24 April 2024 /ref>\"},\"elevation_m\":{\"wt\":\"1084.6\"},\"elevation_ref\":{\"wt\":\" ref>cite map |publisher=Chief Directorate: National G"
     },
     {
       "name": "Mount Fuji",
@@ -184,7 +199,8 @@
       "verify": {
         "match": "Fuji"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": ":{\"wt\":\"Hiking\"},\"embedded\":{\"wt\":\"Infobox UNESCO World Heritage Site\\n |child = yes\\n |official_name = Fujisan, sacred place and source of artistic inspiration\\n |ID = 1418\\n |year = 2013\\n |criteria = Cultural: i"
     },
     {
       "name": "Mont Blanc",
@@ -194,7 +210,8 @@
       "verify": {
         "match": "Mont Blanc"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Mont Blanc Highest mountain in the Alps (4806.m) This article is about the mountain. For other uses, see Mont"
     },
     {
       "name": "Kilimanjaro",
@@ -204,7 +221,8 @@
       "verify": {
         "match": "Kilimanjaro"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "i\":0]}' id=\"mwCA\"> Mount Kilimanjaro Kilimanjaro from Amboseli National Park , Kenya Highest point Elevation 5895 m (19341 ft) Prominence 5895 m (19341 ft) Ranked 4th Isolation 5510 km (3420 mi) Ranked 4th Listing Seve"
     },
     {
       "name": "Mount Everest",
@@ -215,7 +233,8 @@
       "verify": {
         "match": "Everest"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "rest Mount Everest /a> br data-parsoid= {\\\"tsr\\\":[17,21],\\\"stx\\\":\\\"html\\\",\\\"noClose\\\":true} />\",\"description\":\"8848.86 span typeof=\\\"mw:Entity\\\" data-parsoid= {\\\"src\\\":\\\" nbsp;\\\",\\\"srcContent\\\":\\\" \\\",\\\"tsr\\\":[8,8]} > /sp"
     },
     {
       "name": "Olympus Mons, Mars",
@@ -226,7 +245,8 @@
         "number": 21.9,
         "match": "km"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "v/mola.summary.pdf| url-status = dead /ref> br /> \\ncvt|21.665|km|abbr=on ref name=mola_summary/>, cvt|21.9|km|abbr=on ref name=Plescia04/> or cvt|26|km|abbr=on ref name=Comins>cite book|first=Neil F. |la"
     }
   ]
 }

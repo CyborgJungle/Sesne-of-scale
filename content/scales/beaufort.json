@@ -1,0 +1,149 @@
+{
+  "id": "beaufort",
+  "field": "Weather",
+  "name": "What wind force is this?",
+  "question": "The Beaufort scale describes wind by what you can see it doing, from 0 (calm) to 12 (hurricane force).",
+  "unit": "",
+  "type": "lin",
+  "min": 0,
+  "max": 12,
+  "step": 1,
+  "display": {
+    "prefix": "Force "
+  },
+  "items": [
+    {
+      "name": "Smoke rises straight up",
+      "value": 0,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Admiral Francis Beaufort created the scale in 1805 for sailors.",
+      "verify": {
+        "match": "Smoke rises vertically"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Smoke drifts, but wind vanes don't move",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 1 is called 'light air'.",
+      "verify": {
+        "match": "Direction shown by smoke drift"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Wind felt on your face; leaves rustle",
+      "value": 2,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 2 is a 'light breeze'.",
+      "familiar": true,
+      "verify": {
+        "match": "Wind felt on face"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Leaves and small twigs in constant motion; light flags extended",
+      "value": 3,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 3 is a 'gentle breeze'.",
+      "verify": {
+        "match": "small twigs in constant motion"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Raises dust and loose paper; small branches move",
+      "value": 4,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 4 is a 'moderate breeze'.",
+      "verify": {
+        "match": "Raises dust and loose paper"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Small trees in leaf begin to sway",
+      "value": 5,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 5 is a 'fresh breeze'.",
+      "verify": {
+        "match": "Small trees in leaf begin to sway"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Umbrellas used with difficulty",
+      "value": 6,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 6 is a 'strong breeze', about 39–49 km/h.",
+      "familiar": true,
+      "verify": {
+        "match": "umbrellas used with difficulty"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Whole trees in motion; hard to walk against the wind",
+      "value": 7,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 7 is a 'near gale'.",
+      "verify": {
+        "match": "Whole trees in motion"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Twigs break off trees",
+      "value": 8,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 8 is a 'gale'.",
+      "verify": {
+        "match": "Twigs break off trees"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Chimney pots and roof slates blown off",
+      "value": 9,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 9 is a 'strong gale'.",
+      "verify": {
+        "match": "chimney pots"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Trees uprooted; considerable damage to buildings",
+      "value": 10,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 10, a 'storm', is seldom experienced inland.",
+      "verify": {
+        "match": "trees uprooted"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Widespread damage",
+      "value": 11,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 11 is a 'violent storm': winds of 103–117 km/h.",
+      "verify": {
+        "match": "widespread damage"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sea completely white with driving spray",
+      "value": 12,
+      "source": "https://en.wikipedia.org/wiki/Beaufort_scale",
+      "fact": "Force 12 is 'hurricane force': 118 km/h or more.",
+      "familiar": true,
+      "verify": {
+        "match": "completely white"
+      },
+      "status": "draft"
+    }
+  ]
+}

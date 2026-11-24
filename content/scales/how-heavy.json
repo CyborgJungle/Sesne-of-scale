@@ -1,0 +1,295 @@
+{
+  "id": "how-heavy",
+  "field": "Motion",
+  "name": "How heavy?",
+  "question": "Mass, from milligrams to millions of tonnes. Each gridline step is ten times heavier.",
+  "unit": "kg",
+  "type": "log",
+  "min": 0.000001,
+  "max": 10000000000,
+  "display": {
+    "kind": "mass"
+  },
+  "items": [
+    {
+      "name": "Mosquito",
+      "value": 0.0000025,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Smaller mosquito species weigh about 2.5 milligrams.",
+      "verify": {
+        "number": 2.5,
+        "match": "Mosquitoes"
+      },
+      "status": "checked",
+      "quote": "for adults 2-3 × 10 - 7 kg Fruit fly (dry weight) 10 -6 to 1 kg Factor ( kg ) Value Item 10 - 6 milligram (mg) 2.5 × 10 - 6 kg Mosquitoes , common smaller species (about 2.5 milligrams), grain of salt or sand, medicines"
+    },
+    {
+      "name": "Housefly",
+      "value": 0.0000214,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "A housefly weighs about as much as a grain of rice.",
+      "verify": {
+        "number": 21.4,
+        "match": "housefly"
+      },
+      "status": "checked",
+      "quote": "- 5 kg Small granule of quartz (2 mm diameter, 11 milligrams) 2 × 10 - 5 kg Adult housefly ( Musca domestica , 21.4 milligrams) 10 - 4 decigram (dg) 0.27-2.0 × 10 - 4 kg Range of amounts of caffeine in one cup of coffee"
+    },
+    {
+      "name": "US dollar bill",
+      "value": 0.001,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "A US dollar bill weighs about one gram.",
+      "verify": {
+        "number": 1,
+        "match": "dollar bill"
+      },
+      "status": "checked",
+      "quote": "ule of quartz (2 mm diameter, 11 milligrams) 2 × 10 - 5 kg Adult housefly ( Musca domestica , 21.4 milligrams) 10 - 4 decigram (dg) 0.27-2.0 × 10 - 4 kg Range of amounts of caffeine in one cup of coffee (27-200 milligram"
+    },
+    {
+      "name": "One-euro coin",
+      "value": 0.0075,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "A one-euro coin is made of two different metal alloys.",
+      "verify": {
+        "number": 7.5,
+        "match": "one euro"
+      },
+      "status": "checked",
+      "quote": "kg US dollar bill (1 gram) ~1 × 10 - 3 kg Two raisins (approximately 1 gram) ~8 × 10 - 3 kg Coins of one euro (7.5 grams), one US dollar (8.1 grams) and one Canadian loonie (7 grams [pre-2012], 6.27 grams [2012-]) 10 - 2"
+    },
+    {
+      "name": "Adult mouse",
+      "value": 0.03,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "A house mouse weighs 20–40 grams.",
+      "familiar": true,
+      "verify": {
+        "number": 20,
+        "match": "Adult mouse"
+      },
+      "status": "checked",
+      "quote": "~8 × 10 - 3 kg Coins of one euro (7.5 grams), one US dollar (8.1 grams) and one Canadian loonie (7 grams [pre-2012], 6.27 grams [2012-]) 10 - 2 decagram (dag) 1.2 × 10 - 2 kg Mass of one mole ( 6.02214 × 10 23 atoms) of"
+    },
+    {
+      "name": "Baseball",
+      "value": 0.145,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Major League baseballs weigh between 142 and 149 grams.",
+      "verify": {
+        "number": 0.142,
+        "match": "baseball"
+      },
+      "status": "checked",
+      "quote": "nt of the energy that is 1 megaton of TNT equivalent 10 -1 hectogram (hg) 0.1-0.2 kg An orange (100-200 grams) 0.142-0.149 kg A baseball used in the major league . 0.454 kg Pound ( avoirdupois ) (453.6 grams) 0.9 kg Micr"
+    },
+    {
+      "name": "Microraptor (four-winged dinosaur)",
+      "value": 0.9,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Microraptor had feathered wings on both its arms and legs.",
+      "verify": {
+        "match": "Microraptor"
+      },
+      "status": "checked",
+      "quote": "0-200 grams) 0.142-0.149 kg A baseball used in the major league . 0.454 kg Pound ( avoirdupois ) (453.6 grams) 0.9 kg Microraptor , a small, four-winged dinosaur 1 kg to 10 5 kg Iron weights up to 50 kilograms depicted i"
+    },
+    {
+      "name": "House cat",
+      "value": 4.5,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "A typical house cat weighs 4–5 kg.",
+      "familiar": true,
+      "verify": {
+        "number": 4,
+        "match": "Housecat"
+      },
+      "status": "checked",
+      "quote": "kg Smallest breed of dog ( Chihuahua ) 1-3 kg Typical laptop computer, 2010 1-3 kg Adult domestic tortoise 2.5-4 kg Newborn human baby 4.0 kg Women's shot 4-5 kg Housecat 7.26 kg Men's shot 10 1 9-27 kg Medium-sized dog"
+    },
+    {
+      "name": "Men's shot put",
+      "value": 7.26,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "The men's shot weighs 7.26 kg, the women's 4 kg.",
+      "verify": {
+        "match": "Men's shot"
+      },
+      "status": "checked",
+      "quote": "computer, 2010 1-3 kg Adult domestic tortoise 2.5-4 kg Newborn human baby 4.0 kg Women's shot 4-5 kg Housecat 7.26 kg Men's shot 10 1 9-27 kg Medium-sized dog 31.5 kg Average weight of a CRT television from 2007 50 kg L"
+    },
+    {
+      "name": "Adult human",
+      "value": 70,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "70 kg is the textbook 'reference adult'.",
+      "familiar": true,
+      "verify": {
+        "match": "Adult human"
+      },
+      "status": "checked",
+      "quote": "kg Medium-sized dog 31.5 kg Average weight of a CRT television from 2007 50 kg Large dog breed ( Great Dane ) 70 kg Adult human 10 2130-180 kg Mature lion , female (130 kg) and male (180 kg) 200-250 kg Giant tortoise 24"
+    },
+    {
+      "name": "Grand piano",
+      "value": 345,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "A concert grand weighs about as much as five adults.",
+      "verify": {
+        "number": 240,
+        "match": "Grand piano"
+      },
+      "status": "checked",
+      "quote": "e ) 70 kg Adult human 10 2130-180 kg Mature lion , female (130 kg) and male (180 kg) 200-250 kg Giant tortoise 240-450 kg Grand piano 400-900 kg Dairy cow 500-500000 kg A teaspoon (5 ml) of white dwarf material (0.5-500"
+    },
+    {
+      "name": "Passenger car",
+      "value": 1450,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Electric cars are usually heavier because of their batteries.",
+      "familiar": true,
+      "verify": {
+        "number": 1300,
+        "match": "passenger cars"
+      },
+      "status": "checked",
+      "quote": "spelling: metric ton) 1000 kg 1 cubic metre of water 1016.05 kg Ton (British) / 1 long ton (2240 pounds - US) 1300-1600 kg Typical passenger cars 2700-6000 kg Adult elephant 10 4 1.1 × 10 4 kg Hubble Space Telescope (11"
+    },
+    {
+      "name": "Hubble Space Telescope",
+      "value": 11000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Hubble weighs about as much as two adult elephants.",
+      "verify": {
+        "number": 11,
+        "match": "Hubble"
+      },
+      "status": "checked",
+      "quote": "US) 1300-1600 kg Typical passenger cars 2700-6000 kg Adult elephant 10 4 1.1 × 10 4 kg Hubble Space Telescope (11 tonnes) 1.2 × 10 4 kg Largest elephant on record (12 tonnes) 1.4 × 10 4 kg Big Ben (bell) (14 tonnes) 2.7"
+    },
+    {
+      "name": "Big Ben (the bell)",
+      "value": 14000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Big Ben is the bell, not the tower.",
+      "verify": {
+        "number": 14,
+        "match": "Big Ben"
+      },
+      "status": "checked",
+      "quote": "Space Telescope (11 tonnes) 1.2 × 10 4 kg Largest elephant on record (12 tonnes) 1.4 × 10 4 kg Big Ben (bell) (14 tonnes) 2.7 × 10 4 kg ENIAC computer, 1946 (30 tonnes) 4 × 10 4 kg Maximum gross mass (truck + load combin"
+    },
+    {
+      "name": "ENIAC computer (1946)",
+      "value": 30000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "ENIAC filled a large room; today's phones are millions of times faster.",
+      "verify": {
+        "number": 30,
+        "match": "ENIAC"
+      },
+      "status": "checked",
+      "quote": "st elephant on record (12 tonnes) 1.4 × 10 4 kg Big Ben (bell) (14 tonnes) 2.7 × 10 4 kg ENIAC computer, 1946 (30 tonnes) 4 × 10 4 kg Maximum gross mass (truck + load combined) of a semi-trailer truck in the EU (40-44 to"
+    },
+    {
+      "name": "Hoba meteorite",
+      "value": 60000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "The Hoba meteorite in Namibia has never been moved since it was found in 1920.",
+      "verify": {
+        "number": 60,
+        "match": "Hoba"
+      },
+      "status": "checked",
+      "quote": "k + load combined) of a semi-trailer truck in the EU (40-44 tonnes) 5 × 10 4 -6 × 10 4 kg Tank ; Bulldozer (50-60 tonnes) 6.0 × 10 4 kg Largest single-piece meteorite , Hoba West Meteorite (60 tonnes) 7.3 × 10 4 kg Large"
+    },
+    {
+      "name": "Argentinosaurus",
+      "value": 73000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Argentinosaurus is among the largest dinosaurs known.",
+      "verify": {
+        "number": 73,
+        "match": "Argentinosaurus"
+      },
+      "status": "checked",
+      "quote": "est single-piece meteorite , Hoba West Meteorite (60 tonnes) 7.3 × 10 4 kg Largest dinosaur , Argentinosaurus (73 tonnes) 10 5 1.74-1.83 × 10 5 kg Operational empty weight of a Boeing 747-300 1.8 × 10 5 kg Largest animal"
+    },
+    {
+      "name": "Blue whale",
+      "value": 180000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "The blue whale is the largest animal that has ever lived.",
+      "familiar": true,
+      "verify": {
+        "number": 180,
+        "match": "blue whale"
+      },
+      "status": "checked",
+      "quote": "4-1.83 × 10 5 kg Operational empty weight of a Boeing 747-300 1.8 × 10 5 kg Largest animal ever, a blue whale (180 tonnes) 4.2 × 10 5 kg International Space Station (417 tonnes) 6 × 10 5 kg World's heaviest aircraft: Ant"
+    },
+    {
+      "name": "International Space Station",
+      "value": 417000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "The ISS was assembled in orbit from dozens of launches.",
+      "verify": {
+        "number": 417,
+        "match": "International Space Station"
+      },
+      "status": "checked",
+      "quote": "47-300 1.8 × 10 5 kg Largest animal ever, a blue whale (180 tonnes) 4.2 × 10 5 kg International Space Station (417 tonnes) 6 × 10 5 kg World's heaviest aircraft: Antonov An-225 (maximum take-off mass: 600 tonnes, payload"
+    },
+    {
+      "name": "General Sherman tree (trunk)",
+      "value": 1121000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "General Sherman, a giant sequoia, is the largest living tree by trunk volume.",
+      "verify": {
+        "number": 1121,
+        "match": "General Sherman"
+      },
+      "status": "checked",
+      "quote": "(Gg) 1 × 10 6 kg Trunk of the giant sequoia tree named General Sherman , largest living tree by trunk volume (1121 tonnes) 2.0 × 10 6 kg Launch mass of the Space Shuttle (2041 tonnes) 6 × 10 6 kg Largest clonal colony ,"
+    },
+    {
+      "name": "Pando aspen grove",
+      "value": 6000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Pando is a single aspen clone with about 47,000 stems, maybe the heaviest living organism.",
+      "verify": {
+        "number": 6000,
+        "match": "Pando"
+      },
+      "status": "checked",
+      "quote": "tle (2041 tonnes) 6 × 10 6 kg Largest clonal colony , the quaking aspen named Pando (largest living organism) (6000 tonnes) 7.8 × 10 6 kg Virginia -class nuclear submarine (submerged weight) 10 7 1 × 10 7 kg Annual produ"
+    },
+    {
+      "name": "Titanic (fully loaded)",
+      "value": 52000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "Titanic was the largest ship afloat when it entered service in 1912.",
+      "familiar": true,
+      "verify": {
+        "number": 52000,
+        "match": "Titanic"
+      },
+      "status": "checked",
+      "quote": "rged weight) 10 7 1 × 10 7 kg Annual production of Darjeeling tea 5.2 × 10 7 kg RMS Titanic when fully loaded (52000 tonnes) 9.97 × 10 7 kg Heaviest train ever: Australia's BHP Iron Ore, 2001 record (99700 tonnes) 10 8 6"
+    },
+    {
+      "name": "Great Pyramid of Giza",
+      "value": 6000000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(mass)",
+      "fact": "The Great Pyramid is made of about 2.3 million blocks.",
+      "familiar": true,
+      "verify": {
+        "number": 6,
+        "match": "Great Pyramid"
+      },
+      "status": "checked",
+      "quote": "d (52000 tonnes) 9.97 × 10 7 kg Heaviest train ever: Australia's BHP Iron Ore, 2001 record (99700 tonnes) 10 8 6.6 × 10 8 kg Largest ship and largest mobile man-made object, Seawise Giant , when fully loaded (660000 tonn"
+    }
+  ]
+}

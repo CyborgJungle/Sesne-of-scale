@@ -1,0 +1,229 @@
+{
+  "id": "how-fast",
+  "field": "Motion",
+  "name": "How fast?",
+  "question": "Top or typical speed in km/h. Each gridline step is ten times faster.",
+  "unit": "km/h",
+  "type": "log",
+  "min": 0.001,
+  "max": 2000000000,
+  "items": [
+    {
+      "name": "World's fastest snail (record)",
+      "value": 0.0099,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "The record snail covered 33 cm in 2 minutes.",
+      "verify": {
+        "match": "snail"
+      },
+      "status": "checked",
+      "quote": "of radius 1 meter near its surface under its gravity (that is, the first cosmic speed for this ball). 0.00275 0.00990 0.00615 9.17 × 10 -12 World record speed of the fastest snail in the Congham, UK. 10 -2 0.0476 0.171"
+    },
+    {
+      "name": "Sloth (top speed)",
+      "value": 0.29,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Sloths are about three times faster swimming than walking.",
+      "familiar": true,
+      "verify": {
+        "match": "sloth"
+      },
+      "status": "checked",
+      "quote": "he fastest snail in the Congham, UK. 10 -2 0.0476 0.171 0.106 1.58 × 10 -10 Compact cassette tape speed. 0.080 0.29 0.18 2.6 × 10 -10 The top speed of a sloth . 10 -1 0.2778 1 0.6214 9.2657 × 10 -10 1 km/h . 0.44704 1.60"
+    },
+    {
+      "name": "Average walking speed",
+      "value": 4.5,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Above about 7 km/h it becomes more efficient to run than to walk.",
+      "familiar": true,
+      "verify": {
+        "number": 3.6,
+        "match": "walking speed"
+      },
+      "status": "checked",
+      "quote": "dio compact disc ; the speed of signals ( action potentials ) traveling along axons in the human cortex. 1-1.5 3.6-5.4 2.2-3.4 3.3-5.0 × 10 -9 Average walking speed-below a speed of about 2 m/s, it is more efficient to w"
+    },
+    {
+      "name": "Marathon world record (average pace)",
+      "value": 20.81,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "That's a 100 m sprint in about 17 seconds, repeated 422 times.",
+      "verify": {
+        "match": "marathon"
+      },
+      "status": "checked",
+      "quote": "39 8.53 5.35 7.97 × 10 -9 Average speed implied by the world record time for the 50-metre freestyle swim. 5.78 20.81 12.93 1.928 × 10 -8 World record time marathon 6-7 20-25 12-15 1.8-2.3 × 10 -8 Comfortable bicycling sp"
+    },
+    {
+      "name": "Usain Bolt (top speed)",
+      "value": 44.72,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Bolt reached his top speed in his 100 m world record race in Berlin, 2009.",
+      "familiar": true,
+      "verify": {
+        "match": "Top speed reached by Bolt"
+      },
+      "status": "checked",
+      "quote": "eed of Jamaican athlete Usain Bolt while setting the 100-meter world record in Berlin on 16 August 2009. 12.42 44.72 27.78 4.14 × 10 -8 Top speed reached by Bolt during the same race. 8-14 30-50 18-31 2.7-4.7 × 10 -8 Typ"
+    },
+    {
+      "name": "Racehorse",
+      "value": 60,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Racehorses and racing greyhounds run at similar speeds.",
+      "verify": {
+        "match": "racehorse"
+      },
+      "status": "checked",
+      "quote": "l speed limit ; top speed of a running cat or dog. 14 50 31 4.7 × 10 -8 Typical speed of road-race cyclist. 17 60 37 5 × 10 -8 Typical speed of thoroughbred racehorse or racing greyhound . 5-25 18-90 11-56 1.7-8.3 × 10 -"
+    },
+    {
+      "name": "Skydiver falling face-down",
+      "value": 195,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Falling head-first instead can be much faster.",
+      "verify": {
+        "match": "free-fall"
+      },
+      "status": "checked",
+      "quote": "on lower standard tracks). 40.05 144.17 89.59 1.335 × 10 -7 Land speed record for a human powered vehicle . 54 195 122 1.8 × 10 -7 Maximum speed a human can attain during a face-down free-fall . 67 240 149 2.2 × 10 -7 Th"
+    },
+    {
+      "name": "Fastest roller coaster (Formula Rossa)",
+      "value": 240,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Formula Rossa in Abu Dhabi hits 240 km/h in under 5 seconds.",
+      "verify": {
+        "match": "roller coaster"
+      },
+      "status": "checked",
+      "quote": "an powered vehicle . 54 195 122 1.8 × 10 -7 Maximum speed a human can attain during a face-down free-fall . 67 240 149 2.2 × 10 -7 The top speed of the world's fastest roller coaster, Formula Rossa . 90 320 200 3 × 10 -7"
+    },
+    {
+      "name": "Peregrine falcon (dive)",
+      "value": 320,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "The peregrine falcon is the fastest animal on Earth.",
+      "familiar": true,
+      "verify": {
+        "match": "peregrine"
+      },
+      "status": "checked",
+      "quote": "a modern high-speed train (e.g. latest generation of production TGV); a diving peregrine falcon -fastest bird; 320 km/h or 200 mph is a parameter sometimes used in defining a supercar . 91328204 3.04 × 10 -7 Fastest reco"
+    },
+    {
+      "name": "Fastest badminton smash",
+      "value": 565,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "A shuttlecock leaves the racket faster than any other ball in sport, but slows very quickly.",
+      "verify": {
+        "match": "shuttlecock"
+      },
+      "status": "checked",
+      "quote": "stion-powered NHRA Top Fuel Dragster . 154 554.4 344.5 5.1 × 10 -7 Speed of the fastest crossbow arrow . 156.9 565 351.1 5.2 × 10 -7 Speed of the fastest badminton shuttlecock . 159.7 574.8 357.2 5.3 × 10 -7 Top speed of"
+    },
+    {
+      "name": "Airliner cruising",
+      "value": 900,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "An Airbus A380 cruises at about 900 km/h.",
+      "familiar": true,
+      "verify": {
+        "match": "airliner"
+      },
+      "status": "checked",
+      "quote": "Top speed of experimental test TGV train in 2007. 161 580 360 5.4 × 10 -7 Top speed of JR-Maglev in 2003. 250 900 560 8.3 × 10 -7 Typical cruising speed of a modern jet airliner , e.g. an Airbus A380 . 314 1130 702 1 ×"
+    },
+    {
+      "name": "Speed of sound in air",
+      "value": 1225,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "The speed of sound depends on air temperature.",
+      "verify": {
+        "match": "Speed of sound in standard atmosphere"
+      },
+      "status": "checked",
+      "quote": "ft, the Me 163B V18 set on July 6, 1944. 320 1200 720 1.07 × 10 -6 The speed of a typical .22 LR bullet. 340.3 1225 761 1.135 × 10 -6 Speed of sound in standard atmosphere (15 °C and 1 atm ). 344.66 1240.77 770.98 1.15 ×"
+    },
+    {
+      "name": "Felix Baumgartner's skydive from space",
+      "value": 1342.8,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "In 2012 Baumgartner broke the sound barrier falling from 39 km up.",
+      "verify": {
+        "match": "Baumgartner"
+      },
+      "status": "checked",
+      "quote": "1240.77770.98 1.15 × 10 -6 Max speed reached by the jet-propelled car ThrustSSC in 1997-Land speed record. 373 1342.8833.9 1.2 × 10 -6 Highest speed recorded during a free fall set by Felix Baumgartner . 428 1540.8957 1."
+    },
+    {
+      "name": "Concorde",
+      "value": 2170.8,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Concorde crossed the Atlantic in about 3.5 hours.",
+      "familiar": true,
+      "verify": {
+        "match": "Concorde"
+      },
+      "status": "checked",
+      "quote": "1.4 × 10 -6 Max speed of Bell X-1 . 464 1670 1040 1.55 × 10 -6 Speed of Earth 's rotation at the equator . 603 2170.8 1350 2 × 10 -6 Speed of the Concorde airliner. 975 3510 2180 3.25 × 10 -6 Muzzle velocity of M16 rifle"
+    },
+    {
+      "name": "International Space Station",
+      "value": 27700,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "The ISS circles Earth about every 90 minutes.",
+      "verify": {
+        "match": "International Space Station"
+      },
+      "status": "checked",
+      "quote": "cramjet plane. 4500 16000 10000 1.5 × 10 -5 A typical value for the specific impulse of current rockets . 7700 27700 17200 2.57 × 10 -5 Speed of International Space Station and typical speed of other satellites such as t"
+    },
+    {
+      "name": "Apollo 10 (fastest humans ever)",
+      "value": 39985.2,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Apollo 10's crew still hold the speed record for humans, from 1969.",
+      "verify": {
+        "match": "Apollo 10"
+      },
+      "status": "checked",
+      "quote": "cord . 10 4 10600 38160 23713.65 0.00004 Speed of propagation of the explosion of Octanitrocubane (ONC). 11107 39985.2 24846 0.00004 Speed of Apollo 10 - high speed record for human-crewed vehicle. 11200 40320 25100 0.00"
+    },
+    {
+      "name": "Earth orbiting the Sun",
+      "value": 107280,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "You're moving around the Sun at about 30 km every second.",
+      "verify": {
+        "match": "Earth in orbit"
+      },
+      "status": "checked",
+      "quote": "00006 The approximate speed of the Voyager 1 probe relative to the Sun, when it exited the Solar System. 29800 107280 66700 0.00010 Speed of the Earth in orbit around the Sun . 47800 172100 106900 0.00016 Atmospheric ent"
+    },
+    {
+      "name": "Parker Solar Probe (top speed)",
+      "value": 690000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Parker Solar Probe is the fastest object ever built.",
+      "verify": {
+        "match": "Parker"
+      },
+      "status": "checked",
+      "quote": "s can exceed this speed. 140000 540000 313170 0.00047 Approaching velocity of Messier 98 to our galaxy. 192000 690000 430000 0.00064 Predicted [ needs update ] top speed of the Parker Solar Probe at its closest perihelio"
+    },
+    {
+      "name": "Light",
+      "value": 1079252848.8,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(speed)",
+      "fact": "Nothing travels faster than light in a vacuum.",
+      "familiar": true,
+      "verify": {
+        "match": "Speed of light or other"
+      },
+      "status": "checked",
+      "quote": "9252848.786670616629.38 1 - 1 × 10 -11 Maximal speed of an electron in LEP (104.5 GeV). 299792458 - 1.5×10 -15 1079252848.8 - 5.4×10 -15670616629.4 1 - 4.9×10 -24 Speed of the Oh-My-God particle ultra-high-energy cosmic"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "id": "everyday-temperature",
+  "field": "Everyday life",
+  "name": "How hot or cold?",
+  "question": "Temperatures from daily life and record extremes, in °C.",
+  "unit": "°C",
+  "type": "lin",
+  "min": -100,
+  "max": 100,
+  "step": 25,
+  "tickStart": 0,
+  "items": [
+    {
+      "name": "Coldest air ever measured (Vostok, Antarctica)",
+      "value": -89.2,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "It was recorded at Vostok Station on 21 July 1983.",
+      "verify": {
+        "match": "Vostok"
+      },
+      "status": "checked",
+      "quote": "Committee on Toxicology  /ref>\",\"i\":0]}' id=\"mwAT4\"> Freezing/melting point of isopropyl alcohol 183.9 K -89.2 °C -128.7 °F Coldest officially recorded air temperature on Earth, at Vostok Station , Antarctica on 19"
+    },
+    {
+      "name": "Dry ice",
+      "value": -78.5,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Dry ice skips the liquid stage and turns straight into gas.",
+      "familiar": true,
+      "verify": {
+        "match": "dry ice"
+      },
+      "status": "checked",
+      "quote": "ebye temperature of ice 193 to 203 K -80 to -70 °C -112 to -94 °F Typical temperature of a ULT freezer 194.6 K -78.5 °C -109.4 °F Sublimation point of carbon dioxide ( dry ice ) 203.55 K -69.60 °C -93.28 °F Coldest offic"
+    },
+    {
+      "name": "Average on Mars",
+      "value": -63,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Mars is cold because of its thin air and distance from the Sun.",
+      "verify": {
+        "match": "Mean on Mars"
+      },
+      "status": "checked",
+      "quote": "rded air temperature on the Eurasian continent at Oymyakon , USSR on 1933-02-06 [ full citation needed ] 210 K -63 °C -82 °F Mean on Mars 214.9 K -58.2 °C -72.8 °F http://www.currentresults.com/Weather-Extremes/ Current"
+    },
+    {
+      "name": "Where Celsius equals Fahrenheit",
+      "value": -40,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "−40 °C and −40 °F are exactly the same temperature.",
+      "verify": {
+        "match": "coincidence of the Celsius and Fahrenheit"
+      },
+      "status": "checked",
+      "quote": "upercooling ) 225 K -48 °C -55 °F \",\"i\":0]}' id=\"mwAYw\"> Freezing/melting point of cottonseed oil 233.15 K -40.00 °C -40.00 °F http://www.weathernotebook.org/transcripts/2001/02/07.html Webarchive|url=https://web.a"
+    },
+    {
+      "name": "Household freezer",
+      "value": -18,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "−18 °C is 0 °F, the standard freezer setting.",
+      "familiar": true,
+      "verify": {
+        "match": "household freezer"
+      },
+      "status": "checked",
+      "quote": "ia on 1994-06-29255.37 K -17.78 °C 0.00 °F Coldest brine-ice solution found by Daniel Gabriel Fahrenheit 255 K -18 °C -1 °F \\n*Typical temperature of a household freezer ref>cite web |url = http://www.fsis.usda.gov"
+    },
+    {
+      "name": "Olive oil freezes",
+      "value": -6,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Olive oil turns cloudy in the fridge long before it freezes.",
+      "verify": {
+        "match": "olive oil"
+      },
+      "status": "checked",
+      "quote": "oint of hemp seed oil [ full citation needed ] 265.8 K -7.3 °C 18.8 °F Freezing/melting point of bromine 267 K -6 °C 21 °F \\n*Freezing/melting point of sesame oil ref name=\\\"vegbak\\\"/>\",\"i\":0]}' id=\"mwAiE\"> Freez"
+    },
+    {
+      "name": "Seawater freezes",
+      "value": -2,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Salt lowers the freezing point of the ocean to about −2 °C.",
+      "verify": {
+        "match": "oceans"
+      },
+      "status": "checked",
+      "quote": "/>\",\"i\":0]}' id=\"mwAiE\"> Freezing/melting point of olive oil Freezing/melting point of sesame oil 271.15 K -2.00 °C 28.40 °F cite web|url=http://oceanservice.noaa.gov/facts/oceanfreeze.html|title=Can the ocean free"
+    },
+    {
+      "name": "Fridge",
+      "value": 4,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "4 °C slows bacteria without freezing your food.",
+      "familiar": true,
+      "verify": {
+        "match": "household refrigerator"
+      },
+      "status": "checked",
+      "quote": "Science - Oils and Low Temperature /ref>\",\"i\":0]}' id=\"mwAko\"> Freezing/melting point of peanut oil 277 K 4 °C 39 °F Typical temperature of a household refrigerator 277.13 K 3.98 °C 39.16 °F http://www.esf.edu/efb/s"
+    },
+    {
+      "name": "Earth's average",
+      "value": 15,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Without greenhouse gases Earth would average about −18 °C.",
+      "verify": {
+        "match": "Mean on Earth"
+      },
+      "status": "checked",
+      "quote": "Poland , on 2014-11-30) 287.6 K 14.5 °C 58.0 °F Cold threshold of pain if skin reaches this temperature 288 K 15 °C 59 °F Mean on Earth 291.6 K 18.5 °C 65.2 °F cite web |url=https://wmo.int/media/news/new-record-antar"
+    },
+    {
+      "name": "Room temperature",
+      "value": 21,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Scientists often use 20 or 25 °C as 'room temperature'.",
+      "familiar": true,
+      "verify": {
+        "match": "room temperature"
+      },
+      "status": "checked",
+      "quote": "},\"i\":0]}' id=\"mwAoI\"> Hottest temperature in Antarctica, recorded on 2020-02-06 at the Esperanza Base 294 K 21 °C 70 °F Commonly defined value for room temperature 296 K 23 °C 73 °F [https://web.archive.org/web/201408"
+    },
+    {
+      "name": "Butter melts",
+      "value": 31,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Butter melts just below body temperature, which is why it melts in your mouth.",
+      "verify": {
+        "match": "butter"
+      },
+      "status": "checked",
+      "quote": "rowth is typically no greater above this temperature than at this temperature. (see Growing degree-day ) 304 K 31 °C 88 °F Melting/freezing point of butter , critical point for carbon dioxide 307 K 34 °C 93 °F Autoigniti"
+    },
+    {
+      "name": "Human body",
+      "value": 36.4,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "The old '37 °C' average was measured in the 1800s; people today run slightly cooler.",
+      "familiar": true,
+      "verify": {
+        "match": "Average body temperature for a human"
+      },
+      "status": "checked",
+      "quote": "for humans (see Hypothermia ) Warmest sea measured, at the Red Sea Melting/freezing point of palm oil 309.5 K 36.4 °C 97.4 °F Harvard Health Publishing - Time to redefine normal body temperature? https://www.health.harv"
+    },
+    {
+      "name": "A cat's body",
+      "value": 38.7,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Cats run about 2 degrees warmer than people.",
+      "verify": {
+        "match": "body temperature for a cat"
+      },
+      "status": "checked",
+      "quote": "ture for a human [ full citation needed ] 311.03 K 37.88 °C 100.18 °F Beginnings of a fever for humans 311.8 K 38.7 °C 101.6 °F http://people.rit.edu/hmm5837/320/project2/page4.html Webarchive|url=https://web.archive.o"
+    },
+    {
+      "name": "Hot tub (recommended maximum)",
+      "value": 40,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Hot tubs are capped at 40 °C for safety.",
+      "verify": {
+        "match": "hot tub"
+      },
+      "status": "checked",
+      "quote": "eptember 2024\",\"i\":0]}' id=\"mwAuw\"> Average body temperature for a cat [ full citation needed ] 313.15 K 40.00 °C 104.00 °F http://www.jacuzzi.com/hot-tubs/hot-tub-blog/ideal-hot-tub-water-temperature/ Webarchive"
+    },
+    {
+      "name": "Hottest air ever measured (Death Valley)",
+      "value": 56.72,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Death Valley's Furnace Creek holds the world record.",
+      "familiar": true,
+      "verify": {
+        "match": "Death Valley"
+      },
+      "status": "checked",
+      "quote": "Hottest air temperature recorded in the Southern Hemisphere , at Oodnadatta , Australia on 1960-02-01329.87 K 56.72 °C 134.10 °F cite web|url=http://www.guinnessworldrecords.com/world-records/highest-recorded-temperat"
+    },
+    {
+      "name": "Hair dryer air",
+      "value": 60,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Water this hot causes a burn in seconds.",
+      "verify": {
+        "match": "hair dryer"
+      },
+      "status": "checked",
+      "quote": "in Death Valley at Furnace Creek , Inyo County , California , United States of America on 1913-07-10. 333.15 K 60.00 °C 140.00 °F \\n*Average temperature of a hair dryer\",\"i\":0]}' id=\"mwAzw\"> Water will cause a second"
+    },
+    {
+      "name": "Milk pasteurization",
+      "value": 63,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Pasteurization is named after Louis Pasteur.",
+      "verify": {
+        "match": "pasteurization"
+      },
+      "status": "checked",
+      "quote": "second-degree burn in 3 seconds and a third-degree burn in 5 seconds Average temperature of a hair dryer 336 K 63 °C 145 °F Milk pasteurization 342 K 69 °C 156 °F http://science.howstuffworks.com/dictionary/chemistry-ter"
+    },
+    {
+      "name": "Water boiling on top of Everest",
+      "value": 69,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Thin air lowers the boiling point; you can't make a hot cup of tea on Everest.",
+      "verify": {
+        "match": "summit of Mount Everest"
+      },
+      "status": "checked",
+      "quote": "hird-degree burn in 5 seconds Average temperature of a hair dryer 336 K 63 °C 145 °F Milk pasteurization 342 K 69 °C 156 °F http://science.howstuffworks.com/dictionary/chemistry-terms/boiling-info.htm HowStuffWorks - Boi"
+    },
+    {
+      "name": "Sauna",
+      "value": 80,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(temperature)",
+      "fact": "Dry sauna air at 80 °C feels bearable because dry air carries heat poorly.",
+      "familiar": true,
+      "verify": {
+        "match": "sauna"
+      },
+      "status": "checked",
+      "quote": "teria thrive 350 K 77 °C 170 °F Poaching of food 351.52 K 78.37 °C 173.07 °F Boiling point of ethanol 353.15 K 80.00 °C 176.00 °F Average temperature of a sauna 355 K 82 °C 179 °F \\\"Residential Dishwashers\\\". National Sa"
+    }
+  ]
+}

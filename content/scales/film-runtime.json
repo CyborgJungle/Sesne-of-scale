@@ -18,7 +18,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "r 19, 1995 ( 1995-11-19 ) ( El Capitan Theatre ) November 22, 1995 ( 1995-11-22 ) (United States) Running time 81 minutes Country United States Language English Budget $30 million Box office $401.2 million Toy Story is a"
     },
     {
       "name": "Snow White and the Seven Dwarfs (1937)",
@@ -28,7 +29,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "1, 1937 ( 1937-12-21 ) ( Carthay Circle Theatre ) February 4, 1938 ( 1938-02-04 ) (United States) Running time 83 minutes Country United States Language English Budget $1.5 million Box office $418 million Snow White and"
     },
     {
       "name": "The Lion King (1994)",
@@ -38,7 +40,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "June 15, 1994 ( 1994-06-15 ) ( El Capitan Theatre ) June 24, 1994 ( 1994-06-24 ) (United States) Running time 88 minutes Country United States Language English Budget $45 million Box office $979 million The Lion King is"
     },
     {
       "name": "Shrek (2001)",
@@ -48,7 +51,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "pril 22, 2001 ( 2001-04-22 ) ( Mann Village Theatre ) May 18, 2001 ( 2001-05-18 ) (United States) Running time 90 minutes Country United States Language English Budget $60 million Box office $494.3 million Shrek is a 200"
     },
     {
       "name": "Finding Nemo (2003)",
@@ -58,7 +62,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ase dates May 18, 2003 ( 2003-05-18 ) ( Los Angeles ) May 30, 2003 ( 2003-05-30 ) (United States) Running time 100 minutes Country United States Language English Budget $94 million Box office $940.3 million Finding Nemo"
     },
     {
       "name": "Frozen (2013)",
@@ -69,7 +74,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "r 19, 2013 ( 2013-11-19 ) ( El Capitan Theatre ) November 22, 2013 ( 2013-11-22 ) (United States) Running time 102 minutes Country United States Language English Budget $150 million Box office $1.280 billion Frozen is a"
     },
     {
       "name": "Home Alone (1990)",
@@ -79,7 +85,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "November 10, 1990 ( 1990-11-10 ) (sneak preview) November 16, 1990 ( 1990-11-16 ) (United States) Running time 103 minutes Country United States Language English Budget $18 million Box office $476.7 million Home Alone is"
     },
     {
       "name": "Barbie (2023)",
@@ -89,7 +96,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "023-07-09 ) ( Shrine Auditorium ) July 21, 2023 ( 2023-07-21 ) (United States and United Kingdom) Running time 114 minutes Countries United States United Kingdom Language English Budget $128-145 million Box office $1.448"
     },
     {
       "name": "Back to the Future (1985)",
@@ -100,7 +108,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "y Amblin Entertainment Distributed by Universal Pictures Release date July 3, 1985 ( 1985-07-03 ) Running time 116 minutes Country United States Language English Budget $19 million Box office $393-398.2 million Back to t"
     },
     {
       "name": "Star Wars (1977)",
@@ -111,7 +120,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "pany Lucasfilm Ltd. Distributed by Twentieth Century-Fox Release date May 25, 1977 ( 1977-05-25 ) Running time 121 minutes Country United States Language English Budget $11 million Box office $775.4 million Star Wars (la"
     },
     {
       "name": "Spirited Away (2001)",
@@ -131,7 +141,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "dates June 9, 1993 ( 1993-06-09 ) ( Uptown Theater ) June 11, 1993 ( 1993-06-11 ) (United States) Running time 127 minutes Country United States Language English Budget $56-63 million Box office $1.058 billion Jurassic P"
     },
     {
       "name": "Inception (2010)",
@@ -141,7 +152,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "7-08 ) ( Odeon Leicester Square ) July 16, 2010 ( 2010-07-16 ) (United States and United Kingdom) Running time 148 minutes Countries United States United Kingdom Language English Budget $160 million Box office $839 milli"
     },
     {
       "name": "The Dark Knight (2008)",
@@ -151,7 +163,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "City) July 18, 2008 ( 2008-07-18 ) (United States) July 25, 2008 ( 2008-07-25 ) (United Kingdom) Running time 152 minutes Countries United States United Kingdom Language English Budget $185 million Box office $1.009 bil"
     },
     {
       "name": "Avatar (2009)",
@@ -162,7 +175,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": ", 2009 ( 2009-12-10 ) ( Odeon Leicester Square ) December 18, 2009 ( 2009-12-18 ) (United States) Running time 162 minutes Countries United States United Kingdom Language English Budget $237 million Box office $2.924 bil"
     },
     {
       "name": "The Godfather (1972)",
@@ -172,7 +186,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ch 14, 1972 ( 1972-03-14 ) ( Loew's State Theatre ) March 24, 1972 ( 1972-03-24 ) (United States) Running time 175 minutes Country United States Language English Budget $6-7 million Box office $250-291 million The Godfat"
     },
     {
       "name": "Oppenheimer (2023)",
@@ -182,7 +197,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "3 ( 2023-07-11 ) ( Le Grand Rex ) July 21, 2023 ( 2023-07-21 ) (United States and United Kingdom) Running time 180 minutes Countries United States United Kingdom Language English Budget $100 million Box office $983.1 mil"
     },
     {
       "name": "Avengers: Endgame (2019)",
@@ -192,7 +208,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "19 ( 2019-04-22 ) ( Los Angeles Convention Center ) April 26, 2019 ( 2019-04-26 ) (United States) Running time 181 minutes Country United States Language English Budget $356-400 million Box office $2.942 billion Avengers"
     },
     {
       "name": "Titanic (1997)",
@@ -203,7 +220,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "dates November 1, 1997 ( 1997-11-01 ) ( Tokyo ) December 19, 1997 ( 1997-12-19 ) (United States) Running time 195 minutes Country United States Language English Budget $200 million Box office $2.264 billion Titanic is a"
     },
     {
       "name": "The Return of the King (2003)",
@@ -213,7 +231,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "e ) 17 December 2003 ( 2003-12-17 ) (United States) 18 December 2003 ( 2003-12-18 ) (New Zealand) Running time 201 minutes Countries New Zealand Germany United States Language English Budget $94 million Box office $1.138"
     },
     {
       "name": "The Irishman (2019)",
@@ -223,7 +242,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "NYFF ) November 1, 2019 ( 2019-11-01 ) (United States) November 27, 2019 ( 2019-11-27 ) (Netflix) Running time 209 minutes Country United States Language English Budget $159-250 million Box office $8 million The Irishman"
     },
     {
       "name": "Gone with the Wind (1939)",
@@ -233,7 +253,8 @@
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "tributed by Loew's Incorporated Release date December 15, 1939 ( 1939-12-15 ) ( Atlanta premiere) Running time 221 minutes 234-238 minutes (with overture , intermission , entr'acte , and exit music) Country United States"
     },
     {
       "name": "Lawrence of Arabia (1962)",

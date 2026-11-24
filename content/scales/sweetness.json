@@ -1,0 +1,174 @@
+{
+  "id": "sweetness",
+  "field": "Taste",
+  "name": "How sweet?",
+  "question": "Sweetness compared with table sugar (sugar = 1). Each gridline step is ten times sweeter.",
+  "unit": "× sugar",
+  "type": "log",
+  "min": 0.1,
+  "max": 1000000,
+  "items": [
+    {
+      "name": "Lactose (milk sugar)",
+      "value": 0.16,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Milk sugar is only about a sixth as sweet as table sugar.",
+      "verify": {
+        "match": "Lactose"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Maltose (malt sugar)",
+      "value": 0.39,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Maltose forms when starch is broken down, as in brewing.",
+      "verify": {
+        "number": 0.33,
+        "match": "Maltose"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sorbitol",
+      "value": 0.6,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Sorbitol is common in sugar-free chewing gum.",
+      "verify": {
+        "match": "Sorbitol"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Glucose",
+      "value": 0.77,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Glucose is the sugar your blood carries around your body.",
+      "verify": {
+        "number": 0.74,
+        "match": "Glucose"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Table sugar (sucrose)",
+      "value": 1,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Sucrose is the yardstick: everything else is measured against it.",
+      "familiar": true,
+      "verify": {
+        "match": "Sucrose"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Fructose (fruit sugar)",
+      "value": 1.45,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Fructose is the sweetest natural sugar.",
+      "familiar": true,
+      "verify": {
+        "number": 1.17,
+        "match": "Fructose"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Cyclamate",
+      "value": 26,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Cyclamate was discovered in 1937 by a student who noticed his cigarette tasted sweet.",
+      "verify": {
+        "match": "cyclamate"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Stevia",
+      "value": 110,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Stevia sweeteners come from the leaves of a South American plant.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "number": 40,
+        "match": "Steviol"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Aspartame",
+      "value": 200,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Aspartame was discovered by accident when a chemist licked his finger.",
+      "familiar": true,
+      "verify": {
+        "number": 180,
+        "match": "Aspartame"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Saccharin",
+      "value": 450,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Saccharin, from 1879, is the oldest artificial sweetener.",
+      "verify": {
+        "number": 300,
+        "match": "saccharin"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Sucralose",
+      "value": 600,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Sucralose is made from sugar by swapping three parts of the molecule for chlorine.",
+      "verify": {
+        "match": "Sucralose"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Monellin (berry protein)",
+      "value": 1300,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Monellin is a sweet protein from a West African berry.",
+      "verify": {
+        "number": 800,
+        "match": "Monellin"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Thaumatin",
+      "value": 2000,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Thaumatin comes from the katemfe fruit of West Africa.",
+      "verify": {
+        "match": "Thaumatin"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Neotame",
+      "value": 8000,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Neotame is a close relative of aspartame, about 40 times sweeter.",
+      "verify": {
+        "match": "Neotame"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Lugduname",
+      "value": 230000,
+      "source": "https://en.wikipedia.org/wiki/Sweetness",
+      "fact": "Lugduname is one of the sweetest substances known; it has never been approved as food.",
+      "verify": {
+        "match": "Lugduname"
+      },
+      "status": "draft"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "data-size",
+  "field": "Technology",
+  "name": "How much data?",
+  "question": "Size in bytes. Each gridline step is ten times more.",
+  "unit": "bytes",
+  "type": "log",
+  "min": 10000,
+  "max": 1000000000000000000,
+  "display": {
+    "kind": "bytes"
+  },
+  "items": [
+    {
+      "name": "A 500-page book as plain text",
+      "value": 625000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "Plain text is tiny: a whole novel fits in under a megabyte.",
+      "verify": {
+        "number": 5000000,
+        "match": "English book"
+      },
+      "status": "checked",
+      "quote": "194304 bits (512 kibibytes) 4976640 bits - one frame of uncompressed PAL DVD video (720 × 576 × 12 bpp Y'CbCr) 5000000 bits - Typical English book volume in plain text format of 500 pages × 2000 characters per page and 5"
+    },
+    {
+      "name": "One uncompressed DVD video frame",
+      "value": 622080,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "Video is compressed heavily; a movie would be terabytes otherwise.",
+      "disputed": true,
+      "verify": {
+        "number": 4976640,
+        "match": "PAL DVD video"
+      },
+      "status": "checked",
+      "quote": "bits - one frame of uncompressed NTSC DVD video (720 × 480 × 12 bpp Y'CbCr) 2 22 4194304 bits (512 kibibytes) 4976640 bits - one frame of uncompressed PAL DVD video (720 × 576 × 12 bpp Y'CbCr) 5000000 bits - Typical Eng"
+    },
+    {
+      "name": "3.5-inch floppy disk",
+      "value": 1474560,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "The '1.44 MB' floppy is really 1.44 × 1000 × 1024 bytes.",
+      "familiar": true,
+      "verify": {
+        "number": 1.44,
+        "match": "floppy"
+      },
+      "status": "checked",
+      "quote": "s of 2006), 800 × 600 pixels , 24 bpp 11796480 bits - capacity of a 3.5 in floppy disk , colloquially known as 1.44 megabyte but actually 1.44 × 1000 × 1024 bytes 2 24 16777216 bits (2 mebibytes) 25000000 bits - amount o"
+    },
+    {
+      "name": "Five-minute song at CD quality",
+      "value": 52920000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "A CD stores sound as 44,100 samples per second, per channel.",
+      "verify": {
+        "number": 423360000,
+        "match": "five-minute audio"
+      },
+      "status": "checked",
+      "quote": "6 bits (32 mebibytes) 144000000 bits : In 1980 an 18 MB hard disk cost US$4199, equivalent to $16408 in 2025 . 423360000 bits: a five-minute audio recording, in CDDA quality 2 29536870912 bits (64 mebibytes) 10 9 gigabit"
+    },
+    {
+      "name": "Audio CD",
+      "value": 681574400,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "A CD holds about 650 MiB, roughly 74 minutes of music.",
+      "familiar": true,
+      "verify": {
+        "number": 650,
+        "match": "compact disc"
+      },
+      "status": "checked",
+      "quote": "ts (128 mebibytes) 2 31 2147483648 bits (256 mebibytes) 2 32 4294967296 bits (512 mebibytes) 5.45 × 10 9 bits (650 mebibytes) - capacity of a regular compact disc (CD) 5.89 × 10 9 bits (702 mebibytes) - capacity of a lar"
+    },
+    {
+      "name": "The human genome",
+      "value": 800000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "At 2 bits per DNA letter, your genome would fit on a CD.",
+      "verify": {
+        "number": 6.4,
+        "match": "human genome"
+      },
+      "status": "checked",
+      "quote": "ity of a regular compact disc (CD) 5.89 × 10 9 bits (702 mebibytes) - capacity of a large regular compact disc 6.4 × 10 9 bits - capacity of the human genome (assuming 2 bits for each base pair ) 6710886400 bits - averag"
+    },
+    {
+      "name": "Single-layer DVD",
+      "value": 4700000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "A DVD holds about 7 times as much as a CD.",
+      "familiar": true,
+      "verify": {
+        "number": 4.7,
+        "match": "single-layer, single-sided DVD"
+      },
+      "status": "checked",
+      "quote": "tem (with 64 KiB clusters) as well as the maximum file size (4 GiB-1) in MS-DOS 7.1 - 8.0 . 3.76 × 10 10 bits (4.7 gigabytes) - capacity of a single-layer, single-sided DVD 2 36 68719476736 bits (8 gibibytes) 79215880888"
+    },
+    {
+      "name": "Blu-ray disc",
+      "value": 25000000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "Blu-ray uses a blue-violet laser with a shorter wavelength than DVD's red one.",
+      "verify": {
+        "number": 25,
+        "match": "Blu-ray"
+      },
+      "status": "checked",
+      "quote": "gibibytes). 1.46 × 10 11 bits (17 gigabytes) - capacity of a double-sided, dual-layered DVD 2.15 × 10 11 bits (25 gigabytes) - capacity of a single-sided, single-layered 12-cm Blu-ray 2 38274877906944 bits (32 gibibytes)"
+    },
+    {
+      "name": "Human memory (Kurzweil's estimate)",
+      "value": 1250000000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "Futurist Ray Kurzweil estimated a human's functional memory at about 1.25 TB.",
+      "disputed": true,
+      "verify": {
+        "number": 1.25,
+        "match": "functional memory"
+      },
+      "status": "checked",
+      "quote": "quivalent to $118 in 2025 . 2 43 tebibyte (TiB) 8796093022208 bits (1024 gibibytes) 10 13 10000000000000 bits (1.25 terabytes ) - capacity of a human being's functional memory, according to Raymond Kurzweil in The Singul"
+    },
+    {
+      "name": "Library of Congress collection (2005)",
+      "value": 10000000000000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "The Library of Congress is the largest library in the world.",
+      "verify": {
+        "number": 10,
+        "match": "Library of Congress"
+      },
+      "status": "checked",
+      "quote": "ytes) - theoretical maximum of addressable physical memory in the AMD64 architecture [ citation needed ] 4.5 × 10 16 bits (5.625 petabytes ) - estimated hard drive space in Google 's server farm as of 2004 [ update ] [ c"
+    },
+    {
+      "name": "Facebook's data warehouse (2014)",
+      "value": 300000000000000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(data)",
+      "fact": "In 2014 Facebook's warehouse was growing by about 0.6 PB a day.",
+      "verify": {
+        "number": 300,
+        "match": "April 2014"
+      },
+      "status": "checked",
+      "quote": "f June 2013, growing at a rate of 15 PB/month. 2 61 2305843009213693952 bits (256 pebibytes) 2.4 × 10 18 bits (300 petabytes ) - storage space at Facebook data warehouse as of April 2014, growing at a rate of 0.6 PB/day."
+    }
+  ]
+}

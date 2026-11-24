@@ -1,0 +1,169 @@
+{
+  "id": "voltage",
+  "field": "Physics",
+  "name": "Voltage",
+  "question": "How much electrical tension? Each gridline step is ten times more.",
+  "unit": "V",
+  "type": "log",
+  "min": 0.00001,
+  "max": 1000000000,
+  "display": {
+    "kind": "si"
+  },
+  "items": [
+    {
+      "name": "Brain waves (EEG) at the scalp",
+      "value": 0.00005,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "Brain waves are measured in millionths of a volt.",
+      "verify": {
+        "number": 10,
+        "match": "EEG"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Nerve cell at rest",
+      "value": 0.075,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "Every nerve cell is a tiny battery, kept charged by pumping ions.",
+      "verify": {
+        "number": 75,
+        "match": "resting potential"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Lemon battery",
+      "value": 0.9,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "A lemon with a copper and a zinc electrode makes almost a volt.",
+      "verify": {
+        "number": 900,
+        "match": "Lemon"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "AA battery",
+      "value": 1.5,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "AAA, AA, C and D alkaline batteries all give the same 1.5 V; bigger ones just last longer.",
+      "familiar": true,
+      "verify": {
+        "match": "Alkaline battery"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "USB phone charger",
+      "value": 5,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "USB has carried 5 volts since the first version in 1996.",
+      "verify": {
+        "match": "USB"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Car battery",
+      "value": 12,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "A car battery has six cells of about 2 volts each.",
+      "familiar": true,
+      "verify": {
+        "match": "car battery"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "European wall socket",
+      "value": 230,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "North America uses about 120 V; most of the rest of the world uses 220–240 V.",
+      "familiar": true,
+      "disputed": true,
+      "verify": {
+        "number": 240,
+        "match": "wall socket"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Electric eel attack",
+      "value": 600,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "Electric eels aren't true eels; they're a kind of knifefish.",
+      "verify": {
+        "match": "Electric eel"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "London Underground track",
+      "value": 630,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "Many Tube lines use two live rails, one positive and one negative.",
+      "verify": {
+        "match": "London Underground"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Electric fence",
+      "value": 5000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "Electric fences use high voltage but very short, low-current pulses.",
+      "verify": {
+        "number": 3,
+        "match": "Electric fence"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "High-speed train overhead line",
+      "value": 25000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "Most European high-speed lines run at 25,000 volts AC.",
+      "verify": {
+        "number": 25,
+        "match": "high-speed train"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Long-distance power line",
+      "value": 500000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "Very high voltages cut the energy lost when power travels far.",
+      "verify": {
+        "number": 345,
+        "match": "extra-high voltage"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Biggest human-made DC voltage",
+      "value": 25500000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "It was produced by a Van de Graaff generator at Oak Ridge National Laboratory.",
+      "verify": {
+        "number": 25.5,
+        "match": "Van de Graaff"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Lightning bolt",
+      "value": 100000000,
+      "source": "https://en.wikipedia.org/wiki/Orders_of_magnitude_(voltage)",
+      "fact": "A typical lightning bolt spans about 100 million volts end to end.",
+      "familiar": true,
+      "verify": {
+        "number": 100,
+        "match": "lightning"
+      },
+      "status": "draft"
+    }
+  ]
+}

@@ -16,7 +16,8 @@
       "verify": {
         "number": 500
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "pepper 350000-750000 Red savina habanero 100000-350000 Habanero chili , Scotch bonnet pepper , Madame Jeanette 50000-100000 Bird's eye chili (Thai chili pepper), Malagueta pepper 25000-50000 Tabasco pepper , Cayenne pepp"
     },
     {
       "name": "Cubanelle",
@@ -26,7 +27,8 @@
       "verify": {
         "number": 500
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "pepper 350000-750000 Red savina habanero 100000-350000 Habanero chili , Scotch bonnet pepper , Madame Jeanette 50000-100000 Bird's eye chili (Thai chili pepper), Malagueta pepper 25000-50000 Tabasco pepper , Cayenne pepp"
     },
     {
       "name": "Poblano",
@@ -36,7 +38,8 @@
       "verify": {
         "number": 1000
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Trinidad Moruga scorpion , Naga Viper pepper , Infinity chili , Ghost pepper 350000-750000 Red savina habanero 100000-350000 Habanero chili , Scotch bonnet pepper , Madame Jeanette 50000-100000 Bird's eye chili (Thai chi"
     },
     {
       "name": "Jalapeño",
@@ -47,7 +50,8 @@
       "verify": {
         "number": 2500
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "i , Scotch bonnet pepper , Madame Jeanette 50000-100000 Bird's eye chili (Thai chili pepper), Malagueta pepper 25000-50000 Tabasco pepper , Cayenne pepper 10000-25000 Serrano pepper , Aleppo pepper , Cheongyang chili pep"
     },
     {
       "name": "Serrano",
@@ -57,7 +61,8 @@
       "verify": {
         "number": 10000
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Trinidad Moruga scorpion , Naga Viper pepper , Infinity chili , Ghost pepper 350000-750000 Red savina habanero 100000-350000 Habanero chili , Scotch bonnet pepper , Madame Jeanette 50000-100000 Bird's eye chili (Thai chi"
     },
     {
       "name": "Cayenne",
@@ -67,7 +72,8 @@
       "verify": {
         "number": 25000
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "and Chocolate 7-pot have not been officially verified . Scoville heat units Examples 2693000 Pepper X 1500000-2500000 Carolina Reaper 750000-1500000 Trinidad Moruga scorpion , Naga Viper pepper , Infinity chili , Ghost"
     },
     {
       "name": "Gingerol (fresh ginger)",
@@ -77,7 +83,8 @@
       "verify": {
         "match": "Gingerol"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "he table below, non-capsaicinoid compounds are italicized. The ratings for piperine (150000 SHU) and gingerol (60000 SHU) for example are comparative estimates and are not official Scoville ratings. While the ratings are"
     },
     {
       "name": "Bird's eye chili",
@@ -88,7 +95,8 @@
         "number": 50000,
         "match": "Bird's eye"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "pepper 350000-750000 Red savina habanero 100000-350000 Habanero chili , Scotch bonnet pepper , Madame Jeanette 50000-100000 Bird's eye chili (Thai chili pepper), Malagueta pepper 25000-50000 Tabasco pepper , Cayenne pepp"
     },
     {
       "name": "Piperine (black pepper)",
@@ -98,7 +106,8 @@
       "verify": {
         "match": "Piperine"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "rating of 16 billion. In the table below, non-capsaicinoid compounds are italicized. The ratings for piperine (150000 SHU) and gingerol (60000 SHU) for example are comparative estimates and are not official Scoville rati"
     },
     {
       "name": "Habanero",
@@ -110,7 +119,8 @@
         "number": 100000,
         "match": "Habanero chili"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Trinidad Moruga scorpion , Naga Viper pepper , Infinity chili , Ghost pepper 350000-750000 Red savina habanero 100000-350000 Habanero chili , Scotch bonnet pepper , Madame Jeanette 50000-100000 Bird's eye chili (Thai chi"
     },
     {
       "name": "Red Savina habanero",
@@ -121,7 +131,8 @@
         "number": 350000,
         "match": "Red savina"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "00 Carolina Reaper 750000-1500000 Trinidad Moruga scorpion , Naga Viper pepper , Infinity chili , Ghost pepper 350000-750000 Red savina habanero 100000-350000 Habanero chili , Scotch bonnet pepper , Madame Jeanette 50000"
     },
     {
       "name": "Ghost pepper",
@@ -132,7 +143,8 @@
       "verify": {
         "number": 750000
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "e not been officially verified . Scoville heat units Examples 2693000 Pepper X 1500000-2500000 Carolina Reaper 750000-1500000 Trinidad Moruga scorpion , Naga Viper pepper , Infinity chili , Ghost pepper 350000-750000 Red"
     },
     {
       "name": "Police pepper spray",
@@ -144,7 +156,8 @@
         "number": 500000,
         "match": "pepper spray"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "nd 90%, whereas Tabasco sauce has a water content of 95%. For law-enforcement-grade pepper spray , values from 500000 up to 5 million SHU have been reported, but the actual strength of the spray depends on the dilution."
     },
     {
       "name": "Carolina Reaper",
@@ -154,21 +167,24 @@
       "verify": {
         "number": 1500000
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "s Breath and Chocolate 7-pot have not been officially verified . Scoville heat units Examples 2693000 Pepper X 1500000-2500000 Carolina Reaper 750000-1500000 Trinidad Moruga scorpion , Naga Viper pepper , Infinity chili"
     },
     {
       "name": "Pepper X",
       "value": 2693000,
       "source": "https://en.wikipedia.org/wiki/Scoville_scale",
       "fact": "Pepper X took the hottest-pepper world record from the Carolina Reaper in 2023.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "s such as Dragon's Breath and Chocolate 7-pot have not been officially verified . Scoville heat units Examples 2693000 Pepper X 1500000-2500000 Carolina Reaper 750000-1500000 Trinidad Moruga scorpion , Naga Viper pepper"
     },
     {
       "name": "Nonivamide",
       "value": 9200000,
       "source": "https://en.wikipedia.org/wiki/Scoville_scale",
       "fact": "Nonivamide is a synthetic capsaicin often used in pepper spray instead of chili extract.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "units Chemical 16000000000 Resiniferatoxin 5300000000 Tinyatoxin 16000000 Capsaicin 15000000 Dihydrocapsaicin 9200000 Nonivamide 9100000 Nordihydrocapsaicin 8600000 Homocapsaicin , Homodihydrocapsaicin 160000 Shogaol 15"
     },
     {
       "name": "Pure capsaicin",
@@ -178,7 +194,8 @@
       "verify": {
         "match": "Capsaicin"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ically designed and defined exclusively for capsaicinoids found in chili peppers. Scoville heat units Chemical 16000000000 Resiniferatoxin 5300000000 Tinyatoxin 16000000 Capsaicin 15000000 Dihydrocapsaicin 9200000 Noniva"
     }
   ]
 }

@@ -29,7 +29,7 @@ async function throttle() {
 }
 // Pages are cached on disk (.cache/wiki, git-ignored) so re-runs don't fetch them again.
 // Uses the REST page-HTML endpoint: CDN-cached and far more lenient than the action API.
-const CACHE = join(ROOT, ".cache", "wiki");
+const CACHE = join(ROOT, ".cache", "wiki-raw");
 mkdirSync(CACHE, { recursive: true });
 const pageCache = new Map();
 async function fetchPage(url) {
@@ -39,7 +39,7 @@ async function fetchPage(url) {
   if (pageCache.has(title)) return pageCache.get(title);
   const p = (async () => {
     const file = join(CACHE, encodeURIComponent(title) + ".txt");
-    if (existsSync(file)) return { text: readFileSync(file, "utf8") };
+    if (existsSync(file)) return { text: norm(readFileSync(file, "utf8")) };
     const api = `https://en.wikipedia.org/api/rest_v1/page/html/${encodeURIComponent(title)}?redirect=true`;
     for (let tries = 0; tries < 4; tries++) {
       await throttle();
@@ -51,9 +51,8 @@ async function fetchPage(url) {
         .replace(/<sup[^>]*class="[^"]*reference[^"]*"[\s\S]*?<\/sup>/g, "")
         .replace(/<style[\s\S]*?<\/style>/g, "").replace(/<[^>]+>/g, " ")
         .replace(/&nbsp;|&#160;/g, " ").replace(/&amp;/g, "&").replace(/&#[0-9]+;|&[a-z]+;/g, " ");
-      const text = norm(html);
-      writeFileSync(file, text);
-      return { text };
+      writeFileSync(file, html);
+      return { text: norm(html) };
     }
     return { error: "fetch failed (rate limited or offline)" };
   })();
@@ -62,9 +61,10 @@ async function fetchPage(url) {
 }
 
 // Normalise: collapse whitespace, unify dashes and minus signs, drop thousands separators inside numbers.
+// Only commas and thin spaces count as separators; a plain space usually sits between two table cells.
 function norm(s) {
-  return s.replace(/[−–—]/g, "-").replace(/\s+/g, " ")
-    .replace(/(\d)[,   ](?=\d{3}(?!\d))/g, "$1").replace(/(\d)[,   ](?=\d{3}(?!\d))/g, "$1");
+  return s.replace(/[\u2212\u2013\u2014]/g, "-").replace(/\s+/g, " ")
+    .replace(/(\d)[,\u2009\u202f](?=\d{3}(?!\d))/g, "$1").replace(/(\d)[,\u2009\u202f](?=\d{3}(?!\d))/g, "$1");
 }
 const numbersIn = s => (s.match(/-?\d+(?:\.\d+)?/g) || []).map(Number);
 const close = (a, b) => (b === 0 ? Math.abs(a) < 1e-9 : Math.abs(a - b) / Math.abs(b) <= 0.005);

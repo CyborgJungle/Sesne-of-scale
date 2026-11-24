@@ -1,0 +1,187 @@
+{
+  "id": "caffeine",
+  "field": "Food science",
+  "name": "Caffeine",
+  "question": "Milligrams of caffeine per serving.",
+  "unit": "mg",
+  "type": "lin",
+  "min": 0,
+  "max": 300,
+  "step": 50,
+  "items": [
+    {
+      "name": "Decaf coffee (207 ml)",
+      "value": 10,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Decaf isn't caffeine-free, just much lower.",
+      "verify": {
+        "number": 5,
+        "match": "decaffeinated"
+      },
+      "status": "checked",
+      "quote": "80 -135386 -652 Drip coffee 207 mL (7.0 US fl oz) 115 -175555 -845 Coffee, decaffeinated 207 mL (7.0 US fl oz) 5 -15 24 -72 Coffee, espresso 44-60 mL (1.5-2.0 US fl oz) 100 1691 -2254 Tea - black, green, and other types"
+    },
+    {
+      "name": "Milk chocolate (100 g)",
+      "value": 20,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Chocolate also contains theobromine, a milder relative of caffeine.",
+      "verify": {
+        "match": "milk chocolate"
+      },
+      "status": "checked",
+      "quote": "- Chocolate, dark, 60-69% cocoa solids 86 - Chocolate, dark, 45-59% cocoa solids 43 - Candies, milk chocolate 20 - Hershey's Special Dark (45% cocoa content) 1 bar (43 g or 1.5 oz) 31 - Hershey's Milk Chocolate (11% coc"
+    },
+    {
+      "name": "Coca-Cola (330 ml can)",
+      "value": 34,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Coca-Cola once contained an extract of coca leaves; today it gets caffeine added.",
+      "familiar": true,
+      "verify": {
+        "match": "Coca-Cola"
+      },
+      "status": "checked",
+      "quote": ") 22 -74124 -418 Guayakí yerba mate (loose leaf) 6 g (0.21 oz) 85 approx. 358 Coca-Cola 355 mL (12.0 US fl oz) 34 96 Diet Coke 46130 Mountain Dew 54154 Pepsi Zero Sugar 69194 Guaraná Antarctica 350 mL (12 US fl oz) 30100"
+    },
+    {
+      "name": "Diet Coke (330 ml can)",
+      "value": 46,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Diet Coke has more caffeine than regular Coke.",
+      "verify": {
+        "match": "Diet Coke"
+      },
+      "status": "checked",
+      "quote": "Guayakí yerba mate (loose leaf) 6 g (0.21 oz) 85 approx. 358 Coca-Cola 355 mL (12.0 US fl oz) 34 96 Diet Coke 46 130 Mountain Dew 54 154 Pepsi Zero Sugar 69 194 Guaraná Antarctica 350 mL (12 US fl oz) 30 100 Jolt Cola 6"
+    },
+    {
+      "name": "Cup of tea",
+      "value": 48,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Tea leaves contain more caffeine than coffee beans by weight, but a cup uses much less.",
+      "familiar": true,
+      "verify": {
+        "number": 22,
+        "match": "Tea – black"
+      },
+      "status": "checked",
+      "quote": "offee, decaffeinated 207 mL (7.0 US fl oz) 5 -15 24 -72 Coffee, espresso 44-60 mL (1.5-2.0 US fl oz) 100 1691 -2254 Tea - black, green, and other types , - steeped for 3 min. 177 mL (6.0 US fl oz) 22 -74124 -418 Guayakí"
+    },
+    {
+      "name": "Mountain Dew (330 ml can)",
+      "value": 54,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Mountain Dew was first sold as a whisky mixer.",
+      "verify": {
+        "match": "Mountain Dew"
+      },
+      "status": "checked",
+      "quote": "(loose leaf) 6 g (0.21 oz) 85 approx. 358 Coca-Cola 355 mL (12.0 US fl oz) 34 96 Diet Coke 46 130 Mountain Dew 54 154 Pepsi Zero Sugar 69 194 Guaraná Antarctica 350 mL (12 US fl oz) 30 100 Jolt Cola 695 mL (23.5 US fl oz"
+    },
+    {
+      "name": "Excedrin painkiller tablet",
+      "value": 65,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Caffeine makes some painkillers work better.",
+      "verify": {
+        "match": "Excedrin"
+      },
+      "status": "checked",
+      "quote": "/ L ) Caffeine tablet (regular-strength) 1 tablet 100 - Caffeine tablet (extra-strength) 200 - Excedrin tablet 65 - Percolated coffee 207 mL (7.0 US fl oz ) 80 -135386 -652 Drip coffee 207 mL (7.0 US fl oz) 115 -175555 -"
+    },
+    {
+      "name": "Red Bull (250 ml)",
+      "value": 80,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "A can of Red Bull has about as much caffeine as a cup of instant coffee.",
+      "familiar": true,
+      "verify": {
+        "match": "Red Bull"
+      },
+      "status": "checked",
+      "quote": "rams of caffeine per 12 ounce ( 350 mL ) serving. By contrast, energy drinks , such as Red Bull , can start at 80 milligrams of caffeine per serving. The caffeine in these drinks either originates from the ingredients us"
+    },
+    {
+      "name": "Yerba mate (6 g of leaves)",
+      "value": 85,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Yerba mate is traditionally sipped through a metal straw from a gourd.",
+      "verify": {
+        "match": "yerba mate"
+      },
+      "status": "checked",
+      "quote": "ypes , - steeped for 3 min. 177 mL (6.0 US fl oz) 22 -74124 -418 Guayakí yerba mate (loose leaf) 6 g (0.21 oz) 85 approx. 358 Coca-Cola 355 mL (12.0 US fl oz) 34 96 Diet Coke 46130 Mountain Dew 54154 Pepsi Zero Sugar 691"
+    },
+    {
+      "name": "Espresso shot",
+      "value": 100,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "An espresso has less caffeine than a mug of drip coffee, just more concentrated.",
+      "familiar": true,
+      "verify": {
+        "match": "espresso"
+      },
+      "status": "checked",
+      "quote": "Product Serving size Caffeine per serving ( mg ) Caffeine (mg/ L ) Caffeine tablet (regular-strength) 1 tablet 100 - Caffeine tablet (extra-strength) 200 - Excedrin tablet 65 - Percolated coffee 207 mL (7.0 US fl oz ) 80"
+    },
+    {
+      "name": "Percolated coffee (207 ml)",
+      "value": 107,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Percolators cycle boiling water through the grounds again and again.",
+      "verify": {
+        "number": 80,
+        "match": "Percolated coffee"
+      },
+      "status": "checked",
+      "quote": "let 100 - Caffeine tablet (extra-strength) 200 - Excedrin tablet 65 - Percolated coffee 207 mL (7.0 US fl oz ) 80 -135386 -652 Drip coffee 207 mL (7.0 US fl oz) 115 -175555 -845 Coffee, decaffeinated 207 mL (7.0 US fl oz"
+    },
+    {
+      "name": "Drip coffee (207 ml)",
+      "value": 145,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Filter coffee is one of the strongest everyday caffeine sources.",
+      "familiar": true,
+      "verify": {
+        "number": 115,
+        "match": "Drip coffee"
+      },
+      "status": "checked",
+      "quote": "xcedrin tablet 65 - Percolated coffee 207 mL (7.0 US fl oz ) 80 -135386 -652 Drip coffee 207 mL (7.0 US fl oz) 115 -175555 -845 Coffee, decaffeinated 207 mL (7.0 US fl oz) 5 -15 24 -72 Coffee, espresso 44-60 mL (1.5-2.0"
+    },
+    {
+      "name": "Extra-strength caffeine tablet",
+      "value": 200,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Healthy adults are advised to stay under about 400 mg a day.",
+      "verify": {
+        "match": "extra-strength"
+      },
+      "status": "checked",
+      "quote": "ng ( mg ) Caffeine (mg/ L ) Caffeine tablet (regular-strength) 1 tablet 100 - Caffeine tablet (extra-strength) 200 - Excedrin tablet 65 - Percolated coffee 207 mL (7.0 US fl oz ) 80 -135386 -652 Drip coffee 207 mL (7.0 U"
+    },
+    {
+      "name": "Unsweetened cocoa powder (100 g)",
+      "value": 230,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Cocoa powder is where chocolate's caffeine comes from.",
+      "verify": {
+        "match": "dry powder"
+      },
+      "status": "checked",
+      "quote": "lk drink 300-600 mL (10-20 US fl oz) 33 -197 66 -354 Cocoa, dry powder, unsweetened [unspecified strain] 100 g 230 - Cocoa solids, defatted, Criollo strain 1130 - Cocoa solids, defatted, Forastero strain 130 - Cocoa soli"
+    },
+    {
+      "name": "Jolt Cola (695 ml)",
+      "value": 280,
+      "source": "https://en.wikipedia.org/wiki/Caffeine",
+      "fact": "Jolt's 1980s slogan was 'All the sugar and twice the caffeine'.",
+      "verify": {
+        "match": "Jolt"
+      },
+      "status": "checked",
+      "quote": "54 154 Pepsi Zero Sugar 69 194 Guaraná Antarctica 350 mL (12 US fl oz) 30 100 Jolt Cola 695 mL (23.5 US fl oz) 280 403 Red Bull 250 mL (8.5 US fl oz) 80 320 Coffee-flavored milk drink 300-600 mL (10-20 US fl oz) 33 -197"
+    }
+  ]
+}

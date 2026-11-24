@@ -19,35 +19,40 @@
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Talc is the softest mineral on the scale and the main ingredient of talcum powder.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "ks. The Mohs scale is an ordinal scale . For example, corundum (9) is twice as hard as topaz (8), but diamond (10) is about four times as hard as corundum, for absolute hardness. The table below shows the comparison with"
     },
     {
       "name": "Gypsum",
       "value": 2,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Gypsum is the mineral in plaster and drywall.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "n. Mohs hardness Reference mineral Chemical formula Absolute hardness Example image 1 Talc Mg 3 Si 4 O 10 (OH) 2 1 2 Gypsum CaSO 4 · 2H 2 O 2 3 Calcite CaCO 3 14 4 Fluorite CaF 2 21 5 Apatite Ca 5 (PO 4 ) 3 (OH,Cl,F) 48"
     },
     {
       "name": "Calcite",
       "value": 3,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Calcite makes up limestone and marble.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "e rightmost column. Mohs hardness Reference mineral Chemical formula Absolute hardness Example image 1 Talc Mg 3 Si 4 O 10 (OH) 2 1 2 Gypsum CaSO 4 · 2H 2 O 2 3 Calcite CaCO 3 14 4 Fluorite CaF 2 21 5 Apatite Ca 5 (PO 4"
     },
     {
       "name": "Fluorite",
       "value": 4,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Fluorite gave its name to fluorescence: many samples glow under UV light.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "if some material is scratched by apatite but not by fluorite , its hardness on the Mohs scale would be between 4 and 5. Technically, \"scratching\" a material for the purposes of the Mohs scale means creating non- elastic"
     },
     {
       "name": "Apatite",
       "value": 5,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "The enamel on your teeth is mostly a form of apatite.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "e material is scratched by apatite but not by fluorite , its hardness on the Mohs scale would be between 4 and 5. Technically, \"scratching\" a material for the purposes of the Mohs scale means creating non- elastic disloc"
     },
     {
       "name": "Orthoclase feldspar",
@@ -57,7 +62,8 @@
       "verify": {
         "match": "orthoclase"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": ") 2 1 2 Gypsum CaSO 4 · 2H 2 O 2 3 Calcite CaCO 3 14 4 Fluorite CaF 2 21 5 Apatite Ca 5 (PO 4 ) 3 (OH,Cl,F) 48 6 Orthoclase feldspar KAlSi 3 O 8 72 7 Quartz SiO 2100 8 Topaz Al 2 SiO 4 (OH,F) 2200 9 Corundum Al 2 O 3400"
     },
     {
       "name": "Quartz",
@@ -65,14 +71,16 @@
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Quartz is hard enough to scratch window glass.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "Calcite CaCO 3 14 4 Fluorite CaF 2 21 5 Apatite Ca 5 (PO 4 ) 3 (OH,Cl,F) 48 6 Orthoclase feldspar KAlSi 3 O 8 72 7 Quartz SiO 2100 8 Topaz Al 2 SiO 4 (OH,F) 2200 9 Corundum Al 2 O 3400 10 Diamond C 1500 Examples This se"
     },
     {
       "name": "Topaz",
       "value": 8,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Pure topaz is colorless; most blue topaz in shops has been treated.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "widespread in rocks. The Mohs scale is an ordinal scale . For example, corundum (9) is twice as hard as topaz (8), but diamond (10) is about four times as hard as corundum, for absolute hardness. The table below shows th"
     },
     {
       "name": "Corundum (ruby, sapphire)",
@@ -82,7 +90,8 @@
       "verify": {
         "match": "corundum"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "e mineral , most of which are widespread in rocks. The Mohs scale is an ordinal scale . For example, corundum (9) is twice as hard as topaz (8), but diamond (10) is about four times as hard as corundum, for absolute hard"
     },
     {
       "name": "Diamond",
@@ -90,7 +99,8 @@
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "One step above corundum, but about four times as hard.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "n naturally occurring mineral when the scale was designed and defines the top of the scale, arbitrarily set at 10. The hardness of a material is measured against the scale by finding the hardest material that the given m"
     },
     {
       "name": "Potassium metal",
@@ -101,35 +111,40 @@
         "number": 0.2,
         "match": "Potassium"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "hs 8), quartz (Mohs 7), orthoclase (Mohs 6), plagioclase (Mohs 6-6.5), and mica (Mohs 2-4). Hardness Substance 0.2-0.4 Potassium 0.5-0.6 Lithium 1 Talc 1.5 Lead 2 Hardwood 2-2.5 Plastic 2.5 Zinc 2.5-3 Copper 3 Brass 3.5"
     },
     {
       "name": "Lead",
       "value": 1.5,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Lead is soft enough to mark paper, which is why 'lead' pencils got their name (they're actually graphite).",
-      "status": "draft"
+      "status": "checked",
+      "quote": "6), plagioclase (Mohs 6-6.5), and mica (Mohs 2-4). Hardness Substance 0.2-0.4 Potassium 0.5-0.6 Lithium 1 Talc 1.5 Lead 2 Hardwood 2-2.5 Plastic 2.5 Zinc 2.5-3 Copper 3 Brass 3.5 Adamite 3.5-4 Sphalerite 4 Iron 4-4.5 Ord"
     },
     {
       "name": "Zinc",
       "value": 2.5,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Most modern 'copper' pennies in the US are mostly zinc inside.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "6-6.5), and mica (Mohs 2-4). Hardness Substance 0.2-0.4 Potassium 0.5-0.6 Lithium 1 Talc 1.5 Lead 2 Hardwood 2-2.5 Plastic 2.5 Zinc 2.5-3 Copper 3 Brass 3.5 Adamite 3.5-4 Sphalerite 4 Iron 4-4.5 Ordinary steel 4.5 Colema"
     },
     {
       "name": "Brass",
       "value": 3,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Brass is an alloy of copper and zinc.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "4). Hardness Substance 0.2-0.4 Potassium 0.5-0.6 Lithium 1 Talc 1.5 Lead 2 Hardwood 2-2.5 Plastic 2.5 Zinc 2.5-3 Copper 3 Brass 3.5 Adamite 3.5-4 Sphalerite 4 Iron 4-4.5 Ordinary steel 4.5 Colemanite 5 Apatite 5-5.5 Goet"
     },
     {
       "name": "Iron",
       "value": 4,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Pure iron is surprisingly soft; carbon turns it into much harder steel.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "y composed of topaz (Mohs 8), quartz (Mohs 7), orthoclase (Mohs 6), plagioclase (Mohs 6-6.5), and mica (Mohs 2-4). Hardness Substance 0.2-0.4 Potassium 0.5-0.6 Lithium 1 Talc 1.5 Lead 2 Hardwood 2-2.5 Plastic 2.5 Zinc 2."
     },
     {
       "name": "Glass",
@@ -137,35 +152,40 @@
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "A steel knife and window glass are close in hardness.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "Zinc 2.5-3 Copper 3 Brass 3.5 Adamite 3.5-4 Sphalerite 4 Iron 4-4.5 Ordinary steel 4.5 Colemanite 5 Apatite 5-5.5 Goethite 5.5 Glass 5.5-6 Opal 6 Rhodium 6-6.5 Rutile 6.5 Silicon 6.5-7 Jadeite 7 Porcelain 7-7.5 Garnet 7"
     },
     {
       "name": "Silicon",
       "value": 6.5,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Silicon wafers for computer chips are cut from huge single crystals.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "z-rich granite is mainly composed of topaz (Mohs 8), quartz (Mohs 7), orthoclase (Mohs 6), plagioclase (Mohs 6-6.5), and mica (Mohs 2-4). Hardness Substance 0.2-0.4 Potassium 0.5-0.6 Lithium 1 Talc 1.5 Lead 2 Hardwood 2-"
     },
     {
       "name": "Tungsten",
       "value": 7.5,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Tungsten has the highest melting point of any metal.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "e 5 Apatite 5-5.5 Goethite 5.5 Glass 5.5-6 Opal 6 Rhodium 6-6.5 Rutile 6.5 Silicon 6.5-7 Jadeite 7 Porcelain 7-7.5 Garnet 7.5 Tungsten 7.5-8 Emerald 8 Topaz 8.5 Chromium 9 Sapphire 9-9.5 Moissanite 9.5-near 10 Boron 10 D"
     },
     {
       "name": "Chromium",
       "value": 8.5,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Chromium is the hardest pure metal, which is why it's used for plating.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "l 6 Rhodium 6-6.5 Rutile 6.5 Silicon 6.5-7 Jadeite 7 Porcelain 7-7.5 Garnet 7.5 Tungsten 7.5-8 Emerald 8 Topaz 8.5 Chromium 9 Sapphire 9-9.5 Moissanite 9.5-near 10 Boron 10 Diamond Use Despite its lack of precision, the"
     },
     {
       "name": "Sapphire",
       "value": 9,
       "source": "https://en.wikipedia.org/wiki/Mohs_scale",
       "fact": "Synthetic sapphire is used for scratch-resistant watch faces.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "-6.5 Rutile 6.5 Silicon 6.5-7 Jadeite 7 Porcelain 7-7.5 Garnet 7.5 Tungsten 7.5-8 Emerald 8 Topaz 8.5 Chromium 9 Sapphire 9-9.5 Moissanite 9.5-near 10 Boron 10 Diamond Use Despite its lack of precision, the Mohs scale is"
     }
   ]
 }

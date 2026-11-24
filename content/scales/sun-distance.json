@@ -13,14 +13,16 @@
       "value": 0.387098,
       "source": "https://en.wikipedia.org/wiki/Mercury_(planet)",
       "fact": "A year on Mercury lasts 88 Earth days.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "bbr=unit|lk=in\"},\"perihelion\":{\"wt\":\"convert|0.307499|AU|e6km|4|abbr=unit\"},\"semimajor\":{\"wt\":\"convert|0.387098|AU|e6km|4|abbr=unit\"},\"eccentricity\":{\"wt\":\"val|0.205630 ref name=\\\"fact\\\" />\"},\"period\":{\"wt\""
     },
     {
       "name": "Venus",
       "value": 0.723332,
       "source": "https://en.wikipedia.org/wiki/Venus",
       "fact": "A day on Venus is longer than its year.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "bbr=unit|lk=in\"},\"perihelion\":{\"wt\":\"convert|0.718440|AU|e6km|2|abbr=unit\"},\"semimajor\":{\"wt\":\"convert|0.723332|AU|e6km|2|abbr=unit\"},\"eccentricity\":{\"wt\":\"0.006772 ref name=\\\"VSOP87\\\"/>\"},\"period\":{\"wt\":\"pla"
     },
     {
       "name": "Earth",
@@ -31,7 +33,8 @@
       "verify": {
         "match": "Semi-major axis"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ref name=\\\"earth_fact_sheet\\\" />\"},\"note\":{\"wt\":\"no\",\"i\":0]}' id=\"mwEQ\"> Earth Earth as seen from Meteosat-12 in 2025, during the March equinox Designations Alternative names The world The globe Terra Tellus Gaia Adj"
     },
     {
       "name": "Mars",
@@ -42,7 +45,8 @@
       "verify": {
         "number": 1.524
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "left and Valles Marineris at the right. Designations Adjectives Martian Arean (rare, from Ares ) see Name of Mars Symbol Orbital characteristics Epoch J2000 Aphelion 249261000 km ( 1.666 21 AU) Perihelion 206650000 km ("
     },
     {
       "name": "Ceres",
@@ -52,7 +56,8 @@
       "verify": {
         "number": 2.77
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ry 2022 ( JD 2459600.5) Aphelion 2.98 AU (446 million km ) Perihelion 2.55 AU (381 million km) Semi-major axis 2.77 AU (414 million km) Eccentricity 0.0785 Orbital period (sidereal) 4.60 yr 1680 d Orbital period (synodic"
     },
     {
       "name": "Jupiter",
@@ -60,14 +65,18 @@
       "source": "https://en.wikipedia.org/wiki/Jupiter",
       "fact": "Jupiter takes almost 12 years to orbit the Sun.",
       "familiar": true,
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Semi-major axis"
+      }
     },
     {
       "name": "Saturn",
       "value": 9.5826,
       "source": "https://en.wikipedia.org/wiki/Saturn",
       "fact": "Saturn's rings are mostly ice.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "1514.50 million km (10.1238 AU) Perihelion 1352.55 million km (9.0412 AU) Semi-major axis 1433.53 million km (9.5826 AU) Eccentricity 0.0565 Orbital period (sidereal) 29.4475 yr 10755.70 d 24225 Saturnian solar days Orb"
     },
     {
       "name": "Halley's Comet (average)",
@@ -78,14 +87,18 @@
         "number": 17.8,
         "match": "Semi-major axis"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "years Earliest precovery date May 240 BC Number of observations 8518 Aphelion 35.14 au Perihelion 0.59278 au Semi-major axis 17.737 au Eccentricity 0.96658 Orbital period 74.7 years Inclination 161.96° Longitude of asce"
     },
     {
       "name": "Uranus",
       "value": 19.19126,
       "source": "https://en.wikipedia.org/wiki/Uranus",
       "fact": "Uranus was the first planet found with a telescope, in 1781.",
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Semi-major axis"
+      }
     },
     {
       "name": "Neptune",
@@ -95,7 +108,8 @@
       "verify": {
         "number": 30.07
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "eristics Epoch J2000 Aphelion 30.33 AU (4.54 billion km) Perihelion 29.81 AU (4.46 billion km) Semi-major axis 30.07 AU (4.50 billion km) Eccentricity 0.008678 Orbital period (sidereal) 164.8 yr 60195 days 89666 Neptunia"
     },
     {
       "name": "Pluto",
@@ -103,7 +117,8 @@
       "source": "https://en.wikipedia.org/wiki/Pluto",
       "fact": "Pluto hasn't completed an orbit since it was discovered in 1930.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "t\\\" />\\n* (September 5, 1989) ref name=\\\"jpl-ssd-horizons\\\" />\\n\"},\"semimajor\":{\"wt\":\"Plain list|\\n* val|39.482|u=AU\\n* (nowrap|val|fmt=commas|5.90638|u=billion km)\\n\"},\"eccentricity\":{\"wt\":\"val|0.248"
     },
     {
       "name": "Haumea",
@@ -113,7 +128,8 @@
       "verify": {
         "number": 43.1
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "precovery date 22 March 1955 Aphelion 51.585 AU (7.7170 Tm ) Perihelion 34.647 AU (5.1831 Tm) Semi-major axis 43.116 AU (6.4501 Tm) Eccentricity 0.19642 Orbital period (sidereal) 283.12 yr (103410 days) Average orbital"
     },
     {
       "name": "Makemake",
@@ -121,7 +137,8 @@
       "source": "https://en.wikipedia.org/wiki/Makemake",
       "fact": "Makemake is named after a creator god of Easter Island.",
       "verify": {
-        "number": 45.4
+        "number": 45.4,
+        "match": "Semi-major axis"
       },
       "status": "draft"
     },
@@ -133,7 +150,8 @@
       "verify": {
         "number": 67.86
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "barycenter\\\"/>refn|group=lower-alpha|name=period|The heliocentric orbital period of an eccentric orbit like Eris can change quite notably over the 12-year orbit of Jupiter. Barycentric orbits, that use a Sun+Jupite"
     },
     {
       "name": "Sedna",
@@ -141,7 +159,10 @@
       "source": "https://en.wikipedia.org/wiki/Sedna_(dwarf_planet)",
       "fact": "One orbit of Sedna takes over 11,000 years.",
       "disputed": true,
-      "status": "draft"
+      "status": "draft",
+      "verify": {
+        "match": "Semi-major axis"
+      }
     }
   ]
 }

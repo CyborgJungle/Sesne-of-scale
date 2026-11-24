@@ -16,7 +16,8 @@
       "source": "https://en.wikipedia.org/wiki/Mercury_(element)",
       "fact": "Mercury is the only metal that's liquid at room temperature.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "ium Roentgenium Copernicium Nihonium Flerovium Moscovium Livermorium Tennessine Oganesson Cd ↑ Hg ↓ Cn gold ← mercury → thallium Atomic number ( Z ) 80 Group group 12 Period period 6 Block d-block Electron configuration"
     },
     {
       "name": "Ice",
@@ -44,42 +45,48 @@
       "verify": {
         "match": "melting point"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "%), α-Linolenic acid (0-1%) Properties Food energy per 100 g (3.5 oz) 3699 kilojoules (884 kcal) Melting point 34.1 °C (93.4 °F), 35-36.5 °C (95.0-97.7 °F) Solidity at 20 °C (68 °F) solid Refractive index 1.44556-1.44573"
     },
     {
       "name": "Sodium",
       "value": 97.79,
       "source": "https://en.wikipedia.org/wiki/Sodium",
       "fact": "Sodium melts just below the boiling point of water.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "tion [ Ne ] 3s 1 Electrons per shell 2, 8, 1 Physical properties Phase at STP solid Melting point 370.944 K ​ (97.794 °C, ​ 208.029 °F) Boiling point 1156.090 K ​ (882.940 °C, ​ 1621.292 °F) Density (at 20° C) 0.9688 g/c"
     },
     {
       "name": "Sulfur",
       "value": 115.21,
       "source": "https://en.wikipedia.org/wiki/Sulfur",
       "fact": "Melted sulfur turns blood red as it heats up.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "4 Electrons per shell 2, 8, 6 Physical properties Phase at STP solid Melting point alpha (α-S 8 ): 388.36 K ​ (115.21 °C, ​ 239.38 °F) Boiling point 717.8 K ​ (444.6 °C, ​ 832.3 °F) Density (near r.t. ) alpha (α-S 8 ): 2"
     },
     {
       "name": "Tin",
       "value": 231.93,
       "source": "https://en.wikipedia.org/wiki/Tin",
       "fact": "Tin's low melting point made it ideal for solder.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "5s 2 5p 2 Electrons per shell 2, 8, 18, 18, 4 Physical properties Phase at STP solid Melting point 505.08 K ​ (231.93 °C, ​ 449.47 °F) Boiling point 2875 K ​ (2602 °C, ​ 4716 °F) Density (at 20° C) white (β): 7.289 g/cm"
     },
     {
       "name": "Lead",
       "value": 327.46,
       "source": "https://en.wikipedia.org/wiki/Lead",
       "fact": "Lead melts at a temperature you can reach on a camping stove.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "6p 2 Electrons per shell 2, 8, 18, 32, 18, 4 Physical properties Phase at STP solid Melting point 600.61 K ​ (327.46 °C, ​ 621.43 °F) Boiling point 2022 K ​ (1749 °C, ​ 3180 °F) Density (at 20 °C) 11.348 g/cm 3 when liq"
     },
     {
       "name": "Zinc",
       "value": 419.53,
       "source": "https://en.wikipedia.org/wiki/Zinc",
       "fact": "Zinc coats steel to stop it rusting (galvanizing).",
-      "status": "draft"
+      "status": "checked",
+      "quote": "] 3d 10 4s 2 Electrons per shell 2, 8, 18, 2 Physical properties Phase at STP solid Melting point 692.68 K ​ (419.53 °C, ​ 787.15 °F) Boiling point 1180 K ​ (907 °C, ​ 1665 °F) Density (at 20° C) 7.140 g/cm 3 when liqui"
     },
     {
       "name": "Aluminium",
@@ -87,7 +94,8 @@
       "source": "https://en.wikipedia.org/wiki/Aluminium",
       "fact": "Aluminium was once more valuable than gold.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "[ Ne ] 3s 2 3p 1 Electrons per shell 2, 8, 3 Physical properties Phase at STP solid Melting point 933.47 K ​ (660.32 °C, ​ 1220.58 °F) Boiling point 2743 K ​ (2470 °C, ​ 4478 °F) Density (at 20 °C) 2.699 g/cm 3 when liq"
     },
     {
       "name": "Table salt",
@@ -97,14 +105,16 @@
       "verify": {
         "match": "Melting point"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "cubic crystals Odor Faint, salty (when powdered), or odorless (solid rock ) Density 2.17 g/cm 3 Melting point 800.7 °C (1473.3 °F; 1073.8 K) Boiling point 1413 °C (2575 °F; 1686 K) Solubility in water 360 g/L (25 °C) So"
     },
     {
       "name": "Silver",
       "value": 961.78,
       "source": "https://en.wikipedia.org/wiki/Silver",
       "fact": "Silver conducts electricity and heat better than any other metal.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "10 5s 1 Electrons per shell 2, 8, 18, 18, 1 Physical properties Phase at STP solid Melting point 1234.93 K ​ (961.78 °C, ​ 1763.2 °F) Boiling point 2435 K ​ (2162 °C, ​ 3924 °F) Density (at 20° C) 10.503 g/cm 3 (at STP"
     },
     {
       "name": "Gold",
@@ -112,7 +122,8 @@
       "source": "https://en.wikipedia.org/wiki/Gold",
       "fact": "All the gold ever mined would fit in a cube about 22 m on each side.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "6s 1 Electrons per shell 2, 8, 18, 32, 18, 1 Physical properties Phase at STP solid Melting point 1337.33 K ​ (1064.18 °C, ​ 1947.52 °F) Boiling point 3243 K ​ (2970 °C, ​ 5378 °F) Density (at 20° C) 19.283 g/cm 3 when l"
     },
     {
       "name": "Copper",
@@ -127,28 +138,32 @@
       "source": "https://en.wikipedia.org/wiki/Iron",
       "fact": "Iron is the most common element on Earth by mass.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "Ar ] 3d 6 4s 2 Electrons per shell 2, 8, 14, 2 Physical properties Phase at STP solid Melting point 1811 K ​ (1538 °C, ​ 2800 °F) Boiling point 3134 K ​ (2861 °C, ​ 5182 °F) Density (at 20° C) 7.874 g/cm 3 when liquid ("
     },
     {
       "name": "Titanium",
       "value": 1668,
       "source": "https://en.wikipedia.org/wiki/Titanium",
       "fact": "Titanium is as strong as some steels but about 45% lighter.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "Ar ] 3d 2 4s 2 Electrons per shell 2, 8, 10, 2 Physical properties Phase at STP solid Melting point 1941 K ​ (1668 °C, ​ 3034 °F) Boiling point 3560 K ​ (3287 °C, ​ 5949 °F) Density (at 20° C) 4.502 g/cm 3 (near r.t. )"
     },
     {
       "name": "Platinum",
       "value": 1768.3,
       "source": "https://en.wikipedia.org/wiki/Platinum",
       "fact": "Platinum is denser than gold.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "6s 1 Electrons per shell 2, 8, 18, 32, 17, 1 Physical properties Phase at STP solid Melting point 2041.4 K ​ (1768.3 °C, ​ 3214.9 °F) Boiling point 4098 K ​ (3825 °C, ​ 6917 °F) Density (at 20° C) 21.452 g/cm 3 when liq"
     },
     {
       "name": "Tungsten",
       "value": 3422,
       "source": "https://en.wikipedia.org/wiki/Tungsten",
       "fact": "Tungsten has the highest melting point of all metals, which made it ideal for light-bulb filaments.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "4 6s 2 Electrons per shell 2, 8, 18, 32, 12, 2 Physical properties Phase at STP solid Melting point 3695 K ​ (3422 °C, ​ 6192 °F) Boiling point 6203 K ​ (5930 °C, ​ 10706 °F) Density (at 20° C) 19.254 g/cm 3 when liquid"
     }
   ]
 }

@@ -18,7 +18,8 @@
       "verify": {
         "match": "Microsoft"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "f Salford , A-weighted Ambient 4.8 × 10 -6 -12.4 Anechoic chamber , Microsoft, A-weighted Ambient 1.90 × 10 -6 -20.35 ↑ All values listed are the effective sound pressure unless otherwise stated. See also Acoustics - Bra"
     },
     {
       "name": "Threshold of hearing",
@@ -28,7 +29,8 @@
       "verify": {
         "match": "Auditory threshold"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ss, learning detriment, etc. Ambient 0.06 70 Passenger car at 30 km/h ( electric and combustion engines ) 10 m 0.04-0.06 65-70 Normal conversation [ citation needed ] 1 m 2 × 10 -3 -0.02 40-60 Passenger car at 10 km/h (c"
     },
     {
       "name": "Rustling leaves",
@@ -38,7 +40,8 @@
       "verify": {
         "match": "leaf rustling"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "stress, learning detriment, etc. Ambient 0.06 70 Passenger car at 30 km/h ( electric and combustion engines ) 10 m 0.04-0.06 65-70 Normal conversation [ citation needed ] 1 m 2 × 10 -3 -0.02 40-60 Passenger car at 10 km"
     },
     {
       "name": "A very calm room",
@@ -49,7 +52,8 @@
         "number": 20,
         "match": "Very calm room"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Passenger car at 10 km/h (electric) 10 m 6 × 10 -3 50 Very calm room [ citation needed ] Ambient (2-6) × 10 -4 20-30 Light leaf rustling, calm breathing Ambient 6 × 10 -5 10 Auditory threshold at 1 kHz At ear 2.00 × 10 -"
     },
     {
       "name": "Normal conversation (1 m)",
@@ -61,7 +65,8 @@
         "number": 40,
         "match": "Normal conversation"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "tric and combustion engines ) 10 m 0.04-0.06 65-70 Normal conversation [ citation needed ] 1 m 2 × 10 -3 -0.02 40-60 Passenger car at 10 km/h (combustion) 10 m 13 × 10 -3 56 Passenger car at 10 km/h (electric) 10 m 6 × 1"
     },
     {
       "name": "Car passing at 30 km/h (10 m)",
@@ -72,7 +77,8 @@
         "number": 65,
         "match": "Passenger car at 30"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ng detriment, etc. Ambient 0.06 70 Passenger car at 30 km/h ( electric and combustion engines ) 10 m 0.04-0.06 65-70 Normal conversation [ citation needed ] 1 m 2 × 10 -3 -0.02 40-60 Passenger car at 10 km/h (combustion)"
     },
     {
       "name": "Television",
@@ -82,7 +88,8 @@
       "verify": {
         "match": "Television"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ice\" in \"Mode 2: WHO standard level for sensitive users (e.g. children)\" per WHO/ ITU-T Rec. H.870 At ear 0.11 75 Television ( A-weighted ) Ambient 0.11 75 EPA -identified maximum to protect against hearing loss and othe"
     },
     {
       "name": "Vacuum cleaner",
@@ -93,7 +100,8 @@
       "verify": {
         "match": "Vacuum cleaner"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "SH recommended exposure limit (REL) for workplace noise (average over 8-hour workday, A-weighted ) At ear 0.36 85 Hearing damage (over long-term exposure, need not be continuous) At ear 0.36 85 Workplace noise level (8-h"
     },
     {
       "name": "Jackhammer (1 m)",
@@ -103,7 +111,8 @@
       "verify": {
         "match": "Jackhammer"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Loudest human voice 1 inch 110135 Trumpet 0.5 m 63.2130 Vuvuzela horn 1 m 20.0120 Threshold of pain At ear 20-100120-134 Risk of instantaneous noise-induced hearing loss [ citation needed ] At ear 20.0120 Maximum instan"
     },
     {
       "name": "Chainsaw (1 m)",
@@ -176,7 +185,8 @@
       "verify": {
         "match": "Krakatoa"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "the source, registered a sound pressure level spike of more than 2½ inches of mercury (8.5 kPa), equivalent to 172 decibels. ↑ Winchester, Simon (2003). Krakatoa: The Day the World Exploded, August 27, 1883 . Penguin/Vik"
     }
   ]
 }

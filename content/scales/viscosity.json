@@ -1,0 +1,157 @@
+{
+  "id": "viscosity",
+  "field": "Physics",
+  "name": "How thick and gooey?",
+  "question": "Viscosity in millipascal-seconds (water is about 1). Each gridline step is ten times thicker.",
+  "unit": "mPa·s",
+  "type": "log",
+  "min": 0.1,
+  "max": 1000000000000000,
+  "items": [
+    {
+      "name": "Gasoline",
+      "value": 0.6,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Gasoline flows more easily than water.",
+      "verify": {
+        "number": 6,
+        "match": "Gasoline"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Water",
+      "value": 1.0016,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Water's viscosity drops by half between 20 °C and 50 °C.",
+      "familiar": true,
+      "verify": {
+        "match": "Water"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Mercury",
+      "value": 1.526,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Mercury is heavy but flows almost as easily as water.",
+      "verify": {
+        "match": "Mercury"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Whole milk",
+      "value": 2.12,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Milk is about twice as thick as water.",
+      "familiar": true,
+      "verify": {
+        "match": "Whole milk"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Blood",
+      "value": 4.5,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Blood is 3 to 6 times as viscous as water.",
+      "verify": {
+        "number": 3,
+        "match": "Blood"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Olive oil",
+      "value": 84,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Oils get much runnier when warm.",
+      "familiar": true,
+      "verify": {
+        "number": 0.084,
+        "match": "Olive oil"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Castor oil",
+      "value": 100,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Castor oil was once a common household remedy.",
+      "verify": {
+        "number": 0.1,
+        "match": "Castor oil"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "SAE 30 motor oil",
+      "value": 520,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "The number in motor-oil grades is a viscosity class.",
+      "verify": {
+        "number": 0.42,
+        "match": "SAE 30"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Glycerine",
+      "value": 1500,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Glycerine is used to make soap bubbles last longer.",
+      "verify": {
+        "number": 1.5,
+        "match": "Glycerine"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Pancake syrup",
+      "value": 2500,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Syrup thins dramatically when warmed.",
+      "verify": {
+        "number": 2.5,
+        "match": "Pancake syrup"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Honey",
+      "value": 4500,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Honey's thickness depends strongly on its water content.",
+      "familiar": true,
+      "verify": {
+        "number": 2000,
+        "match": "Honey"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Ketchup",
+      "value": 10000,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "Ketchup gets runnier when you shake it (it's 'shear-thinning').",
+      "familiar": true,
+      "verify": {
+        "number": 5000,
+        "match": "Ketchup"
+      },
+      "status": "draft"
+    },
+    {
+      "name": "Pitch (tar)",
+      "value": 230000000000000,
+      "source": "https://en.wikipedia.org/wiki/Viscosity",
+      "fact": "In the Pitch Drop Experiment, running since 1927, a drop falls about once a decade.",
+      "verify": {
+        "number": 2.3,
+        "match": "Pitch"
+      },
+      "status": "draft"
+    }
+  ]
+}
