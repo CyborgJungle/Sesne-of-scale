@@ -3,6 +3,11 @@
   "field": "Physics",
   "name": "Density",
   "question": "Kilograms per cubic meter (water is 1,000). Each gridline step is ten times denser.",
+  "measure": {
+    "formula": "kg / m³",
+    "words": "kilograms in one cubic metre (water = 1,000)",
+    "origin": "Legend says Archimedes used density to check whether a king's crown was pure gold, and shouted 'Eureka!'."
+  },
   "unit": "kg/m³",
   "type": "log",
   "min": 0.01,

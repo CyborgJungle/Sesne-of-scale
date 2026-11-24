@@ -3,6 +3,11 @@
   "field": "Chemistry",
   "name": "pH",
   "question": "How acidic or basic is it? 7 is neutral; every step down is ten times more acidic.",
+  "measure": {
+    "formula": "pH 0–14",
+    "words": "acidity: 7 is neutral, each step down is 10× more acidic",
+    "origin": "Introduced in 1909 by Danish chemist Søren Sørensen at the Carlsberg Laboratory, the research lab of the beer brewery."
+  },
   "unit": "",
   "type": "lin",
   "min": 0,

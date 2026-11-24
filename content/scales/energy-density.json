@@ -3,6 +3,11 @@
   "field": "Nutrition",
   "name": "Energy density",
   "question": "Calories (kcal) in 100 grams of each.",
+  "measure": {
+    "formula": "kcal / 100 g",
+    "words": "kilocalories in 100 grams of the food",
+    "origin": "A food 'Calorie' is really a kilocalorie: the energy needed to warm 1 kg of water by 1 °C."
+  },
   "unit": "kcal / 100 g",
   "type": "lin",
   "min": 0,

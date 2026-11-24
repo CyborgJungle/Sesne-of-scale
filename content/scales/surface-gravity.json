@@ -3,6 +3,11 @@
   "field": "Astronomy",
   "name": "Surface gravity",
   "question": "How hard you'd be pulled down standing on each world. Each gridline step is ten times stronger.",
+  "measure": {
+    "formula": "m/s²",
+    "words": "metres per second per second: how much faster you fall every second",
+    "origin": "Standard Earth gravity, 9.80665 m/s², was fixed by international agreement in 1901."
+  },
   "unit": "m/s²",
   "type": "log",
   "min": 0.1,

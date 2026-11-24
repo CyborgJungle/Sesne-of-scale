@@ -3,6 +3,11 @@
   "field": "Weather",
   "name": "What wind force is this?",
   "question": "The Beaufort scale describes wind by what you can see it doing, from 0 (calm) to 12 (hurricane force).",
+  "measure": {
+    "formula": "force 0–12",
+    "words": "Beaufort wind force: 0 is calm, 12 is hurricane",
+    "origin": "Devised in 1805 by Royal Navy officer Francis Beaufort. Its first official use was on HMS Beagle, the ship that carried Charles Darwin."
+  },
   "unit": "",
   "type": "lin",
   "min": 0,

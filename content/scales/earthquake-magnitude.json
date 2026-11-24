@@ -3,6 +3,11 @@
   "field": "Seismology",
   "name": "Earthquake magnitude",
   "question": "Moment magnitude. Each whole step releases about 32 times more energy.",
+  "measure": {
+    "formula": "Mw",
+    "words": "moment magnitude: each whole step releases about 32× more energy",
+    "origin": "Introduced in 1979 by seismologists Thomas Hanks and Hiroo Kanamori. It replaced the Richter scale for big quakes."
+  },
   "unit": "",
   "type": "lin",
   "min": 5,

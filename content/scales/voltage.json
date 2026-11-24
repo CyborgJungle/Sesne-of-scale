@@ -3,6 +3,11 @@
   "field": "Physics",
   "name": "Voltage",
   "question": "How much electrical tension? Each gridline step is ten times more.",
+  "measure": {
+    "formula": "V",
+    "words": "volts of electrical tension",
+    "origin": "Named after Italian physicist Alessandro Volta, who built the first battery in 1800."
+  },
   "unit": "V",
   "type": "log",
   "min": 0.00001,

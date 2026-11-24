@@ -3,6 +3,11 @@
   "field": "Geography",
   "name": "How tall",
   "question": "Height from base to top, in meters. Each gridline step is ten times taller.",
+  "measure": {
+    "formula": "m",
+    "words": "metres from base to top",
+    "origin": "The metre was first defined in 1793 as one ten-millionth of the distance from the North Pole to the Equator."
+  },
   "unit": "m",
   "type": "log",
   "min": 1,

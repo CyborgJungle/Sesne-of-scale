@@ -224,3 +224,14 @@ body { margin: 0; }
 /* Placed labels: the name always keeps at least 40% of the width; a long guess value is cut instead. */
 .lbl { grid-template-columns: 22px minmax(40%, 1fr) auto; }
 .lbl .val { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+
+/* The scale's "formula" under the question: what the numbers mean. */
+.measure { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; justify-self: start; max-width: 62ch;
+  background: var(--panel); border: 1px solid var(--rule); border-left: 4px solid var(--tag); border-radius: 8px; padding: 7px 12px; margin-top: 4px; }
+.measure .m-label { font: 600 11px var(--f-mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+.measure .m-formula { font: 600 16px var(--f-mono); color: var(--ink); white-space: nowrap; }
+.measure .m-words { font-size: 14px; color: var(--muted); }
+.measure .m-origin { flex-basis: 100%; font-size: 13px; color: var(--ink); opacity: .85; border-top: 1px dashed var(--rule); padding-top: 5px; margin-top: 2px; }
+.measure .m-origin::before { content: "📜 "; }
+.testbar { background: var(--tag); color: var(--tag-ink); font: 600 13px var(--f-mono); text-align: center; padding: 6px 12px; margin: -20px calc(-1 * max(16px, env(safe-area-inset-left, 0px))) 14px; }
+.testbar a { color: inherit; }

@@ -3,6 +3,11 @@
   "field": "History",
   "name": "When was it completed?",
   "question": "The year each landmark was finished or opened.",
+  "measure": {
+    "formula": "year",
+    "words": "the year it was finished or opened",
+    "origin": "Counting years from the birth of Jesus was worked out by the monk Dionysius Exiguus in the year 525."
+  },
   "unit": "",
   "type": "lin",
   "min": 1000,

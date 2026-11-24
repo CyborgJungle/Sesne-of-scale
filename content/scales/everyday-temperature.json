@@ -3,6 +3,11 @@
   "field": "Everyday life",
   "name": "How hot or cold?",
   "question": "Temperatures from daily life and record extremes, in °C.",
+  "measure": {
+    "formula": "°C",
+    "words": "degrees Celsius",
+    "origin": "Daniel Fahrenheit set 0 °F in 1724 using the coldest salt-and-ice mix he could make; on his scale water freezes at 32 °F."
+  },
   "unit": "°C",
   "type": "lin",
   "min": -100,

@@ -3,6 +3,11 @@
   "field": "Food science",
   "name": "Chili heat",
   "question": "Scoville heat units: how many times an extract must be diluted before you can't taste the burn.",
+  "measure": {
+    "formula": "SHU",
+    "words": "Scoville heat units: how many times an extract is diluted before the burn is gone",
+    "origin": "Created in 1912 by American pharmacist Wilbur Scoville, using a panel of tasters. Labs now measure the heat chemicals with chromatography."
+  },
   "unit": "SHU",
   "type": "log",
   "min": 10,

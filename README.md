@@ -55,6 +55,12 @@ See [docs/CONTENT.md](docs/CONTENT.md) for the full guide. In short:
 - **Players:** the service worker fetches from the network first, so phones get a new version on their next visit. The cached copy is only used offline.
 - **CI** (`ci.yml`) validates content and runs the tests on every push.
 
+## Test mode
+
+Open the site with `?test=<TEST_KEY>` (for example `https://sense-of-scale-sepia.vercel.app/?test=...`) to see every scheduled puzzle, including future ones, and play any of them. A yellow bar shows you're in test mode. Test plays are stored separately and are never submitted, so they don't affect streaks or player stats. Testers' responses are never cached.
+
+`TEST_KEY` is a secret environment variable in Vercel (production and preview), at least 16 characters. Without it, test mode is off. To revoke a shared test link, change the value and redeploy.
+
 ## Deploy
 
 1. **Supabase.** Create a project and run `supabase/migrations/20261124000000_init.sql` (SQL editor, or `supabase db push`). Enable `pg_cron` under Database → Extensions if the last line fails. All tables have RLS on and no public policies. Only the server's secret key can reach them.

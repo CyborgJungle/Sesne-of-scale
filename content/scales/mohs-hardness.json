@@ -3,6 +3,11 @@
   "field": "Geology",
   "name": "Mohs hardness",
   "question": "Which scratches which? 1 is soft as talc, 10 is diamond.",
+  "measure": {
+    "formula": "Mohs 1–10",
+    "words": "which mineral scratches which: 1 is talc, 10 is diamond",
+    "origin": "Devised in 1812 by German geologist Friedrich Mohs. Field geologists still carry little scratch kits to use it."
+  },
   "unit": "",
   "type": "lin",
   "min": 0,

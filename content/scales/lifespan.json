@@ -3,6 +3,11 @@
   "field": "Biology",
   "name": "Lifespan",
   "question": "Typical (or record) life length, from hours to millennia.",
+  "measure": {
+    "formula": "time",
+    "words": "typical or record life length, in hours, days or years",
+    "origin": "Tree ages are counted from growth rings; fish ages from similar rings in their ear bones."
+  },
   "unit": "",
   "type": "log",
   "min": 0.001,

@@ -3,6 +3,11 @@
   "field": "Technology",
   "name": "How much data?",
   "question": "Size in bytes. Each gridline step is ten times more.",
+  "measure": {
+    "formula": "bytes",
+    "words": "1 MB = a million bytes, 1 GB = a billion",
+    "origin": "The word 'byte' was coined in 1956 by IBM engineer Werner Buchholz."
+  },
   "unit": "bytes",
   "type": "log",
   "min": 10000,

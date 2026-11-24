@@ -61,6 +61,7 @@ test("plays today's daily puzzle end to end", async () => {
   if (SHOTS) await page.screenshot({ path: `${SHOTS}/1-board.png` });
 
   for (let round = 0; round < 3; round++) {
+    assert.ok((await page.locator(".measure .m-formula").textContent()).trim().length > 0, "the scale's formula should be shown");
     await placeAll(page, round === 0 ? "mixed" : round === 1 ? "tap" : "drag");
     if (SHOTS && round === 0) await page.screenshot({ path: `${SHOTS}/2-placed.png` });
     await page.getByRole("button", { name: "Check placements" }).click();

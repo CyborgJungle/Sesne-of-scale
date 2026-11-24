@@ -3,6 +3,11 @@
   "field": "Materials",
   "name": "Melting point",
   "question": "The temperature where each one turns to liquid.",
+  "measure": {
+    "formula": "°C",
+    "words": "degrees Celsius at which it melts",
+    "origin": "Scientists often use kelvin instead: add 273.15 to degrees Celsius, so the scale starts at absolute zero."
+  },
   "unit": "°C",
   "type": "lin",
   "min": -100,

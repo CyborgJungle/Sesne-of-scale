@@ -3,6 +3,11 @@
   "field": "Physics",
   "name": "How thick and gooey?",
   "question": "Viscosity in millipascal-seconds (water is about 1). Each gridline step is ten times thicker.",
+  "measure": {
+    "formula": "mPa·s",
+    "words": "millipascal-seconds: how strongly it resists flowing (water ≈ 1)",
+    "origin": "Named after Blaise Pascal. The old unit, the centipoise, honours Jean Poiseuille and is exactly the same size."
+  },
   "unit": "mPa·s",
   "type": "log",
   "min": 0.1,

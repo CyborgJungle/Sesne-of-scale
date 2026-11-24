@@ -3,6 +3,11 @@
   "field": "Geography",
   "name": "River length",
   "question": "Length from source to mouth in kilometers. Each gridline step is ten times longer.",
+  "measure": {
+    "formula": "km",
+    "words": "kilometres from source to mouth",
+    "origin": "River lengths differ between sources, because it's hard to decide exactly where a river begins and ends."
+  },
   "unit": "km",
   "type": "log",
   "min": 100,

@@ -3,6 +3,11 @@
   "field": "Physics",
   "name": "Radiation dose",
   "question": "Effective dose in sieverts (Sv). Each gridline step is ten times more.",
+  "measure": {
+    "formula": "Sv",
+    "words": "sieverts of effective dose (1 mSv = a thousandth of a sievert)",
+    "origin": "Named after Swedish medical physicist Rolf Sievert, a pioneer of radiation protection."
+  },
   "unit": "Sv",
   "type": "log",
   "min": 1e-8,

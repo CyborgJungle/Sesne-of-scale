@@ -3,6 +3,11 @@
   "field": "Film",
   "name": "Running time",
   "question": "How long each film is, in minutes.",
+  "measure": {
+    "formula": "min",
+    "words": "minutes from opening to end credits",
+    "origin": "For the Oscars, a film has to run longer than 40 minutes to count as a feature film."
+  },
   "unit": "min",
   "type": "lin",
   "min": 60,

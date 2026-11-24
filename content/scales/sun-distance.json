@@ -3,6 +3,11 @@
   "field": "Astronomy",
   "name": "Distance from the Sun",
   "question": "Average distance from the Sun in astronomical units (1 AU is Earth's distance). Each gridline step is ten times farther.",
+  "measure": {
+    "formula": "AU",
+    "words": "astronomical units: 1 AU is the Earth–Sun distance, about 150 million km",
+    "origin": "Since 2012 one astronomical unit is defined as exactly 149,597,870,700 metres."
+  },
   "unit": "AU",
   "type": "log",
   "min": 0.1,

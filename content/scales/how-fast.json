@@ -3,6 +3,11 @@
   "field": "Motion",
   "name": "How fast?",
   "question": "Top or typical speed in km/h. Each gridline step is ten times faster.",
+  "measure": {
+    "formula": "km/h",
+    "words": "kilometres per hour",
+    "origin": "Most countries use km/h on road signs; the UK and US still use miles per hour (1 mph is about 1.6 km/h)."
+  },
   "unit": "km/h",
   "type": "log",
   "min": 0.001,

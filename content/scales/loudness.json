@@ -3,6 +3,11 @@
   "field": "Acoustics",
   "name": "Loudness",
   "question": "Sound pressure level in decibels. Every +10 dB sounds roughly twice as loud.",
+  "measure": {
+    "formula": "dB",
+    "words": "decibels of sound pressure: +10 dB sounds about twice as loud",
+    "origin": "The 'bel' is named after telephone inventor Alexander Graham Bell. Engineers at Bell Labs introduced it in the 1920s."
+  },
   "unit": "dB",
   "type": "lin",
   "min": -30,

@@ -3,6 +3,11 @@
   "field": "Geography",
   "name": "Country size",
   "question": "Land and water area in square kilometers. Each gridline step is ten times bigger.",
+  "measure": {
+    "formula": "km²",
+    "words": "square kilometres of land and water",
+    "origin": "Square kilometres are the standard for country sizes. Vatican City would fit into New York's Central Park more than seven times."
+  },
   "unit": "km²",
   "type": "log",
   "min": 0.1,

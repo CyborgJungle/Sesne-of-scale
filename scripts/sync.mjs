@@ -17,7 +17,7 @@ const chunks = (a, n) => Array.from({ length: Math.ceil(a.length / n) }, (_, i) 
 const scales = loadScales();
 await upsert("scales", scales.map(s => ({
   id: s.id, field: s.field, name: s.name, question: s.question, unit: s.unit || "", type: s.type, min: s.min, max: s.max,
-  spec: Object.fromEntries(["step", "tickStart", "ticks", "display"].filter(k => s[k] !== undefined).map(k => [k, s[k]])),
+  spec: Object.fromEntries(["measure", "step", "tickStart", "ticks", "display"].filter(k => s[k] !== undefined).map(k => [k, s[k]])),
   updated_at: new Date().toISOString(),
 })));
 const items = scales.flatMap(s => s.items.map(it => ({

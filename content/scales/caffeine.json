@@ -3,6 +3,11 @@
   "field": "Food science",
   "name": "Caffeine",
   "question": "Milligrams of caffeine per serving.",
+  "measure": {
+    "formula": "mg / serving",
+    "words": "milligrams of caffeine in one serving",
+    "origin": "Food-safety agencies such as the EU's EFSA say up to 400 mg a day is fine for most healthy adults."
+  },
   "unit": "mg",
   "type": "lin",
   "min": 0,

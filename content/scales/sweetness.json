@@ -3,6 +3,11 @@
   "field": "Taste",
   "name": "How sweet?",
   "question": "Sweetness compared with table sugar (sugar = 1). Each gridline step is ten times sweeter.",
+  "measure": {
+    "formula": "× sugar",
+    "words": "times as sweet as the same amount of table sugar (sugar = 1)",
+    "origin": "There's no machine for sweetness: it's measured by tasting panels comparing a substance with table sugar."
+  },
   "unit": "× sugar",
   "type": "log",
   "min": 0.1,

@@ -17,6 +17,7 @@ const activeCountries = v => `${v} wdt:P31 wd:Q3624078 . FILTER NOT EXISTS { ${v
 export const RECIPES = {
   "country-area": {
     scale: { id: "country-area", field: "Geography", name: "Country size", question: "Land and water area in square kilometers. Each gridline step is ten times bigger.",
+      measure: { formula: "km²", words: "square kilometres of land and water" },
       unit: "km²", type: "log", min: 0.1, max: 30000000 },
     property: "P2046",
     sparql: `SELECT ?item ?itemLabel (MAX(?a) AS ?value) (MAX(?l) AS ?links) WHERE {
@@ -29,6 +30,7 @@ export const RECIPES = {
   },
   "capital-population": {
     scale: { id: "capital-population", field: "Geography", name: "Capital city population", question: "People living in the city itself (not the wider metro area). Each gridline step is ten times more.",
+      measure: { formula: "people", words: "number of people living in the city itself" },
       unit: "people", type: "log", min: 100, max: 50000000 },
     property: "P1082",
     sparql: `SELECT ?item ?itemLabel ?countryLabel (MAX(?p) AS ?value) (MAX(?l) AS ?links) WHERE {

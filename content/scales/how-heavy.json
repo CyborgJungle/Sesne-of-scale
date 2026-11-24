@@ -3,6 +3,11 @@
   "field": "Motion",
   "name": "How heavy?",
   "question": "Mass, from milligrams to millions of tonnes. Each gridline step is ten times heavier.",
+  "measure": {
+    "formula": "kg",
+    "words": "mass in kilograms (1 tonne = 1,000 kg)",
+    "origin": "From 1889 to 2019 the kilogram was defined by a metal cylinder kept in a vault near Paris."
+  },
   "unit": "kg",
   "type": "log",
   "min": 0.000001,

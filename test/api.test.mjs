@@ -81,3 +81,20 @@ test("archive: lists only dates before the player's today", async () => {
   assert.equal(r.status, 200);
   assert.ok(r.json.every(p => p.date < (today?.date || latestLiveDate())));
 });
+
+test("test key: unlocks future puzzles and the full list, uncached; wrong or missing key doesn't", async () => {
+  const future = loadSchedule().find(p => p.date > latestLiveDate());
+  if (!future) return;
+  process.env.TEST_KEY = "k".repeat(24);
+  try {
+    assert.equal((await call(puzzle, { url: `/api/puzzle?date=${future.date}` })).status, 404);
+    assert.equal((await call(puzzle, { url: `/api/puzzle?date=${future.date}&key=${"x".repeat(24)}` })).status, 404);
+    const ok = await call(puzzle, { url: `/api/puzzle?date=${future.date}&key=${"k".repeat(24)}` });
+    assert.equal(ok.status, 200);
+    assert.equal(ok.cache, "private, no-store");
+    const list = await call(archive, { url: `/api/archive?all=1&key=${"k".repeat(24)}` });
+    assert.equal(list.json.length, loadSchedule().length);
+    const noKey = await call(archive, { url: `/api/archive?all=1` });
+    assert.ok(noKey.json.every(p => p.date <= latestLiveDate()));
+  } finally { delete process.env.TEST_KEY; }
+});

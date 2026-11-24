@@ -3,6 +3,11 @@
   "field": "Materials",
   "name": "Boiling point",
   "question": "The temperature where each one boils, at normal air pressure.",
+  "measure": {
+    "formula": "°C",
+    "words": "degrees Celsius at which it boils, at sea-level air pressure",
+    "origin": "Anders Celsius's original 1742 scale was upside down: 0 was boiling water and 100 was freezing. It was flipped after his death."
+  },
   "unit": "°C",
   "type": "lin",
   "min": -300,

@@ -3,6 +3,11 @@
   "field": "Oceanography",
   "name": "How deep down",
   "question": "Meters below the water surface. Each gridline step is ten times deeper.",
+  "measure": {
+    "formula": "m",
+    "words": "metres below the water surface",
+    "origin": "Sailors measured depth in fathoms: 6 feet (about 1.8 m), roughly the span of a person's outstretched arms."
+  },
   "unit": "m",
   "type": "log",
   "min": 10,

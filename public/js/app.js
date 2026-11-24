@@ -24,7 +24,12 @@ function playerId() {
   }
   return id;
 }
-const KEY = { daily: "sos:daily", archive: "sos:archive" };
+const KEY = { daily: "sos:daily", archive: "sos:archive", test: "sos:test" };
+// Test mode: open the site with ?test=<key> to play any scheduled puzzle. Test plays are stored apart and never submitted.
+const TEST_KEY = new URLSearchParams(location.search).get("test") || "";
+const TESTING = TEST_KEY.length >= 16;
+const keyParam = () => (TESTING ? `&key=${encodeURIComponent(TEST_KEY)}` : "");
+if (TESTING) document.getElementById("testbar").hidden = false;
 const games = mode => store.get(KEY[mode], {});
 function saveGame() {
   const all = games(S.mode); all[S.puzzle.date] = S.g; store.set(KEY[S.mode], all);
@@ -51,7 +56,7 @@ function myStats(today, mode = prefMode()) {
 const puzzleCache = new Map();
 async function fetchPuzzle(date) {
   if (puzzleCache.has(date)) return puzzleCache.get(date);
-  const res = await fetch(`/api/puzzle?date=${date}`);
+  const res = await fetch(`/api/puzzle?date=${date}${keyParam()}`);
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const p = await res.json();
@@ -96,6 +101,7 @@ async function route() {
   S.sel = S.focus = null; S.server = null; S.toast = "";
   const h = location.hash;
   setNav(h === "#archive" ? "archive" : "home");
+  if (TESTING && !h.startsWith("#play/")) return renderTestList();
   if (h === "#archive") return renderArchive();
   const m = h.match(/^#play\/(\d{4}-\d{2}-\d{2})$/);
   const date = m ? m[1] : S.today;
@@ -111,10 +117,10 @@ async function route() {
       : notice("That puzzle isn't available.", "It may not exist, or it isn't out yet where you are.");
   }
   const daily = games("daily")[date];
-  S.mode = date === S.today || daily ? "daily" : "archive";
+  S.mode = TESTING ? "test" : date === S.today || daily ? "daily" : "archive";
   S.g = games(S.mode)[date] || newGame(prefMode());
   if (!S.g.orders) S.g.orders = {};
-  S.view = S.g.done ? "done" : m || started(S.g) ? "play" : "home";
+  S.view = S.g.done ? "done" : (m && !TESTING) || started(S.g) ? "play" : "home";
   render();
 }
 window.addEventListener("hashchange", route);
@@ -132,7 +138,7 @@ function renderMeter() {
   const on = S.view === "play" && S.puzzle;
   m.hidden = !on;
   if (!on) return;
-  document.getElementById("m-label").textContent = (S.mode === "daily" ? "Puzzle" : "Archive") + (gameMode(S.g) === "easy" ? " · Easy" : "");
+  document.getElementById("m-label").textContent = ({ daily: "Puzzle", archive: "Archive", test: "Test" }[S.mode]) + (gameMode(S.g) === "easy" ? " · Easy" : "");
   document.getElementById("m-num").textContent = "#" + S.puzzle.number;
   document.getElementById("m-round").textContent = `${S.g.k + 1} / ${S.puzzle.scales.length}`;
   document.getElementById("m-score").textContent = n(S.g.perScale.reduce((a, b) => a + b, 0));
@@ -176,7 +182,7 @@ function renderHome() {
         <button class="mode${mode === "easy" ? " on" : ""}" role="radio" aria-checked="${mode === "easy"}" data-mode="easy"><b>Easy</b><span>Put the five in the right order, from most to least.</span></button>
         <button class="mode${mode === "hard" ? " on" : ""}" role="radio" aria-checked="${mode === "hard"}" data-mode="hard"><b>Hard</b><span>Place each one on the scale. The closer, the more points.</span></button>
       </div>`}
-      <div class="cta"><button class="btn" id="play">${going ? `Continue (${mode === "easy" ? "Easy" : "Hard"})` : "Play today's puzzle"}</button><span class="tray-note">About 3 minutes · max ${n(p.scales.length * ITEMS_PER_SCALE * MAX_PER_ITEM)} points</span></div>
+      <div class="cta"><button class="btn" id="play">${going ? `Continue (${mode === "easy" ? "Easy" : "Hard"})` : S.mode === "daily" ? "Play today's puzzle" : `Play puzzle #${p.number}`}</button><span class="tray-note">About 3 minutes · max ${n(p.scales.length * ITEMS_PER_SCALE * MAX_PER_ITEM)} points</span></div>
     </div>
     ${statsGrid()}
     <div class="howto"><ol>
@@ -199,9 +205,10 @@ function renderPlay() {
   const isLast = S.g.k === S.puzzle.scales.length - 1;
   main.innerHTML = `
     <section class="head">
-      <div class="eyebrow"><span>${esc(s.field)}</span><span class="pill">${s.type === "log" ? "logarithmic" : "linear"}</span>${s.unit ? `<span class="pill">${esc(s.unit)}</span>` : ""}${S.mode === "archive" ? `<span class="pill mode-tag">archive · #${S.puzzle.number}</span>` : ""}</div>
+      <div class="eyebrow"><span>${esc(s.field)}</span><span class="pill">${s.type === "log" ? "logarithmic" : "linear"}</span>${S.mode !== "daily" ? `<span class="pill mode-tag">${S.mode} · #${S.puzzle.number}</span>` : ""}</div>
       <h2>${esc(s.name)}</h2>
       <p>${esc(s.question)}</p>
+      ${measureHTML(s)}
     </section>
     <section class="board">
       <div class="tray" id="tray">${S.g.revealed ? summaryHTML(its, roundScore) : trayHTML(its)}</div>
@@ -225,6 +232,13 @@ function renderPlay() {
   drawGauge();
   wire();
   if (S.focus !== null) main.querySelector(`[data-label="${S.focus}"]`)?.focus({ preventScroll: true });
+}
+
+/** The scale's "formula": what the numbers mean, e.g. "kcal / 100 g · kilocalories in 100 grams of the food". */
+function measureHTML(s) {
+  const m = s.measure || (s.unit ? { formula: s.unit, words: "" } : null);
+  if (!m) return "";
+  return `<div class="measure"><span class="m-label">Scale</span><b class="m-formula">${esc(m.formula)}</b>${m.words ? `<span class="m-words">${esc(m.words)}</span>` : ""}${m.origin ? `<span class="m-origin">${esc(m.origin)}</span>` : ""}</div>`;
 }
 
 /* ---------- Easy mode: drag the five cards into order ---------- */
@@ -251,9 +265,10 @@ function renderPlayEasy() {
   }).join("");
   main.innerHTML = `
     <section class="head">
-      <div class="eyebrow"><span>${esc(s.field)}</span><span class="pill">easy</span>${s.unit ? `<span class="pill">${esc(s.unit)}</span>` : ""}${S.mode === "archive" ? `<span class="pill mode-tag">archive · #${S.puzzle.number}</span>` : ""}</div>
+      <div class="eyebrow"><span>${esc(s.field)}</span><span class="pill">easy</span>${S.mode !== "daily" ? `<span class="pill mode-tag">${S.mode} · #${S.puzzle.number}</span>` : ""}</div>
       <h2>${esc(s.name)}</h2>
       <p>${esc(s.question)}</p>
+      ${measureHTML(s)}
     </section>
     <section class="easy">
       <div class="ends">▲ Highest</div>
@@ -409,7 +424,7 @@ function renderDone() {
   const card = shareText(p, result, location.origin, gameMode(S.g));
   const daily = S.mode === "daily";
   main.innerHTML = `<section class="end head">
-    <div class="eyebrow"><span>${daily ? "Puzzle" : "Archive"} #${p.number}</span><span class="pill">${esc(fmtDate(p.date))}</span><span class="pill">${gameMode(S.g) === "easy" ? "Easy" : "Hard"}</span></div>
+    <div class="eyebrow"><span>${{ daily: "Puzzle", archive: "Archive", test: "Test" }[S.mode]} #${p.number}</span><span class="pill">${esc(fmtDate(p.date))}</span><span class="pill">${gameMode(S.g) === "easy" ? "Easy" : "Hard"}</span></div>
     <div class="score-xl">${n(result.total)}<small> / ${n(max)}</small></div>
     <h2 style="font-size:clamp(24px,4vw,34px)">${title}</h2>
     <div class="percentile" id="percentile">${daily ? `<span class="tray-note">Comparing with other players…</span>` : ""}</div>
@@ -470,6 +485,28 @@ function startCountdown() {
     el.textContent = [h, m, s].map(x => String(x).padStart(2, "0")).join(":");
   };
   tick(); countdownTimer = setInterval(tick, 1000);
+}
+
+/* ---------- Test mode: every scheduled puzzle, nothing counts ---------- */
+async function renderTestList() {
+  S.view = "test"; renderMeter();
+  main.innerHTML = `<section class="head"><div class="eyebrow"><span class="pill mode-tag">test mode</span></div><h2>All scheduled puzzles</h2>
+    <p>Play any puzzle, including future ones. Test plays are saved separately: they don't touch your streak or the player stats.</p></section>
+    <div id="tlist" class="tray-note">Loading…</div>
+    <div class="cta"><button class="btn ghosty" id="treset">Reset test plays</button><a class="linkbtn" href="/">Exit test mode</a></div>`;
+  document.getElementById("treset").onclick = () => { store.set(KEY.test, {}); renderTestList(); };
+  let list = [];
+  try { const r = await fetch(`/api/archive?all=1${keyParam()}`); if (r.ok) list = await r.json(); } catch { /* shown below */ }
+  const el = document.getElementById("tlist");
+  if (!el || S.view !== "test") return;
+  if (!Array.isArray(list) || !list.length) { el.textContent = "No puzzles found. Is the test key right?"; return; }
+  const t = games("test");
+  el.className = "archive";
+  el.innerHTML = list.map(p => {
+    const g = t[p.date], when = p.date === S.today ? "today" : p.date > S.today ? "upcoming" : "past";
+    return `<button data-date="${p.date}" class="${g?.done ? "done" : ""}"><b>#${p.number}</b><span>${esc(fmtDate(p.date))} · ${when}</span><span>${g?.done ? `${n(g.total)} pts${gameMode(g) === "easy" ? " · Easy" : ""}` : g ? "in progress" : "not played"}</span></button>`;
+  }).join("");
+  el.onclick = e => { const b = e.target.closest("[data-date]"); if (b) location.hash = `#play/${b.dataset.date}`; };
 }
 
 async function renderArchive() {

@@ -21,6 +21,8 @@ A day is 3 scales × 5 items, so a year is **1,095 scale appearances and 5,475 i
   "field": "Oceanography",             // category; the 3 scales of a day come from different fields
   "name": "How deep down",             // title shown to players
   "question": "Meters below the water surface. Each gridline step is ten times deeper.",
+  "measure": { "formula": "m", "words": "metres below the water surface",     // shown under the question: what the numbers mean
+               "origin": "Sailors measured depth in fathoms..." },              // fun line: who made the scale or where it's used
   "unit": "m",                         // shown after values; "" for none
   "type": "log",                       // "lin" or "log" (log needs min > 0)
   "min": 10, "max": 12000,

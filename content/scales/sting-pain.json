@@ -3,6 +3,11 @@
   "field": "Zoology",
   "name": "How much does the sting hurt?",
   "question": "Schmidt sting pain index: entomologist Justin Schmidt rated the pain of insect stings he received, from 1 (mild) to 4 (excruciating).",
+  "measure": {
+    "formula": "pain 1–4",
+    "words": "Schmidt sting pain index: 1 is mild, 4 is excruciating",
+    "origin": "Entomologist Justin Schmidt built the index from stings he collected while studying insects. His book about it is called The Sting of the Wild."
+  },
   "unit": "",
   "type": "lin",
   "min": 0,

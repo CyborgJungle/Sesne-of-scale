@@ -3,6 +3,11 @@
   "field": "Geography",
   "name": "Capital city population",
   "question": "People living in the city itself (not the wider metro area). Each gridline step is ten times more.",
+  "measure": {
+    "formula": "people",
+    "words": "number of people living in the city itself",
+    "origin": "City populations depend on where the boundary is drawn; the surrounding metro area is often many times bigger."
+  },
   "unit": "people",
   "type": "log",
   "min": 100,

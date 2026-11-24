@@ -11,6 +11,10 @@ test("every scale file passes validation without errors", () => {
   for (const s of scales) assert.deepEqual(validateScale(s).errors, [], s.id);
 });
 
+test("every scale explains its measure (formula + words) for players", () => {
+  for (const s of scales) assert.ok(s.measure && s.measure.formula && s.measure.words, `${s.id} has no measure`);
+});
+
 test("item ids are unique across all scales", () => {
   const ids = scales.flatMap(s => s.items.map(it => it.id));
   assert.equal(new Set(ids).size, ids.length);
