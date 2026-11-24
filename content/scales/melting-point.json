@@ -35,7 +35,8 @@
       "value": 29.76,
       "source": "https://en.wikipedia.org/wiki/Gallium",
       "fact": "Gallium melts in your hand.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "0 4s 2 4p 1 Electrons per shell 2, 8, 18, 3 Physical properties Phase at STP solid Melting point 302.9146 K ​ (29.7646 °C, ​ 85.5763 °F) Boiling point 2676 K ​ (2403 °C, ​ 4357 °F) Density (at 20° C) 5.907 g/cm 3 when li"
     },
     {
       "name": "Cocoa butter (chocolate)",
@@ -130,7 +131,8 @@
       "value": 1084.62,
       "source": "https://en.wikipedia.org/wiki/Copper",
       "fact": "Copper melts only about 20 °C above gold.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "] 3d 10 4s 1 Electrons per shell 2, 8, 18, 1 Physical properties Phase at STP solid Melting point 1357.77 K ​ (1084.62 °C, ​ 1984.32 °F) Boiling point 2835 K ​ (2562 °C, ​ 4643 °F) Density (at 20° C) 8.935 g/cm 3 (at STP"
     },
     {
       "name": "Iron",

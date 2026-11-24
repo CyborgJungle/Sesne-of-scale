@@ -49,7 +49,8 @@
       "verify": {
         "match": "years"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "to around 200 meters in the open ocean"
     },
     {
       "name": "Free-dive record (no limits)",
@@ -80,7 +81,8 @@
       "verify": {
         "match": "depth"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "%) Douglas County (13%) Washoe County (11%) Carson City (6%) Average depth 1000 ft (300 m) Max. depth 1645 ft (501 m) Water volume 36 cu mi (150 km 3 ; 120000000 acre⋅ft) [ failed verification ] Residence time 650 years"
     },
     {
       "name": "Emperor penguin dive",
@@ -170,7 +172,8 @@
       "verify": {
         "match": "Titanic"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "n>] /span>Category:Pages using gadget WikiMiniAtlas /span>\"' id=\"mwFA\"/> Depth 12500 feet (2100 fathoms; 3800 metres) Discovered 1 September 1985 ; 41 years ago ( 1985-09-01 ) The wreck of the British ocean liner R"
     },
     {
       "name": "Puerto Rico Trench",
@@ -192,7 +195,8 @@
       "verify": {
         "match": "depth"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "pan>\"' id=\"mwEw\"/> Ocean/sea sources Pacific Ocean Managing agency Federated States of Micronesia Max. depth 10935 ± 6 m (35876 ± 20 ft) below sea level Location of Challenger Deep within the Mariana Trench and western"
     }
   ]
 }

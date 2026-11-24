@@ -65,10 +65,11 @@
       "source": "https://en.wikipedia.org/wiki/Jupiter",
       "fact": "Jupiter takes almost 12 years to orbit the Sun.",
       "familiar": true,
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Semi-major axis"
-      }
+      },
+      "quote": "Epoch J2000 Aphelion 5.4570 AU (816.363 million km ) Perihelion 4.9506 AU (740.595 million km) Semi-major axis 5.2038 AU (778.479 million km) Eccentricity 0.0489 Orbital period (sidereal) 11.862 yr 4332.59 d 10476.8 Jovi"
     },
     {
       "name": "Saturn",
@@ -95,10 +96,11 @@
       "value": 19.19126,
       "source": "https://en.wikipedia.org/wiki/Uranus",
       "fact": "Uranus was the first planet found with a telescope, in 1781.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Semi-major axis"
-      }
+      },
+      "quote": "eristics Epoch J2000 Aphelion 20.0965 AU ( 3.006 39 billion km ) Perihelion 18.2861 AU ( 2.735 56 billion km) Semi-major axis 19.191 26 AU ( 2.870 972 billion km) Eccentricity 0.047 17 Orbital period (sidereal) 84.0205 y"
     },
     {
       "name": "Neptune",
@@ -140,7 +142,8 @@
         "number": 45.4,
         "match": "Semi-major axis"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ecovery date January 29, 1955 Aphelion 52.796 AU (7.8982 Tm ) Perihelion 38.201 AU (5.7148 Tm) Semi-major axis 45.499 AU (6.8066 Tm) Eccentricity 0.1604 Orbital period (sidereal) 306.70 yr (112022 d ) Mean anomaly 170.49"
     },
     {
       "name": "Eris",
@@ -159,10 +162,11 @@
       "source": "https://en.wikipedia.org/wiki/Sedna_(dwarf_planet)",
       "fact": "One orbit of Sedna takes over 11,000 years.",
       "disputed": true,
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Semi-major axis"
-      }
+      },
+      "quote": "ember 1990 Aphelion 937 AU (140 billion km ) or 0.015 ly Perihelion 76.19 AU (11.4 billion km) Semi-major axis 506 AU (76 billion km) or 0.007 ly Eccentricity 0.8496 Orbital period (sidereal) 12 679 yr (barycentric) Orbi"
     }
   ]
 }

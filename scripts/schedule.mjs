@@ -28,7 +28,11 @@ export function rng(seedStr) {
 const sample = (arr, n, r) => { const a = arr.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a.slice(0, n); };
 
 /** Best set of 5 items for one appearance of a scale. */
-export function pickItems(scale, items, date, lastItemUse, r) {
+export function pickItems(scale, allItems, date, lastItemUse, r) {
+  // Hard rule when possible: only items not used in the last ITEM_GAP days. Otherwise the least recently used.
+  const fresh = allItems.filter(it => !lastItemUse.has(it.id) || daysBetween(lastItemUse.get(it.id), date) >= ITEM_GAP);
+  const items = fresh.length >= ITEMS_PER_SCALE ? fresh
+    : allItems.slice().sort((a, b) => (lastItemUse.get(a.id) || "").localeCompare(lastItemUse.get(b.id) || "")).slice(0, Math.max(ITEMS_PER_SCALE + 3, fresh.length));
   let best = null;
   for (let attempt = 0; attempt < 600; attempt++) {
     const set = sample(items, ITEMS_PER_SCALE, r);

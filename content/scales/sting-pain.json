@@ -21,7 +21,8 @@
       "verify": {
         "match": "Potter wasp"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "asp | Club-horned wasp | Sapyga pumila | North America | Disappointing. A paperclip falls on your bare foot. | 0.5 | wasp | Potter wasp | Eumeninae sp. | North America | Looks deceive. Rich and full-bodied in appearance"
     },
     {
       "name": "Sweat bee",
@@ -31,7 +32,8 @@
       "verify": {
         "match": "Sweat bees"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ee | Emphoropsis pallida | North America | Almost pleasant, a lover just bit your earlobe a little too hard. | 1 | bee | Sweat bees | Lasioglossum spp. | North America | Light and ephemeral, almost fruity. A tiny spark h"
     },
     {
       "name": "Red fire ant",
@@ -39,7 +41,8 @@
       "source": "https://en.wikipedia.org/wiki/Schmidt_sting_pain_index",
       "fact": "Schmidt: \"Like walking across a shag carpet and reaching for the light switch.\"",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "cent of a childhood bully. Intimidating, but his punch only glanced your chin, and you live for another day. | 1 | ant | Slender twig ant | Tetraponera sp. | Asia | A skinny bully's punch. It's too weak to hurt but you s"
     },
     {
       "name": "Mud dauber wasp",
@@ -49,7 +52,8 @@
       "verify": {
         "match": "Mud dauber"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "lorion cyaneum | North America | Itchy with a hint of sharpness. A single stinging nettle pricked your hand. | 1 | wasp | Scarab hunter wasp | Triscolia ardens | North America | Like a sip of tannin, bitterness lingers."
     },
     {
       "name": "Paper wasp",
@@ -59,7 +63,8 @@
       "verify": {
         "match": "Paper wasp"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ica | A surprising touch of nasty. Like a thorn hidden on the back of a rose stem as you clutch the bouquet. | 1.5 | wasp | n/a | Mutillidae sp. (A nocturnal velvet ant) | North America | Itch, burn, and more itch. A too"
     },
     {
       "name": "Honey bee",
@@ -70,7 +75,8 @@
       "verify": {
         "match": "Western honey bee"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "on with: details on how the index was developed by Schmidt. You can help by adding missing information. (March 2026) | Schmidt developed the index from observations made during his research on Hymenoptera and their venom"
     },
     {
       "name": "Bumble bee",
@@ -81,7 +87,8 @@
       "verify": {
         "match": "Bumble bees"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "can handle it. A flaming match head lands on your arm and is quenched first with lye and then sulfuric acid. | 2 | bee | Western honey bee | Apis mellifera (A special case, tongue) | Native to Africa and Europe | It's cr"
     },
     {
       "name": "Yellowjacket wasp",
@@ -92,7 +99,8 @@
       "verify": {
         "match": "Western yellowjacket"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "t who stays much too long, the pain drones on. A hot Dutch oven lands on your hand and you can't get it off. | 2 | wasp | Honey wasp | Brachygastra mellifica | North America & Central America | Spicy, blistering. A cotto"
     },
     {
       "name": "Bald-faced hornet",
@@ -102,7 +110,8 @@
       "verify": {
         "match": "Baldfaced hornet"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "a | North America | Rich, hearty, slightly crunchy. Similar to getting your hand mashed in a revolving door. | 2 | wasp | n/a | Mischocyttarus sp. (A type of paper wasp) | North America, Central America & South America |"
     },
     {
       "name": "Jack jumper ant",
@@ -112,7 +121,8 @@
       "verify": {
         "match": "Jack jumper"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Myrmecia pilosula | Australia | The oven mitt had a hole in it when you pulled the cookies out of the oven. | 2 | ant | Metallic green ant | Rhytidoponera metallica | Australia | Deceptively painful. Like biting into a"
     },
     {
       "name": "Trap-jaw ant",
@@ -122,7 +132,8 @@
       "verify": {
         "match": "Trap-jaw ant"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "nd rash with serious lasting power. Should have spent the extra money and paid for a licensed tattoo artist. | 2.5 | ant | Trap-jaw ant | Odontomachus spp. | Tropics worldwide | Instantaneous and excruciating. A rat trap"
     },
     {
       "name": "Nocturnal hornet",
@@ -132,7 +143,8 @@
       "verify": {
         "match": "Nocturnal hornet"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "turnal hornet | Provespa sp. | Asia | Rude, insulting. An ember from your campfire is glued to your forearm. | 2.5 | wasp | Golden paper wasp | Polistes aurifer | North America & Central America | Sharp, piercing, and im"
     },
     {
       "name": "Honey bee sting on the tongue",
@@ -142,7 +154,8 @@
       "verify": {
         "match": "tongue"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "as a similar feeling to \"The oven mitt had a hole in it when you pulled the cookies out of the oven.\" | Level 3 | Most insects that are characterized as having a pain level of 3 are wasps, including the neotropical red"
     },
     {
       "name": "Florida harvester ant",
@@ -152,7 +165,8 @@
       "verify": {
         "match": "Florida harvester"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "us | North America | Bold and unrelenting. Somebody is using a power drill to excavate your ingrown toenail. | 3 | ant | Maricopa harvester ant | Pogonomyrmex maricopa | North America | After eight unrelenting hours of d"
     },
     {
       "name": "Red paper wasp",
@@ -162,7 +176,8 @@
       "verify": {
         "match": "Red paper wasp"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "as a similar feeling to \"The oven mitt had a hole in it when you pulled the cookies out of the oven.\" | Level 3 | Most insects that are characterized as having a pain level of 3 are wasps, including the neotropical red"
     },
     {
       "name": "Bullet ant",
@@ -173,7 +188,8 @@
       "verify": {
         "match": "Bullet ant"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": ", progressing through 2 for familiar pains such as those caused by common bee or wasp stings, and finishing at 4 for the most painful stings. Only the bullet ant, Paraponera clavata, was given a rating of 4, although lat"
     },
     {
       "name": "Tarantula hawk wasp",
@@ -183,7 +199,8 @@
       "verify": {
         "match": "Tarantula hawk"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ralyzing neurotoxic peptide. He later gave the sting of a tarantula hawk species, Pepsis grossa, a rating of a 4, which he described as \"blinding, fierce [and] shockingly electric\", though the duration of pain from the s"
     },
     {
       "name": "Warrior wasp",
@@ -193,7 +210,8 @@
       "verify": {
         "match": "Warrior"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "a | Blinding, fierce, shockingly electric. A running hair dryer has just been dropped into your bubble bath. | 4 | wasp | Warrior (or armadillo) wasp | Synoeca septentrionalis | Central America & South America | Torture."
     }
   ]
 }

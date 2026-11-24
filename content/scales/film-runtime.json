@@ -125,13 +125,14 @@
     },
     {
       "name": "Spirited Away (2001)",
-      "value": 125,
+      "value": 124,
       "source": "https://en.wikipedia.org/wiki/Spirited_Away",
       "fact": "Spirited Away won the Oscar for Best Animated Feature.",
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Running time 124 minutes"
     },
     {
       "name": "Jurassic Park (1993)",
@@ -258,14 +259,14 @@
     },
     {
       "name": "Lawrence of Arabia (1962)",
-      "value": 227,
+      "value": 222,
       "source": "https://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)",
       "fact": "Lawrence of Arabia has no speaking roles for women.",
-      "disputed": true,
       "verify": {
         "match": "Running time"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Running time 222 minutes"
     }
   ]
 }

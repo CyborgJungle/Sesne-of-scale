@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "description": "A daily game about how big, fast, hot, loud and old things really are.",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "node --env-file-if-exists=.env scripts/dev.mjs",
     "validate": "node scripts/validate.mjs",
@@ -13,6 +15,7 @@
     "sync": "node --env-file-if-exists=.env scripts/sync.mjs",
     "wikidata": "node scripts/wikidata-draft.mjs",
     "test": "node --test test/*.test.mjs",
-    "test:e2e": "node --test test/e2e/*.test.mjs"
+    "test:e2e": "node --test test/e2e/*.test.mjs",
+    "capacity": "node scripts/capacity.mjs"
   }
 }

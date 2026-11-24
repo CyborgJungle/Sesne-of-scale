@@ -20,7 +20,8 @@
         "number": 10,
         "match": "EEG"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "tude, the following list describes various voltage levels. SI prefix | Factor (volt) | Value | Item | Micro- | 10 | 500 nV | Change in nerve cell potential caused by opening a single acetylcholine receptor channel | 10 |"
     },
     {
       "name": "Nerve cell at rest",
@@ -31,7 +32,8 @@
         "number": 75,
         "match": "resting potential"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "from K-type thermocouple | Centi- | 10 | ~10-50 mV | Ripple voltage in the output of a good DC power supply | 75 mV | Nerve cell resting potential | Deci- | 10 | 320 mV | Typical voltage reference level in consumer audi"
     },
     {
       "name": "Lemon battery",
@@ -42,7 +44,8 @@
         "number": 900,
         "match": "Lemon"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "icon diodes | 800-1000 mV | Typical positive supply voltage of a low voltage CMOS digital integrated circuit | 900 mV | Lemon battery cell (made with copper and zinc electrodes) | N/A | 10 | 0-3 V | Magnitudes of standar"
     },
     {
       "name": "AA battery",
@@ -53,7 +56,8 @@
       "verify": {
         "match": "Alkaline battery"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "th copper and zinc electrodes) | N/A | 10 | 0-3 V | Magnitudes of standard reduction potentials in chemistry | 1.5 V | Alkaline battery AAAA, AAA, AA, C or D battery | 3.3 V | One of the most common low voltage CMOS digi"
     },
     {
       "name": "USB phone charger",
@@ -63,7 +67,8 @@
       "verify": {
         "match": "USB"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": ", AAA, AA, C or D battery | 3.3 V | One of the most common low voltage CMOS digital circuit supply voltages. | 5 V | USB power, used for example to charge a cell phone or a digital camera. Also one of the most common dig"
     },
     {
       "name": "Car battery",
@@ -74,7 +79,8 @@
       "verify": {
         "match": "car battery"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "voltage for medium-size electric lanterns. A voltage for older electric systems of automobiles. | Deca- | 10 | 12 V | Typical car battery | Hecto- | 10 | 100-240 V | Domestic wall socket voltage | 600 V | Electric eel se"
     },
     {
       "name": "European wall socket",
@@ -87,7 +93,8 @@
         "number": 240,
         "match": "wall socket"
       },
-      "status": "draft"
+      "status": "draft",
+      "note": "The cited page only says 'Domestic wall socket voltage 100–240 V'; confirm 230 V for Europe with a better source."
     },
     {
       "name": "Electric eel attack",
@@ -97,7 +104,8 @@
       "verify": {
         "match": "Electric eel"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "omobiles. | Deca- | 10 | 12 V | Typical car battery | Hecto- | 10 | 100-240 V | Domestic wall socket voltage | 600 V | Electric eel sends this voltage in an average attack | 630 V | London Underground railway tracks | Ki"
     },
     {
       "name": "London Underground track",
@@ -107,7 +115,8 @@
       "verify": {
         "match": "London Underground"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "10 | 100-240 V | Domestic wall socket voltage | 600 V | Electric eel sends this voltage in an average attack | 630 V | London Underground railway tracks | Kilo- | 10 | 2450 V | Electric chair execution in Nebraska | 3-10"
     },
     {
       "name": "Electric fence",
@@ -118,7 +127,8 @@
         "number": 3,
         "match": "Electric fence"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ack | 630 V | London Underground railway tracks | Kilo- | 10 | 2450 V | Electric chair execution in Nebraska | 3-10 kV | Electric fence | 3 kV | Voltage required to generate every 1 mm of electric arc | 3-35 kV | Acceler"
     },
     {
       "name": "High-speed train overhead line",
@@ -129,7 +139,8 @@
         "number": 25,
         "match": "high-speed train"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ion substations to end users | 10 | 15 kV | Train 15 kV AC railway electrification overhead lines, 16+2⁄3 Hz | 25 kV | European high-speed train overhead power lines | 33 kV | Maximum voltage allowed in an electricity di"
     },
     {
       "name": "Long-distance power line",
@@ -140,7 +151,8 @@
         "number": 345,
         "match": "extra-high voltage"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ibution systems) | 69-230 kV | Range used in North American power high-voltage transmission substations | 10 | 345-800 kV | Range used in extra-high voltage power transmission systems | 800 kV | Lowest voltage used by ul"
     },
     {
       "name": "Biggest human-made DC voltage",
@@ -151,7 +163,8 @@
         "number": 25.5,
         "match": "Van de Graaff"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "on systems | Mega- | 10 | 3 MV | Used by the ultra-high voltage electron microscope at Osaka University | 10 | 25.5 MV | The largest man-made DC voltage - produced in a Van de Graaff generator at Oak Ridge National Labor"
     },
     {
       "name": "Lightning bolt",
@@ -163,7 +176,8 @@
         "number": 100,
         "match": "lightning"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "he largest man-made DC voltage - produced in a Van de Graaff generator at Oak Ridge National Laboratory | 10 | 100 MV | The potential difference between the ends of a typical lightning bolt | Peta- | 10 | 7 PV | Voltage"
     }
   ]
 }

@@ -623,3 +623,8 @@ let rz;
 new ResizeObserver(() => { cancelAnimationFrame(rz); rz = requestAnimationFrame(() => { if (S.view === "play" && document.getElementById("gauge")) drawGauge(); }); }).observe(main);
 
 route();
+
+// Installable web app: register the service worker (skipped on localhost so development stays uncached).
+if ("serviceWorker" in navigator && !/^(localhost|127\.)/.test(location.hostname)) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js").catch(() => {}));
+}

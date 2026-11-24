@@ -143,7 +143,8 @@
       "source": "https://en.wikipedia.org/wiki/Eiffel_Tower",
       "fact": "The Eiffel Tower was meant to stand for only 20 years.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "ar=2019 |isbn=9781351665421 |page=80|publisher=Routledge  /ref>\"},\"opening_date\":{\"wt\":\"Start date and age|1889|05|15|df=yes ref name=Bachman />\"},\"building_type\":{\"wt\":\"Observation tower br />Broadcasting tower\"},"
     },
     {
       "name": "Panama Canal",
@@ -162,7 +163,8 @@
       "source": "https://en.wikipedia.org/wiki/Empire_State_Building",
       "fact": "The Empire State Building took just 410 days to build.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "]}' id=\"mwEA\"> Empire State Building The Empire State Building in 2017 Record height Tallest in the world from 1931 to 1967, 1970 [I] Preceded by Chrysler Building Surpassed by Ostankino Tower (overall) World Trade Cente"
     },
     {
       "name": "Golden Gate Bridge",

@@ -16,7 +16,8 @@
       "verify": {
         "match": "Lactose"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": ", is also sweet. Sweetness of various compounds Name | Type of compound | Sweetness | Lactose | Disaccharide | 0.16 | Maltose | Disaccharide | 0.33 - 0.45 | Trehalose (α,α-trehalose) | Disaccharide | max. 0.45 | Isomaltu"
     },
     {
       "name": "Maltose (malt sugar)",
@@ -27,7 +28,8 @@
         "number": 0.33,
         "match": "Maltose"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "rious compounds Name | Type of compound | Sweetness | Lactose | Disaccharide | 0.16 | Maltose | Disaccharide | 0.33 - 0.45 | Trehalose (α,α-trehalose) | Disaccharide | max. 0.45 | Isomaltulose | Disaccharide | 0.40 - 0.5"
     },
     {
       "name": "Sorbitol",
@@ -37,7 +39,8 @@
       "verify": {
         "match": "Sorbitol"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "- 0.50 | L-serine | Amino acid | 0.53 - 0.55 | L-proline | Amino acid | 0.37 - 0.76 | Sorbitol | Polyalcohol | 0.6 | Galactose | Monosaccharide | 0.65 | Glucose | Monosaccharide | 0.74 - 0.8 | Glycine | Amino acid | 0.6"
     },
     {
       "name": "Glucose",
@@ -48,7 +51,8 @@
         "number": 0.74,
         "match": "Glucose"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| 0.37 - 0.76 | Sorbitol | Polyalcohol | 0.6 | Galactose | Monosaccharide | 0.65 | Glucose | Monosaccharide | 0.74 - 0.8 | Glycine | Amino acid | 0.6 - 0.89 | L-alanine | Amino acid | 0.77 - 1.10 | Sucrose | Disaccharid"
     },
     {
       "name": "Table sugar (sucrose)",
@@ -59,7 +63,8 @@
       "verify": {
         "match": "Sucrose"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "in breast milk. Sweetness appears to have the highest taste recognition threshold, being detectable at around 1 part in 200 of sucrose in solution. By comparison, bitterness appears to have the lowest detection threshol"
     },
     {
       "name": "Fructose (fruit sugar)",
@@ -71,7 +76,8 @@
         "number": 1.17,
         "match": "Fructose"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": ".10 | Sucrose | Disaccharide | 1.00 (reference) | Xylitol | sugar alcohol | 1.02 | Fructose | Monosaccharide | 1.17 - 1.75 | Sodium cyclamate | Sulfonate | 26 | Steviol glycoside | Glycoside | 40 - 300 | Aspartame | Dipe"
     },
     {
       "name": "Cyclamate",
@@ -81,7 +87,8 @@
       "verify": {
         "match": "cyclamate"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "e) | Xylitol | sugar alcohol | 1.02 | Fructose | Monosaccharide | 1.17 - 1.75 | Sodium cyclamate | Sulfonate | 26 | Steviol glycoside | Glycoside | 40 - 300 | Aspartame | Dipeptide methyl ester | 180 - 250 | Acesulfame p"
     },
     {
       "name": "Stevia",
@@ -94,7 +101,8 @@
         "number": 40,
         "match": "Steviol"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Fructose | Monosaccharide | 1.17 - 1.75 | Sodium cyclamate | Sulfonate | 26 | Steviol glycoside | Glycoside | 40 - 300 | Aspartame | Dipeptide methyl ester | 180 - 250 | Acesulfame potassium | Oxathiazinone dioxide | 20"
     },
     {
       "name": "Aspartame",
@@ -106,7 +114,8 @@
         "number": 180,
         "match": "Aspartame"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "m cyclamate | Sulfonate | 26 | Steviol glycoside | Glycoside | 40 - 300 | Aspartame | Dipeptide methyl ester | 180 - 250 | Acesulfame potassium | Oxathiazinone dioxide | 200 | Sodium saccharin | Sulfonyl | 300 - 675 | Su"
     },
     {
       "name": "Saccharin",
@@ -117,7 +126,8 @@
         "number": 300,
         "match": "saccharin"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "tose | Monosaccharide | 1.17 - 1.75 | Sodium cyclamate | Sulfonate | 26 | Steviol glycoside | Glycoside | 40 - 300 | Aspartame | Dipeptide methyl ester | 180 - 250 | Acesulfame potassium | Oxathiazinone dioxide | 200 | S"
     },
     {
       "name": "Sucralose",
@@ -127,7 +137,8 @@
       "verify": {
         "match": "Sucralose"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| Oxathiazinone dioxide | 200 | Sodium saccharin | Sulfonyl | 300 - 675 | Sucralose | Modified disaccharide | 600 | Monellin | Protein | 800 to 2000 | Thaumatin | Protein | 2000 | Neotame | Aspartame analog | 8000 | Suc"
     },
     {
       "name": "Monellin (berry protein)",
@@ -138,7 +149,8 @@
         "number": 800,
         "match": "Monellin"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "200 | Sodium saccharin | Sulfonyl | 300 - 675 | Sucralose | Modified disaccharide | 600 | Monellin | Protein | 800 to 2000 | Thaumatin | Protein | 2000 | Neotame | Aspartame analog | 8000 | Sucrooctate | Guanidine | 1620"
     },
     {
       "name": "Thaumatin",
@@ -148,7 +160,8 @@
       "verify": {
         "match": "Thaumatin"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "odium saccharin | Sulfonyl | 300 - 675 | Sucralose | Modified disaccharide | 600 | Monellin | Protein | 800 to 2000 | Thaumatin | Protein | 2000 | Neotame | Aspartame analog | 8000 | Sucrooctate | Guanidine | 162000 (est"
     },
     {
       "name": "Neotame",
@@ -158,7 +171,8 @@
       "verify": {
         "match": "Neotame"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "accharide | 600 | Monellin | Protein | 800 to 2000 | Thaumatin | Protein | 2000 | Neotame | Aspartame analog | 8000 | Sucrooctate | Guanidine | 162000 (estimated) | Bernardame | Guanidine | 188000 (estimated) | Sucrononi"
     },
     {
       "name": "Lugduname",
@@ -168,7 +182,8 @@
       "verify": {
         "match": "Lugduname"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "c acid | Guanidine | 200000 (estimated) | Carrelame | Guanidine | 200000 (estimated) | Lugduname | Guanidine | 230000 (estimated) | Some variation in values is not uncommon between various studies. Such variations may ar"
     }
   ]
 }

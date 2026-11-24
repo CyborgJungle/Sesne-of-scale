@@ -73,14 +73,15 @@
     },
     {
       "name": "Golden hamster",
-      "value": 2.5,
+      "value": 1.75,
       "source": "https://en.wikipedia.org/wiki/Golden_hamster",
       "fact": "Almost all pet hamsters descend from a few hamsters caught in Syria in 1930.",
       "verify": {
-        "number": 2,
-        "match": "years"
+        "number": 1.5,
+        "match": "lifespan"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "with a body mass of around 100–150 grams (3.5–5.3 oz) and lifespan of 1.5–2 years"
     },
     {
       "name": "House mouse (in captivity)",
@@ -90,7 +91,8 @@
       "verify": {
         "match": "years"
       },
-      "status": "draft"
+      "status": "draft",
+      "note": "The page doesn't state a lifespan number near 'lifespan'; find a better source."
     },
     {
       "name": "Dog",
@@ -119,15 +121,17 @@
     },
     {
       "name": "Horse",
-      "value": 28,
+      "value": 27.5,
       "source": "https://en.wikipedia.org/wiki/Horse",
       "fact": "A horse's age can be estimated from its teeth.",
       "familiar": true,
       "disputed": true,
       "verify": {
-        "match": "years"
+        "number": 25,
+        "match": "life expectancy"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "the modern domestic horse has a life expectancy of 25 to 30 years"
     },
     {
       "name": "Brandt's bat (record)",
@@ -137,7 +141,8 @@
       "verify": {
         "match": "years"
       },
-      "status": "draft"
+      "status": "rejected",
+      "note": "The ~40-year records were reclassified to the Siberian bat (Myotis sibiricus), per the source page."
     },
     {
       "name": "Human (global life expectancy)",
@@ -184,7 +189,8 @@
       "verify": {
         "match": "years"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "(9.7 to 17.1 ft) . They may be the longest-lived of all mammals, with the ability to reach an age of more than 200 years. The bowhead was an early whaling target. Their population was severely reduced before a 1966 morat"
     },
     {
       "name": "Rougheye rockfish (record)",
@@ -242,7 +248,8 @@
         "number": 4800,
         "match": "years"
       },
-      "status": "draft"
+      "status": "draft",
+      "note": "Age not found as plain text on the page (may be in an infobox); check by hand."
     }
   ]
 }

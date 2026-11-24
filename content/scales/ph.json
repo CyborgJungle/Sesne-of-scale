@@ -21,7 +21,8 @@
       "verify": {
         "number": 1
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ere KW is the self-ionization constant of water. Taking logarithms, pOH=pKW-pH. So, at room temperature, pOH ≈ 14 - pH. (Under otherwise standard conditions, the equation is exact at approximately 24.87 °C.) However this"
     },
     {
       "name": "Gastric acid",
@@ -29,7 +30,8 @@
       "source": "https://en.wikipedia.org/wiki/PH",
       "fact": "Your stomach lining replaces itself every few days to survive its own acid.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "nce. pH of various body fluids[edit | edit source] pH of various body fluids Compartment | pH | Gastric acid | 1.5-3.5 | Lysosomes | 4.5 | Human skin | 4.7 | Granules of chromaffin cells | 5.5 | Urine | 6.0 | Breast milk"
     },
     {
       "name": "Lemon juice",
@@ -37,7 +39,8 @@
       "source": "https://en.wikipedia.org/wiki/PH",
       "fact": "Lemon juice is 5–6% citric acid.",
       "familiar": true,
-      "status": "draft"
+      "status": "checked",
+      "quote": "in plants[edit | edit source] Lemon juice tastes sour because it contains 5% to 6% citric acid and has a pH of 2.2 (high acidity). Plants contain pH-dependent pigments that can be used as pH indicators, such as those fou"
     },
     {
       "name": "Vinegar",
@@ -47,7 +50,8 @@
       "verify": {
         "number": 2
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "room temperature, pOH ≈ 14 - pH. (Under otherwise standard conditions, the equation is exact at approximately 24.87 °C.) However this relationship is not strictly valid in other circumstances, such as in measurements of"
     },
     {
       "name": "Orange juice",
@@ -57,28 +61,32 @@
       "verify": {
         "number": 3.3
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "nce | pH range | Type | Battery acid | &lt; 1 | Acid | Gastric acid | 1.0-1.5 | Vinegar | 2-3 | Orange juice | 3.3-4.2 | Black coffee | 5-5.03 | Milk | 6.5-6.8 | Pure water at 25 °C | 7 | Neutral | Sea water | 7.5-8.4 |"
     },
     {
       "name": "Human skin",
       "value": 4.7,
       "source": "https://en.wikipedia.org/wiki/PH",
       "fact": "Skin's slightly acidic surface is sometimes called the 'acid mantle'.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "t source] pH of various body fluids Compartment | pH | Gastric acid | 1.5-3.5 | Lysosomes | 4.5 | Human skin | 4.7 | Granules of chromaffin cells | 5.5 | Urine | 6.0 | Breast milk | 7.0-7.45 | Cytosol | 7.2 | Blood (natu"
     },
     {
       "name": "Black coffee",
       "value": 5,
       "source": "https://en.wikipedia.org/wiki/PH",
       "fact": "Dark roasts are usually slightly less acidic than light roasts.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "attery acid | &lt; 1 | Acid | Gastric acid | 1.0-1.5 | Vinegar | 2-3 | Orange juice | 3.3-4.2 | Black coffee | 5-5.03 | Milk | 6.5-6.8 | Pure water at 25 °C | 7 | Neutral | Sea water | 7.5-8.4 | Base | Ammonia | 11.0-11."
     },
     {
       "name": "Urine",
       "value": 6,
       "source": "https://en.wikipedia.org/wiki/PH",
       "fact": "Urine pH swings with diet: lots of meat makes it more acidic.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "H | Gastric acid | 1.5-3.5 | Lysosomes | 4.5 | Human skin | 4.7 | Granules of chromaffin cells | 5.5 | Urine | 6.0 | Breast milk | 7.0-7.45 | Cytosol | 7.2 | Blood (natural pH) | 7.34-7.45 | Cerebrospinal fluid (CSF) | 7"
     },
     {
       "name": "Milk",
@@ -88,7 +96,8 @@
       "verify": {
         "number": 6.5
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "t; 1 | Acid | Gastric acid | 1.0-1.5 | Vinegar | 2-3 | Orange juice | 3.3-4.2 | Black coffee | 5-5.03 | Milk | 6.5-6.8 | Pure water at 25 °C | 7 | Neutral | Sea water | 7.5-8.4 | Base | Ammonia | 11.0-11.5 | Bleach | 12."
     },
     {
       "name": "Pure water",
@@ -99,7 +108,8 @@
       "verify": {
         "match": "Pure water"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "log10([HA+]/M) where [H] is the equilibrium molar concentration of H (in M = mol/L) in the solution. At 25 °C (77 °F), solutions of which the pH is less than 7 are acidic, and solutions of which the pH is greater than 7"
     },
     {
       "name": "Human blood",
@@ -110,7 +120,8 @@
         "number": 7.34,
         "match": "Blood"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "anules of chromaffin cells | 5.5 | Urine | 6.0 | Breast milk | 7.0-7.45 | Cytosol | 7.2 | Blood (natural pH) | 7.34-7.45 | Cerebrospinal fluid (CSF) | 7.5 | Mitochondrial matrix | 7.5 | Pancreas secretions | 8.1 | In liv"
     },
     {
       "name": "Seawater",
@@ -121,7 +132,8 @@
         "number": 7.5,
         "match": "Sea water"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "nge juice | 3.3-4.2 | Black coffee | 5-5.03 | Milk | 6.5-6.8 | Pure water at 25 °C | 7 | Neutral | Sea water | 7.5-8.4 | Base | Ammonia | 11.0-11.5 | Bleach | 12.5 | Lye | 14 | Main article: pH indicator pH can be measur"
     },
     {
       "name": "Household ammonia",
@@ -132,14 +144,16 @@
         "number": 11,
         "match": "Ammonia"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "coffee | 5-5.03 | Milk | 6.5-6.8 | Pure water at 25 °C | 7 | Neutral | Sea water | 7.5-8.4 | Base | Ammonia | 11.0-11.5 | Bleach | 12.5 | Lye | 14 | Main article: pH indicator pH can be measured using indicators, which"
     },
     {
       "name": "Bleach",
       "value": 12.5,
       "source": "https://en.wikipedia.org/wiki/PH",
       "fact": "Household bleach is a dilute solution of sodium hypochlorite.",
-      "status": "draft"
+      "status": "checked",
+      "quote": "lk | 6.5-6.8 | Pure water at 25 °C | 7 | Neutral | Sea water | 7.5-8.4 | Base | Ammonia | 11.0-11.5 | Bleach | 12.5 | Lye | 14 | Main article: pH indicator pH can be measured using indicators, which change color dependin"
     },
     {
       "name": "Lye (drain cleaner)",
@@ -149,7 +163,8 @@
       "verify": {
         "match": "Lye"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| Pure water at 25 °C | 7 | Neutral | Sea water | 7.5-8.4 | Base | Ammonia | 11.0-11.5 | Bleach | 12.5 | Lye | 14 | Main article: pH indicator pH can be measured using indicators, which change color depending on the pH o"
     }
   ]
 }

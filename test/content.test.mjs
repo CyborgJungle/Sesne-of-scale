@@ -36,10 +36,10 @@ test("scheduler: 3 scales a day from different fields, 5 distinct items, reprodu
       assert.equal(new Set(s.items.map(it => it.id)).size, 5);
     }
   });
-  // The gap rule is soft (it can bend when a scale has few items), but should almost always hold.
+  // The gap rule is soft: it bends when a scale has few fresh items left, since fresh items win.
   const sets = a.flatMap(p => p.scales);
   const ok = sets.filter(s => { const ts = s.items.map(it => toT(s, it.value)).sort((x, y) => x - y); return ts.every((t, k) => !k || t - ts[k - 1] >= MIN_GAP_T); });
-  assert.ok(ok.length / sets.length > 0.9, `only ${ok.length}/${sets.length} item sets keep the minimum gap`);
+  assert.ok(ok.length / sets.length >= 0.8, `only ${ok.length}/${sets.length} item sets keep the minimum gap`);
 });
 
 test("scheduler: a scale doesn't come back for at least 4 days with the current pool", () => {

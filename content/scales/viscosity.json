@@ -17,7 +17,8 @@
         "number": 6,
         "match": "Gasoline"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| 2.538 × 10 | | Neon | 3.175 × 10 | 10 | Lower range of liquid viscosity | Pentane | 2.24 × 10 | | Gasoline | 6 × 10 | | Water | 8.90 × 10 | | 10 | Typical range for small-molecule Newtonian liquids | Ethanol | 1.074 ×"
     },
     {
       "name": "Water",
@@ -28,7 +29,8 @@
       "verify": {
         "match": "Water"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ed, particularly in ASTM standards, as centipoise (cP). The centipoise is convenient because the viscosity of water at 20 °C is about 1 cP, and one centipoise is equal to the SI millipascal second (mPa·s). The SI unit of"
     },
     {
       "name": "Mercury",
@@ -38,7 +40,8 @@
       "verify": {
         "match": "Mercury"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "tance | Viscosity (mPa·s) | Temperature (°C) | Ref. | Benzene | 0.604 | 25 | | Water | 1.0016 | 20 | Mercury | 1.526 | 25 | Whole milk | 2.12 | 20 | | Dark beer | 2.53 | 20 | | Olive oil | 56.2 | 26 | | Honey | ≈ 2000-10"
     },
     {
       "name": "Whole milk",
@@ -49,7 +52,8 @@
       "verify": {
         "match": "Whole milk"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| Temperature (°C) | Ref. | Benzene | 0.604 | 25 | | Water | 1.0016 | 20 | Mercury | 1.526 | 25 | Whole milk | 2.12 | 20 | | Dark beer | 2.53 | 20 | | Olive oil | 56.2 | 26 | | Honey | ≈ 2000-10000 | 20 | | Ketchup | ≈ 5"
     },
     {
       "name": "Blood",
@@ -60,7 +64,8 @@
         "number": 3,
         "match": "Blood"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "7.49 × 10 | | Hydrogen | 8.8 × 10 | | 10 | Upper range of gaseous viscosity | Krypton | 2.538 × 10 | | Neon | 3.175 × 10 | 10 | Lower range of liquid viscosity | Pentane | 2.24 × 10 | | Gasoline | 6 × 10 | | Water | 8.9"
     },
     {
       "name": "Olive oil",
@@ -72,7 +77,8 @@
         "number": 0.084,
         "match": "Olive oil"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "10 | | 10 - 10 | Oils and long-chain hydrocarbons | Linseed oil | 0.028 | | Oleic acid | 0.036 | | Olive oil | 0.084 | | SAE 10 Motor oil | 0.085 to 0.14 | | Castor oil | 0.1 | | SAE 20 Motor oil | 0.14 to 0.42 | | SAE 3"
     },
     {
       "name": "Castor oil",
@@ -83,7 +89,8 @@
         "number": 0.1,
         "match": "Castor oil"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ydrocarbons | Linseed oil | 0.028 | | Oleic acid | 0.036 | | Olive oil | 0.084 | | SAE 10 Motor oil | 0.085 to 0.14 | | Castor oil | 0.1 | | SAE 20 Motor oil | 0.14 to 0.42 | | SAE 30 Motor oil | 0.42 to 0.65 | | SAE 40"
     },
     {
       "name": "SAE 30 motor oil",
@@ -94,7 +101,8 @@
         "number": 0.42,
         "match": "SAE 30"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| | Olive oil | 0.084 | | SAE 10 Motor oil | 0.085 to 0.14 | | Castor oil | 0.1 | | SAE 20 Motor oil | 0.14 to 0.42 | | SAE 30 Motor oil | 0.42 to 0.65 | | SAE 40 Motor oil | 0.65 to 0.90 | | Glycerine | 1.5 | | Pancake"
     },
     {
       "name": "Glycerine",
@@ -105,7 +113,8 @@
         "number": 1.5,
         "match": "Glycerine"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "tor oil | 0.14 to 0.42 | | SAE 30 Motor oil | 0.42 to 0.65 | | SAE 40 Motor oil | 0.65 to 0.90 | | Glycerine | 1.5 | | Pancake syrup | 2.5 | | 10 - 10 | Pastes, gels, and other semisolids (generally non-Newtonian) | Ketc"
     },
     {
       "name": "Pancake syrup",
@@ -116,7 +125,8 @@
         "number": 2.5,
         "match": "Pancake syrup"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| SAE 30 Motor oil | 0.42 to 0.65 | | SAE 40 Motor oil | 0.65 to 0.90 | | Glycerine | 1.5 | | Pancake syrup | 2.5 | | 10 - 10 | Pastes, gels, and other semisolids (generally non-Newtonian) | Ketchup | ≈ 10 | | Mustard |"
     },
     {
       "name": "Honey",
@@ -128,7 +138,8 @@
         "number": 2000,
         "match": "Honey"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ercury | 1.526 | 25 | Whole milk | 2.12 | 20 | | Dark beer | 2.53 | 20 | | Olive oil | 56.2 | 26 | | Honey | ≈ 2000-10000 | 20 | | Ketchup | ≈ 5000-20000 | 25 | | Peanut butter | ≈ 10-10 | | | Pitch | 2.3×10 | 10-30 (var"
     },
     {
       "name": "Ketchup",
@@ -140,7 +151,8 @@
         "number": 5000,
         "match": "Ketchup"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| 2.12 | 20 | | Dark beer | 2.53 | 20 | | Olive oil | 56.2 | 26 | | Honey | ≈ 2000-10000 | 20 | | Ketchup | ≈ 5000-20000 | 25 | | Peanut butter | ≈ 10-10 | | | Pitch | 2.3×10 | 10-30 (variable) | | Order of magnitude es"
     },
     {
       "name": "Pitch (tar)",
@@ -151,7 +163,8 @@
         "number": 2.3,
         "match": "Pitch"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "roughly every decade. In this way the viscosity of pitch has been determined to be approximately 230 billion (2.3×10) times that of water. Main article: List of viscosities Observed values of viscosity vary over several"
     }
   ]
 }

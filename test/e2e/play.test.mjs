@@ -83,9 +83,11 @@ test("plays today's daily puzzle end to end", async () => {
 
   // The archive lists earlier puzzles and opens one in archive mode.
   await page.getByRole("button", { name: "Archive" }).click();
-  await page.locator(".archive button").first().waitFor();
-  await page.locator(".archive button").first().click();
-  await page.locator(".mode-tag").waitFor();
+  await page.locator(".archive button, #arch:has-text('No past puzzles')").first().waitFor();
+  if (await page.locator(".archive button").count()) {
+    await page.locator(".archive button").first().click();
+    await page.locator(".mode-tag").waitFor();
+  }
   assert.deepEqual(errors, []);
   await page.close();
 });

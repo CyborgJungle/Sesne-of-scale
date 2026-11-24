@@ -168,14 +168,15 @@
     },
     {
       "name": "Mississippi",
-      "value": 3730,
+      "value": 3766,
       "source": "https://en.wikipedia.org/wiki/Mississippi_River",
       "fact": "A raindrop takes about 90 days to travel the whole Mississippi.",
       "familiar": true,
       "verify": {
         "match": "Length"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "length 2,340 mi (3,766 km)"
     },
     {
       "name": "Congo",
@@ -220,19 +221,21 @@
       "verify": {
         "match": "Length"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "on ref name=\\\"The Amazon River\\\"/>\\n*The length of the Amazon River is usually said to be \\\"at least\\\" cvt|6400|km|sp=us, ref name=\\\"britannica-amazon\\\">cite encyclopedia |url=https://www.britannica.com/place/Ama"
     },
     {
       "name": "Nile",
-      "value": 6650,
+      "value": 7088,
       "source": "https://en.wikipedia.org/wiki/Nile",
-      "fact": "The Nile and the Amazon still compete for 'longest river', depending on how you measure.",
+      "fact": "Wikipedia now gives the Nile as 7,088 km, but 'longest river' is still disputed with the Amazon depending on how you measure.",
       "familiar": true,
       "disputed": true,
       "verify": {
         "match": "Length"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Length 7,088 km (4,404 mi)"
     }
   ]
 }

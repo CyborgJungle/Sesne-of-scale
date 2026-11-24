@@ -67,13 +67,14 @@
     },
     {
       "name": "Potato",
-      "value": 77,
+      "value": 87,
       "source": "https://en.wikipedia.org/wiki/Potato",
       "fact": "Potatoes were the first vegetable grown in space.",
       "verify": {
         "match": "Energy"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Nutritional value per 100 g (3.5 oz) Energy 364 kJ (87 kcal)"
     },
     {
       "name": "Banana",
@@ -100,13 +101,14 @@
     },
     {
       "name": "Honey",
-      "value": 304,
+      "value": 300,
       "source": "https://en.wikipedia.org/wiki/Honey",
       "fact": "Honey found in ancient Egyptian tombs was still edible.",
       "verify": {
         "match": "Energy"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Nutritional value per 100 g (3.5 oz) Energy 1,270 kJ (300 kcal)"
     },
     {
       "name": "Sugar",
@@ -122,13 +124,14 @@
     },
     {
       "name": "Cheddar cheese",
-      "value": 403,
+      "value": 409,
       "source": "https://en.wikipedia.org/wiki/Cheddar_cheese",
       "fact": "Cheddar is named after a village in Somerset, England.",
       "verify": {
         "match": "Energy"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Nutritional value per 100 g (3.5 oz) Energy 409 kcal (1,710 kJ)"
     },
     {
       "name": "Almonds",
@@ -143,14 +146,15 @@
     },
     {
       "name": "Peanut butter",
-      "value": 588,
+      "value": 597,
       "source": "https://en.wikipedia.org/wiki/Peanut_butter",
       "fact": "Peanuts are legumes, related to beans and peas.",
       "familiar": true,
       "verify": {
         "match": "Energy"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "Food energy (per 100 g serving) 597 kcal (2,500 kJ )"
     },
     {
       "name": "Walnuts",

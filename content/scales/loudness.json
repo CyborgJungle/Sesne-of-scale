@@ -122,7 +122,8 @@
       "verify": {
         "match": "chainsaw"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "s complying with WHO's global safe listening standard | Ambient | 20.0 | 120 | Jet engine | 100-30 m | 6-200 | 110-140 | Two-stroke chainsaw | 1 m | 6 | 110 | Jackhammer | 1 m | 2.00 | 100 | Sound level limit (A-weighted"
     },
     {
       "name": "Vuvuzela (1 m)",
@@ -132,7 +133,8 @@
       "verify": {
         "match": "Vuvuzela"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| 135 | Loudest human voice | 1 inch | 110 | 135 | Trumpet | 0.5 m | 63.2 | 130 | Vuvuzela horn | 1 m | 20.0 | 120 | Threshold of pain | At ear | 20-100 | 120-134 | Risk of instantaneous noise-induced hearing loss | At e"
     },
     {
       "name": "Threshold of pain",
@@ -143,7 +145,8 @@
         "number": 120,
         "match": "Threshold of pain"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| 135 | Loudest human voice | 1 inch | 110 | 135 | Trumpet | 0.5 m | 63.2 | 130 | Vuvuzela horn | 1 m | 20.0 | 120 | Threshold of pain | At ear | 20-100 | 120-134 | Risk of instantaneous noise-induced hearing loss | At e"
     },
     {
       "name": "Trumpet (0.5 m)",
@@ -153,7 +156,8 @@
       "verify": {
         "match": "Trumpet"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "o workers in the EU | At ear | 112 | 135 | Loudest human voice | 1 inch | 110 | 135 | Trumpet | 0.5 m | 63.2 | 130 | Vuvuzela horn | 1 m | 20.0 | 120 | Threshold of pain | At ear | 20-100 | 120-134 | Risk of instantaneou"
     },
     {
       "name": "Jet engine (1 m)",
@@ -164,7 +168,8 @@
       "verify": {
         "match": "Jet engine"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "| 8.9×10 | 153 | 9-inch (23 cm) party balloon inflated to rupture | 1 m | 730 | 151 | Jet engine | 1 m | 630 | 150 | 9-inch (23 cm) diameter balloon crushed to rupture | 0.95 m | 450 | 147 | 9-inch (23 cm) diameter ballo"
     },
     {
       "name": "Firecracker (0.5 m)",
@@ -174,7 +179,8 @@
       "verify": {
         "match": "Firecracker"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "6 | 1883 eruption of Krakatoa | 165 km | 8×10 | 172 | .30-06 rifle being fired | 1 m toshooter's side | 7×10 | 171 | Firecracker | 0.5 m | 7×10 | 171 | Stun grenade | Ambient | (1.6-8)×10 | 158-172 | 9-inch (23 cm) party"
     },
     {
       "name": "Krakatoa eruption, 165 km away",

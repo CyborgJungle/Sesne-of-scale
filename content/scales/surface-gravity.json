@@ -16,7 +16,8 @@
       "status": "draft",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "note": "Infobox value wasn't readable as text; check by hand."
     },
     {
       "name": "Pluto",
@@ -24,10 +25,11 @@
       "source": "https://en.wikipedia.org/wiki/Pluto",
       "fact": "On Pluto you could jump about 16 times higher than on Earth.",
       "familiar": true,
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "]\\n\"},\"density\":{\"wt\":\"val|1.853|0.004|u=g/cm3 ref name=\\\"Brozovic2024\\\"/>\"},\"surface_grav\":{\"wt\":\"cvt|0.620|m/s2|g0|lk=outefn|name = Surface gravity\"},\"escape_velocity\":{\"wt\":\"val|1.212 km/sefn|name"
     },
     {
       "name": "Triton",
@@ -50,40 +52,44 @@
       "value": 1.235,
       "source": "https://en.wikipedia.org/wiki/Callisto_(moon)",
       "fact": "Callisto is one of the most heavily cratered objects in the Solar System.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "\"Anderson 2001\\\"/>\"},\"surface_grav\":{\"wt\":\"val|1.236|ul=m/s2 (0.126 g-force|g ) ref group=lower-alpha>Surface gravity derived from the mass ( m ), the gravitational constant ( G ) and the radius ( r ): math>\\"
     },
     {
       "name": "Europa",
       "value": 1.315,
       "source": "https://en.wikipedia.org/wiki/Europa_(moon)",
       "fact": "Europa likely hides a salty ocean under its ice.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "hs) ref name=\\\"jplfact\\\"/>\"},\"surface_grav\":{\"wt\":\"val|1.314|ul=m/s2 br />(0.134 g) ref group=lower-alpha>Surface gravity derived from the mass ( m ), the gravitational constant ( G ) and the radius ( r ): G m /"
     },
     {
       "name": "Titan",
       "value": 1.352,
       "source": "https://en.wikipedia.org/wiki/Titan_(moon)",
       "fact": "With low gravity and thick air, a person on Titan could fly by flapping wings.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "1.345 180 354 ± 0.000 030 232 ) × 10 23 kg (0.0225 Earths) Mean density 1.8814 ± 0.0001 g/cm 3 Surface gravity 1.352 m/s 2 ( 0.138 g ) Moment of inertia factor 0.343 ± 0.001 Escape velocity 2.641 km/s Synodic rotation pe"
     },
     {
       "name": "Ganymede",
       "value": 1.428,
       "source": "https://en.wikipedia.org/wiki/Ganymede_(moon)",
       "fact": "Ganymede is bigger than the planet Mercury.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "ths) Mass (1.481 48 ± 0.000 03 ) × 10 23 kg (0.025 Earths) Mean density 1.9420 ± 0.0048 g/cm 3 (0.351 Earths) Surface gravity 1.427 m/s 2 (0.146 g ) Moment of inertia factor 0.3161 ± 0.000 40 Escape velocity 2.741 km/s S"
     },
     {
       "name": "The Moon",
@@ -102,10 +108,11 @@
       "value": 1.796,
       "source": "https://en.wikipedia.org/wiki/Io_(moon)",
       "fact": "Io is the most volcanically active body in the Solar System.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "(0.023 Earths) Mass 8.9296 × 10 22 kg (0.015 Earths) Mean density 3.5205 g/cm 3 (0.639 Earths) Surface gravity 1.796 m/s 2 (18.3% g ) Moment of inertia factor 0.378 24 ± 0.000 22 Escape velocity 2558 m/s Synodic rotation"
     },
     {
       "name": "Mercury",
@@ -129,10 +136,11 @@
       "value": 8.69,
       "source": "https://en.wikipedia.org/wiki/Uranus",
       "fact": "Uranus rotates on its side.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "00 40 ) × 10 25 kg 14.536 Earths GM = 5793939 ± 13 km 3 /s 2 Mean density 1.270 ± 0.001 g/cm 3 Surface gravity 8.69 m/s 2 (0.886 g 0 ) Moment of inertia factor 0.23 (estimate) Escape velocity 21.3 km/s Synodic rotation p"
     },
     {
       "name": "Venus",
@@ -156,20 +164,22 @@
       "value": 10.44,
       "source": "https://en.wikipedia.org/wiki/Saturn",
       "fact": "Saturn is less dense than water.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "683 17 ± 0.000 26 ) × 10 26 kg 95.159 Earths Mean density 0.6871 ± 0.0002 g/cm 3 0.1246 Earths Surface gravity 10.44 m/s 2 1.065 g 0 Moment of inertia factor 0.22 Escape velocity 35.5 km/s Synodic rotation period 10 h 32"
     },
     {
       "name": "Neptune",
-      "value": 11.15,
+      "value": 11.27,
       "source": "https://en.wikipedia.org/wiki/Neptune",
       "fact": "Neptune has the fastest winds in the Solar System.",
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "Surface gravity 11.27 m/s 2 (1.149 g 0 )"
     },
     {
       "name": "Jupiter",
@@ -177,10 +187,11 @@
       "source": "https://en.wikipedia.org/wiki/Jupiter",
       "fact": "Jupiter is more than twice as massive as all the other planets combined.",
       "familiar": true,
-      "status": "draft",
+      "status": "checked",
       "verify": {
         "match": "Surface gravity"
-      }
+      },
+      "quote": "125 ± 0.000 088 ) × 10 27 kg 317.8 × of Earth's 0.000 95 × of Sun's Mean density 1.326 g/cm 3 Surface gravity 24.79 m/s 2 2.528 g 0 Moment of inertia factor 0.2756 ± 0.0006 Escape velocity 59.5 km/s Synodic rotation per"
     }
   ]
 }

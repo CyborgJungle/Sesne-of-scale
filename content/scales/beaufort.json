@@ -20,7 +20,8 @@
       "verify": {
         "match": "Smoke rises vertically"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "nd speed | Wave height | Sea conditions | Land conditions | Sea conditions (photo) | Associated warning flag | 0 | Calm | < 1 knot < 1 mph < 1 km/h 0-0.2 m/s | 0 ft 0 m | Sea like a mirror | Smoke rises vertically | | |"
     },
     {
       "name": "Smoke drifts, but wind vanes don't move",
@@ -30,7 +31,8 @@
       "verify": {
         "match": "Direction shown by smoke drift"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ve height | Sea conditions | Land conditions | Sea conditions (photo) | Associated warning flag | 0 | Calm | < 1 knot < 1 mph < 1 km/h 0-0.2 m/s | 0 ft 0 m | Sea like a mirror | Smoke rises vertically | | | 1 | Light air"
     },
     {
       "name": "Wind felt on your face; leaves rustle",
@@ -41,7 +43,8 @@
       "verify": {
         "match": "Wind felt on face"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "earance of scales are formed, without foam crests | Direction shown by smoke drift but not by wind vanes | | | 2 | Light breeze | 4-6 knots 4-7 mph 6-11 km/h 1.6-3.3 m/s | 1-2 ft 0.3-0.6 m | Small wavelets still short bu"
     },
     {
       "name": "Leaves and small twigs in constant motion; light flags extended",
@@ -51,7 +54,8 @@
       "verify": {
         "match": "small twigs in constant motion"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ts have a glassy appearance but do not break | Wind felt on face; leaves rustle; wind vane moved by wind | | | 3 | Gentle breeze | 7-10 knots 8-12 mph 12-19 km/h 3.4-5.4 m/s | 2-4 ft 0.6-1.2 m | Large wavelets; crests be"
     },
     {
       "name": "Raises dust and loose paper; small branches move",
@@ -61,7 +65,8 @@
       "verify": {
         "match": "Raises dust and loose paper"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "eaves rustle; wind vane moved by wind | | | 3 | Gentle breeze | 7-10 knots 8-12 mph 12-19 km/h 3.4-5.4 m/s | 2-4 ft 0.6-1.2 m | Large wavelets; crests begin to break; foam of glassy appearance; perhaps scattered white ho"
     },
     {
       "name": "Small trees in leaf begin to sway",
@@ -71,7 +76,8 @@
       "verify": {
         "match": "Small trees in leaf begin to sway"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ll twigs in constant motion; light flags extended | | | 4 | Moderate breeze | 11-16 knots 13-18 mph 20-28 km/h 5.5-7.9 m/s | 3.5-6 ft 1-2 m | Small waves becoming longer; fairly frequent white horses | Raises dust and lo"
     },
     {
       "name": "Umbrellas used with difficulty",
@@ -82,7 +88,8 @@
       "verify": {
         "match": "umbrellas used with difficulty"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "formed; chance of some spray | Small trees in leaf begin to sway; crested wavelets form on inland waters | | | 6 | Strong breeze | 22-27 knots 25-31 mph 39-49 km/h 10.8-13.8 m/s | 9-13 ft 3-4 m | Large waves begin to for"
     },
     {
       "name": "Whole trees in motion; hard to walk against the wind",
@@ -92,7 +99,8 @@
       "verify": {
         "match": "Whole trees in motion"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ome spray | Large branches in motion; whistling heard in telegraph wires; umbrellas used with difficulty | | | 7 | Moderate gale, near gale | 28-33 knots 32-38 mph 50-61 km/h 13.9-17.1 m/s | 13-19 ft 4-5.5 m | Sea heaps"
     },
     {
       "name": "Twigs break off trees",
@@ -102,7 +110,8 @@
       "verify": {
         "match": "Twigs break off trees"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "d; spindrift begins to be seen | Whole trees in motion; inconvenience felt when walking against the wind | | | 8 | Gale, fresh gale | 34-40 knots 39-46 mph 62-74 km/h 17.2-20.7 m/s | 18-25 ft 5.5-7.5 m | Moderately high"
     },
     {
       "name": "Chimney pots and roof slates blown off",
@@ -112,7 +121,8 @@
       "verify": {
         "match": "chimney pots"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "well-marked streaks along the direction of the wind | Twigs break off trees; generally impedes progress | | | 9 | Strong/severe gale | 41-47 knots 47-54 mph 75-88 km/h 20.8-24.4 m/s | 23-32 ft 7-10 m | High waves; dense"
     },
     {
       "name": "Trees uprooted; considerable damage to buildings",
@@ -122,7 +132,8 @@
       "verify": {
         "match": "trees uprooted"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "ly impedes progress | | | 9 | Strong/severe gale | 41-47 knots 47-54 mph 75-88 km/h 20.8-24.4 m/s | 23-32 ft 7-10 m | High waves; dense streaks of foam along the direction of the wind; sea begins to roll; spray affects v"
     },
     {
       "name": "Widespread damage",
@@ -132,7 +143,8 @@
       "verify": {
         "match": "widespread damage"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "s heavy; visibility affected | Seldom experienced inland; trees uprooted; considerable structural damage | | | 11 | Violent storm | 56-63 knots 64-72 mph 103-117 km/h 28.5-32.6 m/s | 37-52 ft 11.5-16 m | Exceptionally hi"
     },
     {
       "name": "Sea completely white with driving spray",
@@ -143,7 +155,8 @@
       "verify": {
         "match": "completely white"
       },
-      "status": "draft"
+      "status": "checked",
+      "quote": "sts are blown into foam; visibility affected | Very rarely experienced; accompanied by widespread damage | | | 12 | Hurricane-force | ≥ 64 knots ≥ 73 mph ≥ 118 km/h ≥ 32.7 m/s | ≥ 46 ft ≥ 14 m | The air is filled with fo"
     }
   ]
 }
