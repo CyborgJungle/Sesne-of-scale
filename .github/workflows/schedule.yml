@@ -1,0 +1,33 @@
+# Keeps the daily schedule 60 days ahead. Runs every Monday (and on demand from the Actions tab).
+# New days are committed to main, which makes Vercel deploy them automatically.
+# Already-scheduled days are never changed.
+name: Extend schedule
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # Mondays 03:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: schedule
+env:
+  # Which items may be scheduled. Switch to "verified" once people review content in the review tool.
+  MIN_STATUS: checked
+jobs:
+  extend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm run validate -- --quiet
+      - run: node scripts/schedule.mjs --allow "$MIN_STATUS" --days 60
+      - run: npm test
+      - name: Commit new days
+        run: |
+          if [ -z "$(git status --porcelain schedule)" ]; then echo "Nothing new to schedule."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add schedule
+          git commit -m "Schedule: extend to 60 days ahead"
+          git push
+      - run: node scripts/capacity.mjs --allow "$MIN_STATUS"

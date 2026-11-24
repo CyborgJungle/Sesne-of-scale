@@ -48,6 +48,13 @@ See [docs/CONTENT.md](docs/CONTENT.md) for the full guide. In short:
 
 **Item status:** `draft` → `checked` (source auto-verified) → `verified` (a person approved) → schedulable. `rejected` items are kept, with a note, so nobody re-adds them.
 
+## Automatic updates
+
+- **Code and content:** every push to `main` deploys to production on Vercel (https://sense-of-scale-sepia.vercel.app). Pushes to other branches get a private preview URL.
+- **Schedule:** `.github/workflows/schedule.yml` runs every Monday. It adds days so there are always 60 scheduled ahead, commits them to `main`, and that push deploys. It uses items with status `checked` or better; change `MIN_STATUS` to `verified` once review is under way. You can also run it by hand from the Actions tab.
+- **Players:** the service worker fetches from the network first, so phones get a new version on their next visit. The cached copy is only used offline.
+- **CI** (`ci.yml`) validates content and runs the tests on every push.
+
 ## Deploy
 
 1. **Supabase.** Create a project and run `supabase/migrations/20261124000000_init.sql` (SQL editor, or `supabase db push`). Enable `pg_cron` under Database → Extensions if the last line fails. All tables have RLS on and no public policies. Only the server's secret key can reach them.
