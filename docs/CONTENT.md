@@ -7,7 +7,9 @@ A day is 3 scales × 5 items, so a year is **1,095 scale appearances and 5,475 i
 - **~200 scales × ~20 items** (about 4,000 sourced facts). Each scale then appears about 5 times a year with mostly different items.
 - You don't need a whole year before launch. Keep at least 30 scheduled days in the buffer and add about 20 scales a week.
 
-**Batch 1 (this repo):** 18 scales, 340 items. That's about 3 weeks of puzzles before items start repeating, enough for a soft launch or playtesting.
+**In this repo so far:** 30 scales and about 525 items. That covers serious ones (melting points, earthquakes, rivers) and wacky ones: insect sting pain, sweeteners, voltage, radiation doses, viscosity, Beaufort wind descriptions, data sizes, caffeine, everyday temperatures. That's about 5 weeks of puzzles before items start repeating, enough for a soft launch.
+
+**Easy mode and ties:** Easy mode only asks for the order, so items with equal values (for example several insects at pain level 2) are interchangeable, and either spot counts. The scheduler still avoids putting items that are too close together in the same puzzle.
 
 ## Scale file format
 

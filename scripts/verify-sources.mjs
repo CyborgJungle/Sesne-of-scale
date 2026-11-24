@@ -10,7 +10,7 @@
 //
 // Per-item overrides: "verify": { "number": 24, "match": "adult" } — the number as the page writes it
 // (e.g. hours instead of years) and the word to look near (defaults to the item name without brackets).
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { loadScales, saveScale, ROOT } from "../lib/content.js";
 
@@ -23,33 +23,39 @@ const UA = "SenseOfScale-content-check/0.1 (daily puzzle game; source verificati
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 let lastRequest = 0;
 async function throttle() {
-  const wait = lastRequest + 1500 - Date.now();
-  lastRequest = Math.max(Date.now(), lastRequest + 1500);
+  const wait = lastRequest + 1200 - Date.now();
+  lastRequest = Math.max(Date.now(), lastRequest + 1200);
   if (wait > 0) await sleep(wait);
 }
+// Pages are cached on disk (.cache/wiki, git-ignored) so re-runs don't fetch them again.
+// Uses the REST page-HTML endpoint: CDN-cached and far more lenient than the action API.
+const CACHE = join(ROOT, ".cache", "wiki");
+mkdirSync(CACHE, { recursive: true });
 const pageCache = new Map();
 async function fetchPage(url) {
   const m = url.match(/^https?:\/\/en\.(?:m\.)?wikipedia\.org\/wiki\/([^#?]+)/);
   if (!m) return null;
-  const title = decodeURIComponent(m[1]);
+  const title = decodeURIComponent(m[1]).replace(/ /g, "_");
   if (pageCache.has(title)) return pageCache.get(title);
   const p = (async () => {
-    const api = `https://en.wikipedia.org/w/api.php?action=parse&format=json&redirects=1&maxlag=5&prop=text|wikitext&page=${encodeURIComponent(title)}`;
-    for (let tries = 0; tries < 5; tries++) {
+    const file = join(CACHE, encodeURIComponent(title) + ".txt");
+    if (existsSync(file)) return { text: readFileSync(file, "utf8") };
+    const api = `https://en.wikipedia.org/api/rest_v1/page/html/${encodeURIComponent(title)}?redirect=true`;
+    for (let tries = 0; tries < 4; tries++) {
       await throttle();
-      const res = await fetch(api, { headers: { "User-Agent": UA, "Api-User-Agent": UA }, signal: AbortSignal.timeout(30000) }).catch(e => ({ status: 0, text: async () => String(e) }));
-      const body = await res.text();
-      let j;
-      try { j = JSON.parse(body); } catch { j = null; }
-      if (!j || res.status === 429 || j.error?.code === "maxlag") { await sleep(5000 * (tries + 1)); continue; }
-      if (j.error) return { error: j.error.info };
-      const html = j.parse.text["*"]
+      const res = await fetch(api, { headers: { "User-Agent": UA, "Api-User-Agent": UA }, signal: AbortSignal.timeout(30000) })
+        .catch(e => ({ status: 0, ok: false, text: async () => String(e) }));
+      if (res.status === 404) return { error: "page not found" };
+      if (!res.ok) { await sleep(3000 * (tries + 1)); continue; }
+      const html = (await res.text())
         .replace(/<sup[^>]*class="[^"]*reference[^"]*"[\s\S]*?<\/sup>/g, "")
         .replace(/<style[\s\S]*?<\/style>/g, "").replace(/<[^>]+>/g, " ")
         .replace(/&nbsp;|&#160;/g, " ").replace(/&amp;/g, "&").replace(/&#[0-9]+;|&[a-z]+;/g, " ");
-      return { text: norm(html + "\n" + j.parse.wikitext["*"]) };
+      const text = norm(html);
+      writeFileSync(file, text);
+      return { text };
     }
-    return { error: "rate limited" };
+    return { error: "fetch failed (rate limited or offline)" };
   })();
   pageCache.set(title, p);
   return p;

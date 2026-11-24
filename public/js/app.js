@@ -1,6 +1,6 @@
 import {
   toT, fromT, clamp, scoreItem, band, verdict, fmtVal, ticksFor, isoDate, addDays, daysBetween,
-  shareText, scorePuzzle, ITEMS_PER_SCALE, MAX_PER_ITEM,
+  shareText, scoreGame, scoreOrder, trueOrder, ITEMS_PER_SCALE, MAX_PER_ITEM,
 } from "./core.js";
 
 /* ---------- Constants & helpers ---------- */
@@ -29,17 +29,20 @@ const games = mode => store.get(KEY[mode], {});
 function saveGame() {
   const all = games(S.mode); all[S.puzzle.date] = S.g; store.set(KEY[S.mode], all);
 }
-const newGame = () => ({ placements: {}, k: 0, revealed: false, done: false, perScale: [], total: 0, submitted: false });
+const newGame = (mode = "hard") => ({ mode, placements: {}, orders: {}, k: 0, revealed: false, done: false, perScale: [], total: 0, submitted: false });
+const gameMode = g => g.mode || "hard";
+const started = g => g.k > 0 || Object.keys(g.placements).length > 0 || Object.keys(g.orders || {}).length > 0;
+const prefMode = () => (store.get("sos:mode", "hard") === "easy" ? "easy" : "hard");
 
-/** Personal stats from finished daily games. */
-function myStats(today) {
+/** Personal stats from finished daily games (streaks count either mode; best score is per mode). */
+function myStats(today, mode = prefMode()) {
   const done = Object.entries(games("daily")).filter(([, g]) => g.done).sort(([a], [b]) => a.localeCompare(b));
   const dates = new Set(done.map(([d]) => d));
   let streak = 0;
   for (let d = dates.has(today) ? today : addDays(today, -1); dates.has(d); d = addDays(d, -1)) streak++;
   let maxStreak = 0, run = 0, prev = null;
   for (const [d] of done) { run = prev && daysBetween(prev, d) === 1 ? run + 1 : 1; maxStreak = Math.max(maxStreak, run); prev = d; }
-  const totals = done.map(([, g]) => g.total);
+  const totals = done.filter(([, g]) => gameMode(g) === mode).map(([, g]) => g.total);
   return { played: done.length, streak, maxStreak, best: totals.length ? Math.max(...totals) : 0,
     avg: totals.length ? Math.round(totals.reduce((a, b) => a + b, 0) / totals.length) : 0 };
 }
@@ -59,13 +62,14 @@ async function submitResult() {
   if (S.mode !== "daily" || S.g.submitted) return;
   try {
     const res = await fetch("/api/result", { method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ date: S.puzzle.date, playerId: playerId(), placements: S.g.placements }) });
+      body: JSON.stringify({ date: S.puzzle.date, playerId: playerId(), mode: gameMode(S.g),
+        ...(gameMode(S.g) === "easy" ? { orders: S.g.orders } : { placements: S.g.placements }) }) });
     if (res.ok || res.status === 409) { S.g.submitted = true; saveGame(); }
   } catch { /* offline: try again next time the results screen opens */ }
 }
 async function loadServerStats() {
   try {
-    const res = await fetch(`/api/stats?date=${S.puzzle.date}`);
+    const res = await fetch(`/api/stats?date=${S.puzzle.date}&mode=${gameMode(S.g)}`);
     if (res.ok) S.server = await res.json();
   } catch { S.server = null; }
 }
@@ -108,8 +112,9 @@ async function route() {
   }
   const daily = games("daily")[date];
   S.mode = date === S.today || daily ? "daily" : "archive";
-  S.g = games(S.mode)[date] || newGame();
-  S.view = S.g.done ? "done" : m || S.g.k || Object.keys(S.g.placements).length ? "play" : "home";
+  S.g = games(S.mode)[date] || newGame(prefMode());
+  if (!S.g.orders) S.g.orders = {};
+  S.view = S.g.done ? "done" : m || started(S.g) ? "play" : "home";
   render();
 }
 window.addEventListener("hashchange", route);
@@ -127,7 +132,7 @@ function renderMeter() {
   const on = S.view === "play" && S.puzzle;
   m.hidden = !on;
   if (!on) return;
-  document.getElementById("m-label").textContent = S.mode === "daily" ? "Puzzle" : "Archive";
+  document.getElementById("m-label").textContent = (S.mode === "daily" ? "Puzzle" : "Archive") + (gameMode(S.g) === "easy" ? " · Easy" : "");
   document.getElementById("m-num").textContent = "#" + S.puzzle.number;
   document.getElementById("m-round").textContent = `${S.g.k + 1} / ${S.puzzle.scales.length}`;
   document.getElementById("m-score").textContent = n(S.g.perScale.reduce((a, b) => a + b, 0));
@@ -155,31 +160,39 @@ function statsGrid() {
     <div class="stat"><b>${st.streak}</b><span>Streak</span></div>
     <div class="stat"><b>${st.maxStreak}</b><span>Best streak</span></div>
     <div class="stat"><b>${st.played}</b><span>Played</span></div>
-    <div class="stat"><b>${st.best ? n(st.best) : "–"}</b><span>Best score</span></div>
+    <div class="stat"><b>${st.best ? n(st.best) : "–"}</b><span>Best · ${prefMode() === "easy" ? "Easy" : "Hard"}</span></div>
   </div>`;
 }
 
 function renderHome() {
-  const p = S.puzzle, started = S.g.k > 0 || Object.keys(S.g.placements).length > 0;
+  const p = S.puzzle, going = started(S.g), mode = gameMode(S.g);
   const fields = [...new Set(p.scales.map(s => s.field))].join(" · ");
   main.innerHTML = `<section class="home">
     <div class="hero">
       <div class="eyebrow"><span>Puzzle #${p.number}</span><span class="pill">${esc(fmtDate(p.date))}</span></div>
       <h2>How good is your sense of scale?</h2>
-      <p>Three scales today: <b style="color:var(--ink)">${esc(fields)}</b>. Put five things on each scale where you think they belong. The closer you are, the more points you get.</p>
-      <div class="cta"><button class="btn" id="play">${started ? "Continue" : "Play today's puzzle"}</button><span class="tray-note">About 3 minutes · max ${n(p.scales.length * ITEMS_PER_SCALE * MAX_PER_ITEM)} points</span></div>
+      <p>Three scales today: <b style="color:var(--ink)">${esc(fields)}</b>. Five things on each. Pick how you want to play. You get one game a day.</p>
+      ${going ? "" : `<div class="modes" role="radiogroup" aria-label="Game mode">
+        <button class="mode${mode === "easy" ? " on" : ""}" role="radio" aria-checked="${mode === "easy"}" data-mode="easy"><b>Easy</b><span>Put the five in the right order, from most to least.</span></button>
+        <button class="mode${mode === "hard" ? " on" : ""}" role="radio" aria-checked="${mode === "hard"}" data-mode="hard"><b>Hard</b><span>Place each one on the scale. The closer, the more points.</span></button>
+      </div>`}
+      <div class="cta"><button class="btn" id="play">${going ? `Continue (${mode === "easy" ? "Easy" : "Hard"})` : "Play today's puzzle"}</button><span class="tray-note">About 3 minutes · max ${n(p.scales.length * ITEMS_PER_SCALE * MAX_PER_ITEM)} points</span></div>
     </div>
     ${statsGrid()}
     <div class="howto"><ol>
-      <li>Drag each tag onto the scale, or tap a tag and then tap the scale.</li>
-      <li>Check your placements to see the real values and your points.</li>
+      <li>Easy: drag the cards into order. Hard: drag each tag onto the scale, or tap a tag and then the scale.</li>
+      <li>Check to see the real values and your points.</li>
       <li>One puzzle a day for everyone. Share your result, keep your streak.</li>
     </ol></div>
   </section>`;
-  document.getElementById("play").onclick = () => { S.view = "play"; render(); };
+  main.querySelectorAll("[data-mode]").forEach(b => (b.onclick = () => {
+    S.g.mode = b.dataset.mode; store.set("sos:mode", S.g.mode); renderHome();
+  }));
+  document.getElementById("play").onclick = () => { S.view = "play"; saveGame(); render(); };
 }
 
 function renderPlay() {
+  if (gameMode(S.g) === "easy") return renderPlayEasy();
   const s = scale(), its = items();
   const placed = its.filter(it => it.t !== null).length;
   const roundScore = its.reduce((a, it) => a + it.pts, 0);
@@ -214,6 +227,89 @@ function renderPlay() {
   if (S.focus !== null) main.querySelector(`[data-label="${S.focus}"]`)?.focus({ preventScroll: true });
 }
 
+/* ---------- Easy mode: drag the five cards into order ---------- */
+function easyOrder() {
+  const s = scale();
+  if (!S.g.orders[s.id]) S.g.orders[s.id] = s.items.map(it => it.id); // puzzle order is already shuffled
+  return S.g.orders[s.id];
+}
+
+function renderPlayEasy() {
+  const s = scale(), order = easyOrder();
+  const byId = new Map(s.items.map((it, i) => [it.id, { ...it, i }]));
+  const scored = S.g.revealed ? new Map(scoreOrder(s, order).map(x => [x.id, x])) : null;
+  const roundScore = scored ? [...scored.values()].reduce((a, x) => a + x.pts, 0) : 0;
+  const isLast = S.g.k === S.puzzle.scales.length - 1;
+  const cards = order.map((id, rank) => {
+    const it = byId.get(id), sc = scored?.get(id);
+    const tail = sc
+      ? `<span class="oval">${esc(fmtVal(s, it.value))}</span><span class="score" style="background:${color(sc.pts)}">+${sc.pts}</span>
+         <span class="should${sc.should === rank ? " ok" : ""}">${sc.should === rank ? "Right spot" : `Belongs at #${sc.should + 1}`}</span>`
+      : `<span class="omove"><button class="obtn" data-move="-1" aria-label="Move ${esc(it.name)} up" ${rank === 0 ? "disabled" : ""}>▲</button><button class="obtn" data-move="1" aria-label="Move ${esc(it.name)} down" ${rank === order.length - 1 ? "disabled" : ""}>▼</button></span>`;
+    return `<li class="ocard${sc ? " revealed" : ""}" data-ocard data-id="${esc(id)}" style="--c:var(--c${it.i})">
+      <span class="rank">${rank + 1}</span><span class="nm">${esc(it.name)}</span>${tail}</li>`;
+  }).join("");
+  main.innerHTML = `
+    <section class="head">
+      <div class="eyebrow"><span>${esc(s.field)}</span><span class="pill">easy</span>${s.unit ? `<span class="pill">${esc(s.unit)}</span>` : ""}${S.mode === "archive" ? `<span class="pill mode-tag">archive · #${S.puzzle.number}</span>` : ""}</div>
+      <h2>${esc(s.name)}</h2>
+      <p>${esc(s.question)}</p>
+    </section>
+    <section class="easy">
+      <div class="ends">▲ Highest</div>
+      <ol class="olist" id="olist">${cards}</ol>
+      <div class="ends">▼ Lowest</div>
+    </section>
+    ${S.g.revealed ? `<div class="summary"><div class="tray-title">This scale</div><div class="big">${roundScore}<small> / ${ITEMS_PER_SCALE * MAX_PER_ITEM}</small></div></div>${factsHTML(s.items.map((it, i) => ({ ...it, i })))}` : ""}
+    <div class="actions">
+      <p>${S.g.revealed
+        ? "100 points for the right spot, 50 for one spot off."
+        : "Drag the cards (or use ▲▼) so the highest value is at the top."}</p>
+      ${S.g.revealed
+        ? `<button class="btn" id="next">${isLast ? "See results" : "Next scale →"}</button>`
+        : `<button class="btn" id="check">Check order</button>`}
+    </div>`;
+  wire();
+}
+
+let odrag = null;
+main.addEventListener("pointerdown", e => {
+  const card = e.target.closest("[data-ocard]");
+  if (!card || e.target.closest("button") || S.view !== "play" || S.g.revealed || e.button > 0) return;
+  e.preventDefault();
+  odrag = { card, grab: e.clientY - card.getBoundingClientRect().top };
+  card.classList.add("lift");
+  card.setPointerCapture?.(e.pointerId);
+});
+main.addEventListener("pointermove", e => {
+  if (!odrag) return;
+  const { card, grab } = odrag, list = card.parentElement;
+  const others = [...list.children].filter(c => c !== card);
+  const idx = others.findIndex(c => { const r = c.getBoundingClientRect(); return e.clientY < r.top + r.height / 2; });
+  const before = idx === -1 ? null : others[idx];
+  if (card.nextElementSibling !== before) list.insertBefore(card, before);
+  card.style.transform = "";
+  card.style.transform = `translateY(${e.clientY - grab - card.getBoundingClientRect().top}px)`;
+});
+function endOrderDrag() {
+  if (!odrag) return;
+  S.g.orders[scale().id] = [...odrag.card.parentElement.children].map(c => c.dataset.id);
+  odrag = null; saveGame(); render();
+}
+main.addEventListener("pointerup", endOrderDrag);
+main.addEventListener("pointercancel", endOrderDrag);
+
+function moveCard(btn) {
+  const id = btn.closest("[data-ocard]").dataset.id, dir = +btn.dataset.move;
+  const o = S.g.orders[scale().id], i = o.indexOf(id), j = i + dir;
+  if (j < 0 || j >= o.length) return;
+  [o[i], o[j]] = [o[j], o[i]];
+  saveGame(); render();
+  const card = main.querySelector(`[data-ocard][data-id="${CSS.escape(id)}"]`);
+  const same = card?.querySelector(`[data-move="${dir}"]`);
+  (same && !same.disabled ? same : card?.querySelector(".obtn:not([disabled])"))?.focus();
+}
+
 function trayHTML(its) {
   const left = its.filter(it => it.t === null);
   let h = `<div class="tray-title">Specimens · ${left.length} to place</div>`;
@@ -237,7 +333,7 @@ function factsHTML(its) {
   const withFacts = its.filter(it => it.fact);
   if (!withFacts.length) return "";
   return `<section class="facts"><div class="tray-title">Did you know</div>
-    ${withFacts.map(it => `<p><span class="badge" style="background:var(--c${it.i})">${it.i + 1}</span><span>${esc(it.fact)} <a href="${esc(it.source)}" target="_blank" rel="noopener">source</a></span></p>`).join("")}
+    ${withFacts.map(it => `<p><span class="dot" style="background:var(--c${it.i})"></span><span><b>${esc(it.name)}:</b> ${esc(it.fact)} <a href="${esc(it.source)}" target="_blank" rel="noopener">source</a></span></p>`).join("")}
   </section>`;
 }
 
@@ -307,13 +403,13 @@ function drawGauge() {
 
 function renderDone() {
   const p = S.puzzle, max = p.scales.length * ITEMS_PER_SCALE * MAX_PER_ITEM;
-  const result = scorePuzzle(p, S.g.placements);
+  const result = scoreGame(p, S.g);
   const pct = result.total / max;
   const title = pct >= .8 ? "Walking reference book." : pct >= .6 ? "Solid instincts." : pct >= .4 ? "Decent sense of scale." : "The universe is weird. Try again tomorrow.";
-  const card = shareText(p, result, location.origin);
+  const card = shareText(p, result, location.origin, gameMode(S.g));
   const daily = S.mode === "daily";
   main.innerHTML = `<section class="end head">
-    <div class="eyebrow"><span>${daily ? "Puzzle" : "Archive"} #${p.number}</span><span class="pill">${esc(fmtDate(p.date))}</span></div>
+    <div class="eyebrow"><span>${daily ? "Puzzle" : "Archive"} #${p.number}</span><span class="pill">${esc(fmtDate(p.date))}</span><span class="pill">${gameMode(S.g) === "easy" ? "Easy" : "Hard"}</span></div>
     <div class="score-xl">${n(result.total)}<small> / ${n(max)}</small></div>
     <h2 style="font-size:clamp(24px,4vw,34px)">${title}</h2>
     <div class="percentile" id="percentile">${daily ? `<span class="tray-note">Comparing with other players…</span>` : ""}</div>
@@ -341,7 +437,7 @@ async function showPercentile(total) {
   const beat = Math.round(100 * (below + same / 2) / st.plays);
   el.innerHTML = st.plays < 5
     ? `<span class="tray-note">${st.plays} player${st.plays === 1 ? "" : "s"} so far today. Check back later to see how you rank.</span>`
-    : `You beat <b>${beat}%</b> of ${n(st.plays)} players today. <span class="tray-note">Average ${n(Math.round(st.mean))}.</span>`;
+    : `You beat <b>${beat}%</b> of ${n(st.plays)} ${gameMode(S.g) === "easy" ? "Easy" : "Hard"} players today. <span class="tray-note">Average ${n(Math.round(st.mean))}.</span>`;
 }
 
 async function share(text) {
@@ -388,7 +484,7 @@ async function renderArchive() {
   el.className = "archive";
   el.innerHTML = list.map(p => {
     const g = d[p.date]?.done ? d[p.date] : a[p.date];
-    return `<button data-date="${p.date}" class="${g?.done ? "done" : ""}"><b>#${p.number}</b><span>${esc(fmtDate(p.date))}</span><span>${g?.done ? `${n(g.total)} pts` : g ? "in progress" : "not played"}</span></button>`;
+    return `<button data-date="${p.date}" class="${g?.done ? "done" : ""}"><b>#${p.number}</b><span>${esc(fmtDate(p.date))}</span><span>${g?.done ? `${n(g.total)} pts${gameMode(g) === "easy" ? " · Easy" : ""}` : g ? "in progress" : "not played"}</span></button>`;
   }).join("");
   el.onclick = e => { const b = e.target.closest("[data-date]"); if (b) location.hash = `#play/${b.dataset.date}`; };
 }
@@ -446,6 +542,11 @@ function onUp(e) {
   if (!d.moved) {
     // A tap: select a tray tag (then tap the scale), or focus a placed tag.
     const placedT = S.g.placements[scale().items[d.i].id];
+    if (placedT !== undefined && S.sel !== null) {
+      // A tag is waiting to be placed and the tap landed on another label: place it right there.
+      const t = tFromPoint(e.clientX, e.clientY);
+      if (t !== null) { setT(S.sel, t); S.focus = S.sel; S.sel = null; render(); return; }
+    }
     if (placedT === undefined) { S.sel = S.sel === d.i ? null : d.i; S.focus = null; }
     else { S.sel = null; S.focus = d.i; }
     render();
@@ -462,6 +563,8 @@ function onCancel() { endDrag(); drag = null; render(); }
 main.addEventListener("pointerdown", onDown);
 main.addEventListener("click", e => {
   if (S.view !== "play") return;
+  const mv = e.target.closest("[data-move]");
+  if (mv) return moveCard(mv);
   const el = e.target.closest("[data-drag]");
   if (el) {
     if (e.detail !== 0) return; // pointer clicks are handled in onUp; this is keyboard Enter/Space
@@ -501,7 +604,9 @@ function wire() {
   const check = document.getElementById("check");
   if (check) check.onclick = () => {
     const s = scale();
-    S.g.perScale[S.g.k] = s.items.reduce((a, it) => a + scoreItem(s, it, S.g.placements[it.id]), 0);
+    S.g.perScale[S.g.k] = gameMode(S.g) === "easy"
+      ? scoreOrder(s, S.g.orders[s.id]).reduce((a, x) => a + x.pts, 0)
+      : s.items.reduce((a, it) => a + scoreItem(s, it, S.g.placements[it.id]), 0);
     S.g.revealed = true; S.focus = null; saveGame(); render();
   };
   const next = document.getElementById("next");

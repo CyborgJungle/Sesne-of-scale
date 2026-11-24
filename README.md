@@ -1,6 +1,11 @@
 # Sense of Scale
 
-A daily game about how big, fast, hot, loud and old things really are. Every day everyone gets the same puzzle: **3 scales × 5 items**. Drag each item onto the gauge where you think it belongs, check, and score up to 100 points per item (1,500 a day). Share a spoiler-free result card and keep your streak going.
+A daily game about how big, fast, hot, loud and old things really are. Every day everyone gets the same puzzle: **3 scales × 5 items**, played in one of two modes:
+
+- **Easy:** drag the five cards into the right order, highest at the top. 100 points for the right spot, 50 for one spot off.
+- **Hard:** place each item on the gauge itself. Up to 100 points each, depending on how close you get.
+
+Either way it's up to 1,500 points a day. A player gets one game a day, in the mode they choose. Streaks count both modes, and leaderboard stats are kept per mode. Finish with a spoiler-free share card.
 
 ## How it fits together
 
@@ -10,8 +15,8 @@ A daily game about how big, fast, hot, loud and old things really are. Every day
                                                                                                     ▼ npm run sync
  Browser (static site on Vercel)                                                        Supabase Postgres
    GET  /api/puzzle?date=…  ── cached on the CDN, served only once that date has started somewhere on Earth
-   POST /api/result         ── server recomputes the score; one row per player per day
-   GET  /api/stats?date=…   ── score histogram, rolled up every minute by pg_cron, cached 60 s
+   POST /api/result         ── server recomputes the score (either mode); one row per player per day
+   GET  /api/stats?date=…&mode=easy|hard ── score histogram per mode, rolled up every minute, cached 60 s
    GET  /api/archive        ── past puzzles
 ```
 

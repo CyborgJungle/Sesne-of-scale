@@ -53,3 +53,36 @@ test("share card is spoiler-free: squares and scores only", () => {
   const r = { total: 610, perScale: [{ score: 400, items: [95, 80, 75, 70, 80].map(pts => ({ pts })) }, { score: 210, items: [10, 50, 60, 40, 50].map(pts => ({ pts })) }] };
   assert.equal(shareText(p, r, "https://x.test"), "Sense of Scale #7  610/1000\n🟩🟩🟩🟩🟩  400\n🟥🟨🟨🟨🟨  210\nhttps://x.test");
 });
+
+test("easy mode: exact spot 100, one off 50, further 0; ties are interchangeable", async () => {
+  const { scoreOrder, scoreOrders, trueOrder } = await import("../public/js/core.js");
+  const s = { id: "x", items: [["a", 5], ["b", 4], ["c", 3], ["d", 2], ["e", 1]].map(([id, value]) => ({ id, value })) };
+  assert.deepEqual(trueOrder(s), ["a", "b", "c", "d", "e"]);
+  assert.deepEqual(scoreOrder(s, ["a", "b", "c", "d", "e"]).map(x => x.pts), [100, 100, 100, 100, 100]);
+  assert.deepEqual(scoreOrder(s, ["b", "a", "c", "d", "e"]).map(x => x.pts), [50, 50, 100, 100, 100]);
+  assert.deepEqual(scoreOrder(s, ["e", "b", "c", "d", "a"]).map(x => x.pts), [0, 100, 100, 100, 0]);
+  const tie = { id: "t", items: [["a", 2], ["b", 2], ["c", 1], ["d", 1], ["e", 0]].map(([id, value]) => ({ id, value })) };
+  assert.deepEqual(scoreOrder(tie, ["b", "a", "d", "c", "e"]).map(x => x.pts), [100, 100, 100, 100, 100]);
+  const p = { scales: [s] };
+  assert.equal(scoreOrders(p, { x: ["a", "b", "c", "d", "e"] }).total, 500);
+  assert.equal(scoreOrders(p, {}).total, 0);
+});
+
+test("SI, byte and mass formatting", async () => {
+  const { fmtVal } = await import("../public/js/core.js");
+  assert.equal(fmtVal({ unit: "V", display: { kind: "si" } }, 0.075), "75 mV");
+  assert.equal(fmtVal({ unit: "V", display: { kind: "si" } }, 25500000), "25.5 MV");
+  assert.equal(fmtVal({ unit: "Sv", display: { kind: "si" } }, 9.8e-8), "98 nSv");
+  assert.equal(fmtVal({ display: { kind: "bytes" } }, 4.7e9), "4.7 GB");
+  assert.equal(fmtVal({ display: { kind: "mass" } }, 0.0025), "2.5 g");
+  assert.equal(fmtVal({ display: { kind: "mass" } }, 180000), "180 tonnes");
+});
+
+test("very large and very small numbers use powers of ten", async () => {
+  const { fmtNum, tickText } = await import("../public/js/core.js");
+  assert.equal(fmtNum(2.3e14), "230 trillion");
+  assert.equal(fmtNum(2.3e17), "2.3×10¹⁷");
+  assert.equal(fmtNum(0.00005), "5×10⁻⁵");
+  assert.equal(tickText({ type: "log" }, 1e15), "10¹⁵");
+  assert.equal(tickText({ type: "log" }, 1e12), "1T");
+});

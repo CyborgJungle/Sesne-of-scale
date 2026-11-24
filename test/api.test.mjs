@@ -54,6 +54,22 @@ test("result: server recomputes the score; one result per player per day", { ski
   assert.equal(st.json.histogram[String(Math.floor(r1.json.score / 50))], 1);
 });
 
+test("result: easy mode scores the order; a player still gets one result per day", { skip: !today && "no live puzzle" }, async () => {
+  const { trueOrder } = await import("../public/js/core.js");
+  const orders = Object.fromEntries(today.scales.map(s => [s.id, trueOrder(s)]));
+  const playerId = randomUUID();
+  const r = await call(result, { url: "/api/result", method: "POST", body: { date: today.date, playerId, mode: "easy", orders } });
+  assert.equal(r.status, 200);
+  assert.equal(r.json.score, today.scales.length * 500);
+  assert.equal(r.json.mode, "easy");
+  const again = await call(result, { url: "/api/result", method: "POST", body: { date: today.date, playerId, mode: "easy", orders } });
+  assert.equal(again.json.stored, false);
+  const bad = { ...orders, [today.scales[0].id]: orders[today.scales[0].id].slice(0, 4) };
+  assert.equal((await call(result, { url: "/api/result", method: "POST", body: { date: today.date, playerId: randomUUID(), mode: "easy", orders: bad } })).status, 400);
+  const st = await call(stats, { url: `/api/stats?date=${today.date}&mode=easy` });
+  assert.equal(st.json.plays, 1);
+});
+
 test("result: archive dates don't count", async () => {
   const old = loadSchedule().find(p => p.date < addDays(earliestLiveDate(), -1));
   const r = await call(result, { url: "/api/result", method: "POST", body: { date: old?.date || "2000-01-01", playerId: randomUUID(), placements: {} } });

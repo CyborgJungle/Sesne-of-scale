@@ -42,11 +42,13 @@ create table public.puzzles (
   created_at  timestamptz not null default now()
 );
 
--- One row for each player and day. ~1M rows a year at a few thousand players a day; no partitioning needed yet.
+-- One row for each player and day (in whichever mode they chose). ~1M rows a year at a few thousand
+-- players a day; no partitioning needed yet.
 create table public.results (
   date         date not null references public.puzzles (date),
   player_id    uuid not null,
-  placements   jsonb not null,
+  mode         text not null default 'hard' check (mode in ('easy', 'hard')),
+  answer       jsonb not null,                       -- hard: { itemId: t }, easy: { scaleId: [itemId, ...] }
   score        integer not null check (score >= 0),
   item_scores  jsonb not null,
   created_at   timestamptz not null default now(),
@@ -55,11 +57,13 @@ create table public.results (
 
 -- Rolled up every minute by pg_cron, so busy moments don't make every player's request scan results.
 create table public.daily_stats (
-  date        date primary key references public.puzzles (date),
+  date        date not null references public.puzzles (date),
+  mode        text not null check (mode in ('easy', 'hard')),
   plays       integer not null default 0,
   mean        double precision,
   histogram   jsonb not null default '{}'::jsonb,  -- { "<score div 50>": count }
-  updated_at  timestamptz not null default now()
+  updated_at  timestamptz not null default now(),
+  primary key (date, mode)
 );
 
 -- ---------- Lock it down: no direct browser access ----------
@@ -78,16 +82,16 @@ security definer
 set search_path = ''
 as $$
   with buckets as (
-    select date, score / 50 as b, count(*) as c, sum(score) as total
+    select date, mode, score / 50 as b, count(*) as c, sum(score) as total
     from public.results
     where date >= since
-    group by date, score / 50
+    group by date, mode, score / 50
   )
-  insert into public.daily_stats (date, plays, mean, histogram, updated_at)
-  select date, sum(c), sum(total)::double precision / sum(c), jsonb_object_agg(b::text, c), now()
+  insert into public.daily_stats (date, mode, plays, mean, histogram, updated_at)
+  select date, mode, sum(c), sum(total)::double precision / sum(c), jsonb_object_agg(b::text, c), now()
   from buckets
-  group by date
-  on conflict (date) do update
+  group by date, mode
+  on conflict (date, mode) do update
     set plays = excluded.plays, mean = excluded.mean, histogram = excluded.histogram, updated_at = excluded.updated_at;
 $$;
 revoke execute on function public.refresh_daily_stats(date) from public, anon, authenticated;
@@ -97,10 +101,11 @@ create or replace view public.item_difficulty
 with (security_invoker = true) as
 select
   e.key                    as item_id,
+  r.mode,
   count(*)                 as plays,
   avg((e.value)::numeric)  as avg_points
 from public.results r, jsonb_each_text(r.item_scores) e
-group by e.key;
+group by e.key, r.mode;
 revoke all on public.item_difficulty from anon, authenticated;
 
 -- pg_cron: enable the extension in the dashboard (Database → Extensions) if this fails, then rerun the line.

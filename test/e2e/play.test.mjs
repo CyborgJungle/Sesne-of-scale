@@ -21,10 +21,10 @@ before(async () => {
 after(async () => { await browser?.close(); server?.kill(); });
 
 async function placeAll(page, mode) {
-  const gauge = page.locator("#gauge");
-  const box = await gauge.boundingBox();
   for (let k = 0; k < 5; k++) {
     const chip = page.locator(".chip").first();
+    await chip.scrollIntoViewIfNeeded();
+    const box = await page.locator("#gauge").boundingBox(); // re-measure: on phones the tray above it shrinks
     const y = box.y + 40 + (k / 4) * (box.height - 80);
     const how = mode === "mixed" ? ["drag", "tap", "key", "drag", "tap"][k] : mode;
     if (how === "drag") {
@@ -35,7 +35,9 @@ async function placeAll(page, mode) {
       await page.mouse.up();
     } else if (how === "tap") {
       await chip.click();
-      await page.mouse.click(box.x + box.width / 2, y);
+      const g = await page.locator("#gauge").boundingBox();
+      // Clicking via the locator scrolls the gauge into view first, as a person would.
+      await page.locator("#gauge").click({ position: { x: g.width / 2, y: 40 + (k / 4) * (g.height - 80) }, force: true });
     } else {
       await chip.focus();
       await page.keyboard.press("Enter");          // select → focus moves to the gauge
@@ -53,6 +55,8 @@ test("plays today's daily puzzle end to end", async () => {
   page.on("pageerror", e => errors.push(e.message));
   page.on("console", m => m.type() === "error" && errors.push(m.text()));
   await page.goto(BASE);
+  if (SHOTS) await page.screenshot({ path: `${SHOTS}/0-home.png` });
+  await page.getByRole("radio", { name: /hard/i }).click();
   await page.getByRole("button", { name: /play today's puzzle/i }).click();
   if (SHOTS) await page.screenshot({ path: `${SHOTS}/1-board.png` });
 
@@ -82,6 +86,40 @@ test("plays today's daily puzzle end to end", async () => {
   await page.locator(".archive button").first().waitFor();
   await page.locator(".archive button").first().click();
   await page.locator(".mode-tag").waitFor();
+  assert.deepEqual(errors, []);
+  await page.close();
+});
+
+test("easy mode: reorder by dragging and with the arrow buttons", async () => {
+  const page = await browser.newPage({ viewport: { width: 1200, height: 900 } });
+  const errors = [];
+  page.on("pageerror", e => errors.push(e.message));
+  await page.goto(BASE);
+  await page.getByRole("radio", { name: /easy/i }).click();
+  await page.getByRole("button", { name: /play today's puzzle/i }).click();
+  for (let round = 0; round < 3; round++) {
+    await page.locator(".ocard").first().waitFor();
+    const before = await page.locator(".ocard .nm").allTextContents();
+    // Drag the bottom card to the top.
+    const last = await page.locator(".ocard").nth(4).boundingBox();
+    const first = await page.locator(".ocard").nth(0).boundingBox();
+    await page.mouse.move(last.x + 60, last.y + last.height / 2);
+    await page.mouse.down();
+    await page.mouse.move(first.x + 60, first.y + 4, { steps: 10 });
+    await page.mouse.up();
+    const afterDrag = await page.locator(".ocard .nm").allTextContents();
+    assert.equal(afterDrag[0], before[4], "dragged card should be on top");
+    // Move the top card down one with its ▼ button.
+    await page.locator(".ocard").nth(0).getByRole("button", { name: /down/i }).click();
+    assert.equal((await page.locator(".ocard .nm").allTextContents())[1], before[4]);
+    if (SHOTS && round === 0) await page.screenshot({ path: `${SHOTS}/6-easy-board.png`, fullPage: true });
+    await page.getByRole("button", { name: "Check order" }).click();
+    assert.equal(await page.locator(".ocard.revealed").count(), 5);
+    if (SHOTS && round === 0) await page.screenshot({ path: `${SHOTS}/7-easy-reveal.png`, fullPage: true });
+    await page.getByRole("button", { name: round < 2 ? /next scale/i : /see results/i }).click();
+  }
+  await page.locator(".score-xl").waitFor();
+  assert.match(await page.locator("#sharecard").textContent(), /^Sense of Scale #\d+ \(Easy\) {2}\d+\/1500/);
   assert.deepEqual(errors, []);
   await page.close();
 });

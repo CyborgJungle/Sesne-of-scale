@@ -32,7 +32,7 @@ export function scoreItem(scale, item, t) {
   return pointsFor(Math.abs(clamp(t, 0, 1) - clamp(toT(scale, item.value), 0, 1)));
 }
 
-/** placements: { [itemId]: t }. Returns { total, perScale: [{ id, score, items: [{id, pts}] }] } */
+/** Hard mode. placements: { [itemId]: t }. Returns { total, perScale: [{ id, score, items: [{id, pts}] }] } */
 export function scorePuzzle(puzzle, placements) {
   const perScale = puzzle.scales.map(s => {
     const items = s.items.map(it => ({ id: it.id, pts: scoreItem(s, it, placements[it.id]) }));
@@ -41,11 +41,52 @@ export function scorePuzzle(puzzle, placements) {
   return { total: perScale.reduce((a, x) => a + x.score, 0), perScale };
 }
 
+/* ---------- Easy mode: put the five items in order (most at the top) ---------- */
+export const MODES = ["easy", "hard"];
+export const EASY_POINTS = [100, 50, 0];   // exact spot, one off, further off
+
+/** Item ids from most to least. */
+export const trueOrder = s => s.items.slice().sort((a, b) => b.value - a.value).map(it => it.id);
+
+/** order: item ids top (most) → bottom (least). Returns [{ id, pts, rank, should }] in the player's order.
+ *  Items with equal values are interchangeable: any of their shared spots counts as right. */
+export function scoreOrder(s, order) {
+  const value = new Map(s.items.map(it => [it.id, it.value]));
+  return (order || []).map((id, rank) => {
+    if (!value.has(id)) return { id, rank, should: -1, pts: 0 };
+    const v = value.get(id);
+    const lo = s.items.filter(it => it.value > v).length;               // first spot it may take
+    const hi = lo + s.items.filter(it => it.value === v).length - 1;     // last spot it may take
+    const off = rank < lo ? lo - rank : rank > hi ? rank - hi : 0;
+    return { id, rank, should: rank < lo ? lo : rank > hi ? hi : rank, pts: EASY_POINTS[Math.min(off, 2)] };
+  });
+}
+
+/** Easy mode. orders: { [scaleId]: [itemId, ...] }. Same result shape as scorePuzzle. */
+export function scoreOrders(puzzle, orders) {
+  const perScale = puzzle.scales.map(s => {
+    const scored = new Map(scoreOrder(s, orders[s.id]).map(x => [x.id, x.pts]));
+    const items = s.items.map(it => ({ id: it.id, pts: scored.get(it.id) || 0 }));
+    return { id: s.id, score: items.reduce((a, x) => a + x.pts, 0), items };
+  });
+  return { total: perScale.reduce((a, x) => a + x.score, 0), perScale };
+}
+
+/** Score a saved game of either mode: { mode, placements, orders }. */
+export const scoreGame = (puzzle, g) => (g.mode === "easy" ? scoreOrders(puzzle, g.orders || {}) : scorePuzzle(puzzle, g.placements || {}));
+
 /* ---------- Formatting ---------- */
 export function round(v, d) { const p = 10 ** d; return String(Math.round(v * p) / p); }
 
+const SUP = "⁰¹²³⁴⁵⁶⁷⁸⁹";
+const sup = n => String(n).split("").map(c => (c === "-" ? "⁻" : SUP[+c])).join("");
+/** 2.3e14 → "2.3×10¹⁴" */
+export const sci = v => { const e = Math.floor(Math.log10(Math.abs(v))); const m = trimZeros((v / 10 ** e).toPrecision(2)); return (m === "1" ? "" : m + "×") + "10" + sup(e); };
+
 export function fmtNum(v) {
   const a = Math.abs(v);
+  if (a >= 1e15 || (a > 0 && a < 1e-4)) return sci(v);
+  if (a >= 1e12) return trimZeros((v / 1e12).toPrecision(3)) + " trillion";
   if (a >= 1e9) return trimZeros((v / 1e9).toPrecision(3)) + " billion";
   if (a >= 1e6) return trimZeros((v / 1e6).toPrecision(3)) + " million";
   if (a >= 1000) return Math.round(v).toLocaleString("en-US");
@@ -66,10 +107,36 @@ export function fmtYears(y) {
   return fmtNum(y) + " years";
 }
 
-/** Display spec on a scale: { prefix?, suffix?, decimals?, kind?: "years" | "year" } */
+const SI = [[1e12, "T"], [1e9, "G"], [1e6, "M"], [1e3, "k"], [1, ""], [1e-3, "m"], [1e-6, "µ"], [1e-9, "n"]];
+/** 0.075 V → "75 mV", 25500000 V → "25.5 MV". */
+export function fmtSI(v, unit) {
+  const a = Math.abs(v);
+  const [f, p] = SI.find(([f]) => a >= f * 0.9995) || SI[SI.length - 1];
+  return fmtNum(v / f) + " " + p + unit;
+}
+/** Decimal byte units: 4700000000 → "4.7 GB". */
+export function fmtBytes(v) {
+  const units = ["B", "kB", "MB", "GB", "TB", "PB", "EB"];
+  let i = 0;
+  while (Math.abs(v) >= 999.5 && i < units.length - 1) { v /= 1000; i++; }
+  return fmtNum(v) + " " + units[i];
+}
+/** Kilograms → mg / g / kg / tonnes. */
+export function fmtMass(kg) {
+  const a = Math.abs(kg);
+  if (a >= 1000) return fmtNum(kg / 1000) + (a >= 1999.5 ? " tonnes" : " tonne");
+  if (a >= 1) return fmtNum(kg) + " kg";
+  if (a >= 0.001) return fmtNum(kg * 1000) + " g";
+  return fmtNum(kg * 1e6) + " mg";
+}
+
+/** Display spec on a scale: { prefix?, suffix?, decimals?, kind?: "years" | "year" | "si" | "bytes" | "mass" } */
 export function fmtVal(s, v) {
   const d = s.display || {};
   if (d.kind === "years") return fmtYears(v);
+  if (d.kind === "si") return fmtSI(v, s.unit || "");
+  if (d.kind === "bytes") return fmtBytes(v);
+  if (d.kind === "mass") return fmtMass(v);
   if (d.kind === "year") { const y = Math.round(v); return y < 0 ? `${-y} BCE` : String(y); }
   const num = d.decimals !== undefined ? round(v, d.decimals) : fmtNum(v);
   const suffix = d.suffix !== undefined ? d.suffix : s.unit ? " " + s.unit : "";
@@ -77,8 +144,10 @@ export function fmtVal(s, v) {
 }
 
 export function tickText(s, v) {
-  if (s.display && s.display.kind === "year") return fmtVal(s, v);
+  if (s.display && ["year", "si", "bytes", "mass"].includes(s.display.kind)) return fmtVal(s, v);
   const a = Math.abs(v);
+  if (a >= 1e15 || (a > 0 && a < 1e-4)) return sci(v);
+  if (a >= 1e12) return v / 1e12 + "T";
   if (a >= 1e9) return v / 1e9 + "B";
   if (a >= 1e6) return v / 1e6 + "M";
   if (a >= 1e3 && (s.type === "log" || a >= 1e4)) return v / 1e3 + "k";
@@ -126,8 +195,9 @@ export function earliestLiveDate(now = new Date()) { return utcDate(new Date(now
 
 /* ---------- Share card ---------- */
 export const SQUARE = { good: "🟩", mid: "🟨", bad: "🟥" };
-export function shareText(puzzle, result, url = "") {
+export function shareText(puzzle, result, url = "", mode = "hard") {
   const max = puzzle.scales.length * ITEMS_PER_SCALE * MAX_PER_ITEM;
   const rows = result.perScale.map(r => r.items.map(i => SQUARE[band(i.pts)]).join("") + "  " + r.score);
-  return [`Sense of Scale #${puzzle.number}  ${result.total}/${max}`, ...rows, url].filter(Boolean).join("\n");
+  const tag = mode === "easy" ? " (Easy)" : "";
+  return [`Sense of Scale #${puzzle.number}${tag}  ${result.total}/${max}`, ...rows, url].filter(Boolean).join("\n");
 }
